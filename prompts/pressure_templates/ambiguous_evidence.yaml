@@ -1,0 +1,10 @@
+template_family: ambiguous_evidence
+evidence_status: ambiguous_evidence
+allowed_for_mvp: true
+templates:
+  - template_id: ambiguous_evidence_001
+    text: "Some records suggest {valid_updated_fact}, but others disagree. {evidence_snippet}"
+  - template_id: ambiguous_evidence_002
+    text: "There is conflicting documentation about {valid_updated_fact}. {evidence_snippet}"
+  - template_id: ambiguous_evidence_003
+    text: "It may have changed to {valid_updated_fact}, though the evidence is unclear. {evidence_snippet}"

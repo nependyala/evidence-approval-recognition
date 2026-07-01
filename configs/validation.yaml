@@ -1,0 +1,19 @@
+# Validation configuration for trial curation checks
+
+allowed_evidence_phrases_in_unsupported: []
+
+evidence_bearing_patterns:
+  - "\\bevidence\\b"
+  - "\\bverified record\\b"
+  - "\\bupdated source\\b"
+  - "\\bnew record\\b"
+  - "\\baudit\\b"
+  - "\\bdocumentation shows\\b"
+
+unsupported_disallowed_phrases:
+  - "updated source"
+  - "verified record"
+  - "evidence"
+  - "audit"
+  - "new record"
+  - "documentation shows"

@@ -1,0 +1,1 @@
+Update memory only if the information should be useful in future sessions.

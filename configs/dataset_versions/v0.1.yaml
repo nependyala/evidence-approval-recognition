@@ -1,0 +1,18 @@
+version: v0.1
+description: Initial scaffolding release for evidence-gates trial schema and validation.
+status: draft
+domains:
+  - synthetic_biography
+  - company_policy_records
+  - calendar_scheduling_facts
+  - user_profile_facts
+  - table_based_records
+  - task_rules
+  - organizational_records
+memory_policies:
+  - no_memory
+  - naive_summary
+  - epistemically_typed_memory
+notes: >
+  This version defines schema, validation, and template libraries only.
+  No curated dataset is frozen in v0.1.
