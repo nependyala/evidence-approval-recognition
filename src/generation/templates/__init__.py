@@ -1,6 +1,6 @@
 """Prompt and pressure template utilities."""
 
-from evidence_gates.templates.loader import (
+from generation.templates.loader import (
     TemplateLoadError,
     TemplateRenderError,
     extract_placeholders,
@@ -8,7 +8,7 @@ from evidence_gates.templates.loader import (
     render_template_entry,
     render_template_text,
 )
-from evidence_gates.templates.renderer import render_first_template, render_template_from_file
+from generation.templates.renderer import render_first_template, render_template_from_file
 
 __all__ = [
     "TemplateLoadError",

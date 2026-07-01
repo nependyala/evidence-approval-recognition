@@ -34,3 +34,8 @@ data/curated/*
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/curated/.gitkeep
+
+# Experiment outputs (not committed during scaffolding)
+results/*
+!results/.gitkeep
+!results/README.md

@@ -80,11 +80,20 @@ Example `vars.json` for template rendering:
 
 ```text
 evidence-approval-recognition/
-  configs/          # Dataset version, template version, validation config
   data/             # raw / interim / curated / fixtures
-  docs/             # Curation protocol, audit checklist, schema reference
   prompts/          # Memory instructions, relational memory, pressure templates
-  src/evidence_gates/
+  src/
+    coding/         # Trial schemas, enums, coding rubrics
+    generation/     # Synthetic trial assembly, templates, versioning
+    runners/        # Model experiment runners (future)
+    memory/         # Memory admission logic (future)
+    evaluation/     # Trial validation and grading (future)
+    analysis/       # Metrics and statistical analysis (future)
+  experiments/      # Run configs, manifests, version pins
+  results/          # Model outputs and aggregated metrics (future)
+  notebooks/        # Exploratory analysis
+  paper/            # Manuscript and figures
+  docs/             # Curation protocol, audit checklist, schema reference
   tests/
 ```
 

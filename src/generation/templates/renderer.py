@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Any
 
-from evidence_gates.templates.loader import load_template_file, render_template_entry
+from generation.templates.loader import load_template_file, render_template_entry
 
 
 def render_template_from_file(

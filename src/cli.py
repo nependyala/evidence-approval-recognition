@@ -7,8 +7,7 @@ from typing import Annotated
 import typer
 from pydantic import TypeAdapter
 
-from evidence_gates.curation.assembly import assemble_trial
-from evidence_gates.schemas.enums import (
+from coding.enums import (
     Domain,
     EvidenceStatus,
     ExpectedEvidenceLevel,
@@ -20,9 +19,10 @@ from evidence_gates.schemas.enums import (
     RelationalCondition,
     TurnStructure,
 )
-from evidence_gates.schemas.trial import HiddenMetadata, Trial, VisibleInput
-from evidence_gates.templates.loader import load_template_file, render_template_entry
-from evidence_gates.validation.validator import validate_trial_directory, validate_trial_file
+from coding.trial import HiddenMetadata, Trial, VisibleInput
+from evaluation.validator import validate_trial_directory, validate_trial_file
+from generation.assembly import assemble_trial
+from generation.templates.loader import load_template_file, render_template_entry
 
 app = typer.Typer(
     name="eg",

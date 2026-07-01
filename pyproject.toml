@@ -22,10 +22,20 @@ dev = [
 ]
 
 [project.scripts]
-eg = "evidence_gates.cli:app"
+eg = "cli:app"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/evidence_gates"]
+packages = [
+    "src/coding",
+    "src/generation",
+    "src/evaluation",
+    "src/runners",
+    "src/memory",
+    "src/analysis",
+]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/cli.py" = "cli.py"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -40,4 +50,4 @@ src = ["src", "tests"]
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.ruff.lint.per-file-ignores]
-"src/evidence_gates/cli.py" = ["B008"]
+"src/cli.py" = ["B008"]

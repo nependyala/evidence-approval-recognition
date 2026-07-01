@@ -9,7 +9,7 @@ Examples:
 - `v0.1` — Initial scaffolding / draft schema
 - `v1.0` — First frozen public release
 
-Config files live in `configs/dataset_versions/{version}.yaml`.
+Config files live in `experiments/configs/dataset_versions/{version}.yaml`.
 
 ## Template version naming
 
@@ -19,7 +19,7 @@ Examples:
 
 - `templates_v0.1`
 
-Config files live in `configs/template_versions/{version}.yaml`.
+Config files live in `experiments/configs/template_versions/{version}.yaml`.
 
 ## Trial ID naming
 

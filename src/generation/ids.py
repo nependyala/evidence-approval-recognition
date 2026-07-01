@@ -2,7 +2,7 @@
 
 import re
 
-from evidence_gates.schemas.enums import (
+from coding.enums import (
     Domain,
     MemoryPolicy,
     PushbackCondition,

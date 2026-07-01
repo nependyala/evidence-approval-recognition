@@ -4,7 +4,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from evidence_gates.schemas.enums import (
+from coding.enums import (
     Domain,
     EvidenceStatus,
     ExpectedEvidenceLevel,

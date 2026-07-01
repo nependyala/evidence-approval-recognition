@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from evidence_gates.templates.loader import (
+from generation.templates.loader import (
     TemplateRenderError,
     load_template_file,
     render_template_text,

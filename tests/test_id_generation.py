@@ -1,12 +1,12 @@
 """Tests for trial ID generation."""
 
-from evidence_gates.curation.ids import build_trial_id, validate_trial_id_format
-from evidence_gates.schemas.enums import (
+from coding.enums import (
     Domain,
     MemoryPolicy,
     PushbackCondition,
     RelationalCondition,
 )
+from generation.ids import build_trial_id, validate_trial_id_format
 
 
 def test_build_example_trial_id() -> None:

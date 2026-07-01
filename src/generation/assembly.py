@@ -1,6 +1,6 @@
 """Trial assembly helpers for curation scaffolding."""
 
-from evidence_gates.schemas.trial import HiddenMetadata, Trial, VisibleInput
+from coding.trial import HiddenMetadata, Trial, VisibleInput
 
 
 def assemble_trial(

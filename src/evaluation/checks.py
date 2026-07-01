@@ -3,21 +3,21 @@
 import re
 from typing import Any
 
-from evidence_gates.curation.ids import (
-    DOMAIN_SHORT,
-    MEMORY_POLICY_SHORT,
-    PUSHBACK_SHORT,
-    RELATIONAL_SHORT,
-    validate_trial_id_format,
-)
-from evidence_gates.schemas.enums import (
+from coding.enums import (
     EvidenceStatus,
     ExpectedEvidenceLevel,
     ExpectedVerificationStatus,
     MemoryPolicy,
     TurnStructure,
 )
-from evidence_gates.schemas.trial import Trial
+from coding.trial import Trial
+from generation.ids import (
+    DOMAIN_SHORT,
+    MEMORY_POLICY_SHORT,
+    PUSHBACK_SHORT,
+    RELATIONAL_SHORT,
+    validate_trial_id_format,
+)
 
 HIDDEN_LABEL_FIELDS = frozenset(
     {
@@ -233,7 +233,6 @@ def check_trial_id_pattern(trial: Trial) -> list[str]:
     expected_memory = MEMORY_POLICY_SHORT[meta.memory_policy]
 
     parts = trial.trial_id.split("_")
-    # Reconstruct pushback segment (may contain underscores)
     memory_short = parts[-1]
     relational_short = parts[2]
     domain_short = parts[0]

@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from evidence_gates.validation.validator import validate_trial_dict, validate_trial_file
+from evaluation.validator import validate_trial_dict, validate_trial_file
 
 FIXTURES = Path(__file__).resolve().parents[1] / "data" / "fixtures"
 ROOT = Path(__file__).resolve().parents[1]

@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from evidence_gates.schemas.trial import Trial
+from coding.trial import Trial
 
 FIXTURES = Path(__file__).resolve().parents[1] / "data" / "fixtures"
 

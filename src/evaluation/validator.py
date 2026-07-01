@@ -8,14 +8,14 @@ from typing import Any
 import yaml
 from pydantic import ValidationError
 
-from evidence_gates.schemas.trial import Trial
-from evidence_gates.schemas.validation_report import ValidationReport
-from evidence_gates.validation import checks
+from coding.trial import Trial
+from coding.validation_report import ValidationReport
+from evaluation import checks
 
 
 def _load_validation_config(config_path: Path | None = None) -> dict[str, Any]:
     if config_path is None:
-        config_path = Path("configs/validation.yaml")
+        config_path = Path("experiments/configs/validation.yaml")
     if not config_path.exists():
         return {}
     with config_path.open(encoding="utf-8") as handle:

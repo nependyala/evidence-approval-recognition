@@ -1,6 +1,6 @@
-"""Pydantic schemas for trial records and validation reports."""
+"""Trial schemas, enums, and validation report models."""
 
-from evidence_gates.schemas.enums import (
+from coding.enums import (
     Domain,
     EvidenceStatus,
     ExpectedEvidenceLevel,
@@ -13,8 +13,8 @@ from evidence_gates.schemas.enums import (
     RelationalCondition,
     TurnStructure,
 )
-from evidence_gates.schemas.trial import HiddenMetadata, Trial, VisibleInput
-from evidence_gates.schemas.validation_report import ValidationReport
+from coding.trial import HiddenMetadata, Trial, VisibleInput
+from coding.validation_report import ValidationReport
 
 __all__ = [
     "Domain",
