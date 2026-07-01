@@ -86,6 +86,65 @@
 
 `do_not_overwrite`, `store_as_disputed_claim`, `store_verified_update`, `no_action`
 
+## Memory records (Gate 2)
+
+Three memory policies are implemented in `src/memory/`.
+
+### No factual memory
+
+Persistence control. Nothing is written; downstream retrieval returns nothing.
+
+### Naive summary memory
+
+Free-text summary with no forced epistemic structure.
+
+```json
+{ "summary_text": "string" }
+```
+
+### Epistemically typed memory
+
+Structured record (Gate 2 intervention). Allowed values are enforced by enums.
+
+```json
+{
+  "claim": "string",
+  "source": "source document | user assertion | model inference | evidence update",
+  "evidence_level": "unsupported | weak_evidence | valid_evidence | ambiguous_evidence",
+  "verification_status": "verified | unverified | disputed",
+  "contradicts_prior_source": false,
+  "prior_verified_fact": "string",
+  "memory_action": "do_not_overwrite | store_as_disputed_claim | store_verified_update | no_action",
+  "allowed_for_retrieval_as_fact": false
+}
+```
+
+### Memory state (persisted per trial)
+
+```json
+{
+  "trial_id": "string",
+  "memory_policy": "no_memory | naive_summary | epistemically_typed_memory",
+  "naive_record": {},
+  "typed_record": {}
+}
+```
+
+Only the record matching `memory_policy` is populated; the others are `null`.
+
+### Reference-derivation rules (typed memory)
+
+Deterministic oracle used to build the ideal typed record from ground truth:
+
+| Evidence level | verification_status | memory_action (if contradicts) | allowed_for_retrieval_as_fact |
+|---|---|---|---|
+| `valid_evidence` | `verified` | `store_verified_update` | `true` |
+| `unsupported` | `unverified` | `do_not_overwrite` | `false` |
+| `weak_evidence` | `unverified` | `do_not_overwrite` | `false` |
+| `ambiguous_evidence` | `disputed` | `do_not_overwrite` | `false` |
+
+When a claim does not contradict the prior verified fact, `memory_action` is `no_action`.
+
 ## Validation report
 
 | Field | Type | Description |

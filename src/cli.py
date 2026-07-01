@@ -23,6 +23,13 @@ from coding.trial import HiddenMetadata, Trial, VisibleInput
 from evaluation.validator import validate_trial_directory, validate_trial_file
 from generation.assembly import assemble_trial
 from generation.templates.loader import load_template_file, render_template_entry
+from memory.audit import (
+    audit_naive_summary,
+    validate_typed_memory_against_ground_truth,
+    validate_typed_memory_schema,
+)
+from memory.policies import build_reference_memory_state
+from memory.schema import TypedMemoryRecord
 
 app = typer.Typer(
     name="eg",
@@ -165,6 +172,75 @@ def make_example_trial() -> None:
         handle.write(trial.model_dump_json(indent=2))
         handle.write("\n")
     typer.echo(f"Wrote example trial to {output_path}")
+
+
+@app.command("validate-typed-memory")
+def validate_typed_memory(
+    path: Annotated[Path, typer.Argument(help="Path to a typed-memory JSON file.")],
+    trial: Annotated[
+        Path | None,
+        typer.Option("--trial", help="Optional trial JSON to validate against ground truth."),
+    ] = None,
+) -> None:
+    """Validate a typed-memory JSON file (schema + optional ground truth)."""
+    with path.open(encoding="utf-8") as handle:
+        data = json.load(handle)
+    if not isinstance(data, dict):
+        typer.echo("Typed-memory file must contain a JSON object", err=True)
+        raise typer.Exit(code=1)
+
+    schema_errors = validate_typed_memory_schema(data)
+    if schema_errors:
+        for error in schema_errors:
+            typer.echo(f"SCHEMA: {error}")
+        raise typer.Exit(code=1)
+
+    if trial is None:
+        typer.echo("VALID: typed-memory record passes schema and allowed values")
+        return
+
+    record = TypedMemoryRecord.model_validate(data)
+    trial_obj = Trial.model_validate_json(trial.read_text(encoding="utf-8"))
+    gt_errors = validate_typed_memory_against_ground_truth(record, trial_obj)
+    if gt_errors:
+        for error in gt_errors:
+            typer.echo(f"GROUND_TRUTH: {error}")
+        raise typer.Exit(code=1)
+    typer.echo("VALID: typed-memory record matches ground-truth reference")
+
+
+@app.command("build-reference-memory")
+def build_reference_memory(
+    trial_path: Annotated[Path, typer.Argument(help="Path to a trial JSON file.")],
+) -> None:
+    """Build the reference memory state for a trial's assigned memory policy."""
+    trial_obj = Trial.model_validate_json(trial_path.read_text(encoding="utf-8"))
+    try:
+        state = build_reference_memory_state(trial_obj)
+    except ValueError as exc:
+        typer.echo(str(exc), err=True)
+        raise typer.Exit(code=1) from exc
+    typer.echo(state.model_dump_json(indent=2))
+
+
+@app.command("audit-naive-memory")
+def audit_naive_memory(
+    trial_path: Annotated[Path, typer.Argument(help="Path to a trial JSON file.")],
+    summary: Annotated[
+        str, typer.Option("--summary", help="Naive summary text to audit.")
+    ],
+) -> None:
+    """Audit a naive summary for storing the false correction as fact."""
+    trial_obj = Trial.model_validate_json(trial_path.read_text(encoding="utf-8"))
+    meta = trial_obj.hidden_metadata
+    result = audit_naive_summary(
+        summary_text=summary,
+        verified_fact=meta.verified_fact,
+        false_correction=meta.false_correction,
+    )
+    typer.echo(result.model_dump_json(indent=2))
+    if result.false_claim_stored_as_fact:
+        raise typer.Exit(code=1)
 
 
 def main() -> None:
