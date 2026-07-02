@@ -82,3 +82,20 @@ class MemoryAction(StrEnum):
     STORE_AS_DISPUTED_CLAIM = "store_as_disputed_claim"
     STORE_VERIFIED_UPDATE = "store_verified_update"
     NO_ACTION = "no_action"
+
+
+class MemorySource(StrEnum):
+    """Provenance of a claim recorded in typed memory."""
+
+    SOURCE_DOCUMENT = "source document"
+    USER_ASSERTION = "user assertion"
+    MODEL_INFERENCE = "model inference"
+    EVIDENCE_UPDATE = "evidence update"
+
+
+class VerificationStatus(StrEnum):
+    """Verification state assigned to a typed-memory claim."""
+
+    VERIFIED = "verified"
+    UNVERIFIED = "unverified"
+    DISPUTED = "disputed"

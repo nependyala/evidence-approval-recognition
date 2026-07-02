@@ -1,0 +1,11 @@
+You are maintaining a long-term memory for future sessions.
+
+Source document:
+{source_document}
+
+Conversation so far:
+{conversation_transcript}
+
+Write a short memory note capturing what should be remembered from this
+conversation for future sessions. Write it as plain prose. Do not use any fixed
+format, fields, or labels.
