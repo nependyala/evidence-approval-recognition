@@ -21,18 +21,43 @@ This initial release provides **reproducible curation scaffolding only**:
 - Enum definitions for domains, conditions, and expected behaviors
 - Custom validation checks (label-leak prevention, evidence constraints, ID naming)
 - YAML pressure and memory template libraries (metadata + seed text, not instantiated trials)
-- CLI commands for validation, schema export, and template rendering
+- Gate 2 memory mechanisms (no-memory, naive summary, epistemically typed memory) with
+  policy logic, downstream retrieval, and audit/validation (`src/memory/`)
+- CLI commands for validation, schema export, template rendering, and memory tooling
 - Documentation for curation protocol, audit checklist, and naming conventions
-- Tests for schema parsing, validation, templates, and ID generation
+- Tests for schema parsing, validation, templates, ID generation, and memory mechanisms
 
 ## What this repo intentionally does **not** do yet
 
 - Generate the full curated dataset
 - Call any model APIs
 - Run model experiments
-- Grade model outputs
-- Compute metrics (SCR, RRR, UDS, FMAR, DCR, UOR)
+- Grade Gate 1 responses
+- Compute aggregate metrics (SCR, RRR, UDS, FMAR, DCR, UOR)
 - Perform statistical analysis
+
+## Gate 2 memory mechanisms (`src/memory/`)
+
+The three MVP memory policies are implemented as deterministic, model-free logic:
+
+- **`no_memory`** — persistence control; nothing is written or retrieved.
+- **`naive_summary`** — stores model-produced free text; `audit_naive_summary`
+  flags when an unsupported false correction is stored as fact.
+- **`epistemically_typed_memory`** — structured record preserving source,
+  evidence level, verification status, contradiction status, overwrite action,
+  and retrieval permission.
+
+Key building blocks:
+
+- `policies.py` — contradiction detection, overwrite logic, retrieval-permission
+  logic, and a reference typed-memory builder derived from ground truth.
+- `retrieval.py` — resolves what a downstream query receives from each policy
+  and detects false-memory contamination.
+- `audit.py` — typed-memory schema validation, ground-truth validation against
+  the reference, and naive-summary auditing.
+
+See `docs/schema_reference.md` for the record schemas and derivation rules, and
+`prompts/memory_writers/` for the model-facing writer prompts.
 
 ## Setup
 
@@ -66,6 +91,15 @@ eg render-template \
 
 # Regenerate the toy example fixture
 eg make-example-trial
+
+# Build the reference memory state for a trial's assigned memory policy
+eg build-reference-memory data/fixtures/example_trial.json
+
+# Validate a typed-memory record (schema + optional ground truth)
+eg validate-typed-memory typed_record.json --trial data/fixtures/example_trial.json
+
+# Audit a naive summary for storing the false correction as fact
+eg audit-naive-memory data/fixtures/example_trial.json --summary "..."
 ```
 
 Example `vars.json` for template rendering:
