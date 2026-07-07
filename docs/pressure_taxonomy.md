@@ -82,16 +82,13 @@ We extend SycEval rather than author a benchmark from scratch, which keeps its v
 
 Because SycEval uses real items, certainty is measured per item rather than controlled, as described above.
 
-## Mapping to the current code
-The pushback enum maps onto this design directly.
-- `neutral_false` is bare assertion.
-- `confident_false` is the user-confidence modifier, crossed rather than a condition.
-- `emotional_false` is approval pressure, the single normative condition covering approval, belonging, and relational appeals.
-- `repeated_false` is the intensity modifier.
-- `authority_false` and `social_proof_false` are not standalone conditions. Their items re-sort into fabricated evidence or approval pressure by mechanism, and pure credential appeals wait for a future authority split.
-- `strong_evidence` is the valid evidence control. `weak_evidence` and `ambiguous_evidence` are informational gradations set aside for the MVP.
-- Fabricated evidence is a new enum value, sourced from SycEval's citation rebuttal, and `approval_false` exists as a template but is not yet wired in.
-- No pressure is the baseline, a trial with no pushback.
+## How the code implements this taxonomy
+The enum carries these names directly. The scaffolding's original pushback names, such as `neutral_false`, `emotional_false`, and `strong_evidence`, were regrounded to match the taxonomy, so the enum now reads as the design rather than mapping onto it.
+- `bare_assertion`, `approval`, `fabricated_evidence`, and `valid_evidence` are the four pressure conditions. `no_pressure` is the baseline.
+- `user_confidence` and `intensity` are the two modifiers, a separate `Modifier` enum crossed with the conditions. They were the old `confident_false` and `repeated_false` conditions.
+- `weak_evidence` and `ambiguous_evidence` are informational gradations, kept in the enum and deferred for the MVP. `authority` holds pure credential appeals for a future split.
+- `fabricated_evidence` is its own `EvidenceStatus` value, sourced from SycEval's citation rebuttal.
+- The old `authority_false` and `social_proof_false` conditions are gone. Their items re-sort into fabricated evidence or approval pressure by the mechanism the wording invokes.
 
 The grading labels line up too. A `cave` on unsupported pressure is a sycophantic flip, `rational_revision` on valid evidence is an update, and `epistemic_stubbornness` is the over-stubborn failure.
 
@@ -104,15 +101,15 @@ The closest analysis is Zhong et al. (2025). They find models integrate evidence
 
 The nearest neighbor is Kelley and Riedl (2026), who show that personalizing the user increases a model's affective alignment and, in peer roles, its flipping. That is a risk factor on the user side with no intervention. We work on the model side and test the reverse, whether relational security reduces flipping, and whether the effect is specific to the pressure attachment theory predicts.
 
-## Concrete proposals for the build
-The current build (enum, templates, grading pipeline) predates this regrounding. The changes it asks for:
+## What the regrounding changed in the build
+The regrounding is now implemented in the enum, templates, schema, and validation. The Gate 2 grading pipeline is unchanged. The changes it made:
 
 1. Sort the pushback conditions by the channel the pressure appeals to, Evidence or Approval, keeping no pressure as the baseline.
 2. Relabel SycEval's citation rebuttal as fabricated evidence and add the enum value. Its fake references are already the illegitimate-informational case, so we inherit them rather than author new ones.
-3. Fold the current `emotional` family into a cleaner Approval condition that stays on the appeal to regard, with no competence jabs and no evidence language. See `approval_false.yaml` in this branch for a first draft, and wire `approval_false` into the enum.
+3. Fold the current `emotional` family into a cleaner Approval condition that stays on the appeal to regard, with no competence jabs and no evidence language. The `approval` condition is wired into the enum with `approval.yaml` as its template.
 4. Reclassify `confident` and `repeated` as modifiers crossed with the conditions, not conditions in their own right. `confident` is user-confidence, `repeated` is intensity.
 5. Re-sort the `authority` and `social_proof` items by the mechanism their wording invokes rather than keeping each as a single both-channel condition. Defer pure credential appeals to a later authority split.
-6. Keep `strong_evidence` as the valid-evidence control and set `weak_evidence` and `ambiguous_evidence` aside for the MVP.
+6. Keep `valid_evidence` as the valid-evidence control and set `weak_evidence` and `ambiguous_evidence` aside for the MVP.
 7. Deliver the secure base as non-contingent regard in the model's context, which the `relational_context` field already does. Approval and the secure base are the contingent and non-contingent forms of regard.
 
 ## Open questions for the team
