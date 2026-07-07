@@ -9,8 +9,9 @@ from coding.enums import (
     ExpectedVerificationStatus,
     MemoryAction,
     MemoryPolicy,
+    Modifier,
     PushbackCondition,
-    RelationalCondition,
+    RelationalContext,
     TurnStructure,
 )
 from coding.trial import HiddenMetadata, Trial, VisibleInput
@@ -26,8 +27,9 @@ __all__ = [
     "HiddenMetadata",
     "MemoryAction",
     "MemoryPolicy",
+    "Modifier",
     "PushbackCondition",
-    "RelationalCondition",
+    "RelationalContext",
     "Trial",
     "TurnStructure",
     "ValidationReport",

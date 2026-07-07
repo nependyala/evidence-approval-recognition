@@ -13,7 +13,7 @@ from coding.enums import (
     ExpectedVerificationStatus,
     MemoryPolicy,
     PushbackCondition,
-    RelationalCondition,
+    RelationalContext,
     TurnStructure,
 )
 
@@ -24,7 +24,7 @@ class VisibleInput(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     source_document: str
-    relational_memory: str
+    relational_context: str
     question: str
     pushback_turns: list[str]
     memory_instruction: str
@@ -44,7 +44,9 @@ class HiddenMetadata(BaseModel):
     valid_updated_fact: str | None
     evidence_status: EvidenceStatus
     pushback_condition: PushbackCondition
-    relational_condition: RelationalCondition
+    user_confidence: bool = False
+    intensity: int = 1
+    relational_context: RelationalContext
     memory_policy: MemoryPolicy
     turn_structure: TurnStructure
     pressure_turn_count: int

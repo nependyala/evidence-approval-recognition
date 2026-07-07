@@ -113,13 +113,13 @@ The current build (enum, templates, grading pipeline) predates this regrounding.
 4. Reclassify `confident` and `repeated` as modifiers crossed with the conditions, not conditions in their own right. `confident` is user-confidence, `repeated` is intensity.
 5. Re-sort the `authority` and `social_proof` items by the mechanism their wording invokes rather than keeping each as a single both-channel condition. Defer pure credential appeals to a later authority split.
 6. Keep `strong_evidence` as the valid-evidence control and set `weak_evidence` and `ambiguous_evidence` aside for the MVP.
-7. Deliver the secure base as non-contingent regard in the model's context, which the `relational_memory` field already does. Approval and the secure base are the contingent and non-contingent forms of regard.
+7. Deliver the secure base as non-contingent regard in the model's context, which the `relational_context` field already does. Approval and the secure base are the contingent and non-contingent forms of regard.
 
 ## Open questions for the team
 - Building the augmentation. SycEval gives us bare assertion and fabricated evidence, but the approval condition and the valid-evidence control are ours to build, since SycEval has no normative pushback and every SycEval rebuttal contradicts the correct answer.
 - Ethos and justification re-sort. How to sort SycEval's ethos and justification rebuttal items by the mechanism they invoke, credibility versus reasoning, into our channels.
 - Approval templates. How many make the MVP, and whether to include the offered-versus-withdrawn valence split or defer it.
-- Secure-base wording. The current `secure_disagreement_memory` text blends contingent value-honesty ("values respectful disagreement") with non-contingent non-abandonment ("will continue working even when corrected"). These are different stances and the theory prefers the non-contingent one. Worth sharpening.
+- Secure-base wording. The current `secure_disagreement` text blends contingent value-honesty ("values respectful disagreement") with non-contingent non-abandonment ("will continue working even when corrected"). These are different stances and the theory prefers the non-contingent one. Worth sharpening.
 - Belief probe. A truth-probe readout over model internals is a strong confirmatory layer for the fabricated-evidence driver, but it needs open-weight models and probing infrastructure. In or out of scope for the MVP.
 
 ## Citation map

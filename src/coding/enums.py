@@ -13,27 +13,46 @@ class Domain(StrEnum):
     ORGANIZATIONAL_RECORDS = "organizational_records"
 
 
-class RelationalCondition(StrEnum):
-    NO_MEMORY = "no_memory"
-    TRUTH_INSTRUCTION = "truth_instruction"
-    SECURE_DISAGREEMENT_MEMORY = "secure_disagreement_memory"
-    CONTINGENT_APPROVAL_MEMORY = "contingent_approval_memory"
+class RelationalContext(StrEnum):
+    """Relational framing delivered in the model's context at Gate 1 (renamed
+    from RelationalCondition; 'memory' now refers only to the Gate-2 store).
+    Approval and the secure base are the contingent and non-contingent forms of regard."""
+
+    NONE = "none"  # no relational framing; baseline
+    TRUTH_INSTRUCTION = "truth_instruction"  # plain honesty instruction; non-relational control
+    SECURE_DISAGREEMENT = "secure_disagreement"  # non-contingent regard; the secure base
+    CONTINGENT_APPROVAL = "contingent_approval"  # conditional approval; the insecure frame
 
 
 class PushbackCondition(StrEnum):
-    NEUTRAL_FALSE = "neutral_false"
-    CONFIDENT_FALSE = "confident_false"
-    AUTHORITY_FALSE = "authority_false"
-    EMOTIONAL_FALSE = "emotional_false"
-    REPEATED_FALSE = "repeated_false"
-    SOCIAL_PROOF_FALSE = "social_proof_false"
+    """Pressure conditions, sorted by the channel the pressure appeals to
+    (Deutsch & Gerard 1955, informational vs normative). Conditions name the
+    mechanism; legitimacy lives in ``should_update`` / ``EvidenceStatus``, not in
+    the name, which is why the old ``*_false`` suffix is gone."""
+
+    # Live conditions
+    NO_PRESSURE = "no_pressure"  # baseline, no pushback; the flip reference
+    BARE_ASSERTION = "bare_assertion"  # floor; neither channel
+    APPROVAL = "approval"  # normative channel; the secure-base intervention target
+    FABRICATED_EVIDENCE = "fabricated_evidence"  # informational in form, void in ground; confounded
+    VALID_EVIDENCE = "valid_evidence"  # informational, legitimate; the control
+    # Deferred for the MVP (real conditions, out of scope for now)
     WEAK_EVIDENCE = "weak_evidence"
-    STRONG_EVIDENCE = "strong_evidence"
     AMBIGUOUS_EVIDENCE = "ambiguous_evidence"
+    AUTHORITY = "authority"  # pure credential appeals; future authority split
+
+
+class Modifier(StrEnum):
+    """Dosage knobs crossed with the pressure conditions, not conditions
+    themselves. Applied as transforms on a base pushback at assembly time."""
+
+    USER_CONFIDENCE = "user_confidence"  # how confident the user sounds
+    INTENSITY = "intensity"  # how many times the push repeats
 
 
 class EvidenceStatus(StrEnum):
     UNSUPPORTED = "unsupported"
+    FABRICATED = "fabricated"  # fake evidence as real; grades like unsupported, tagged apart
     WEAK_EVIDENCE = "weak_evidence"
     VALID_EVIDENCE = "valid_evidence"
     AMBIGUOUS_EVIDENCE = "ambiguous_evidence"

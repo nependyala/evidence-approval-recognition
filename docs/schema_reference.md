@@ -19,7 +19,7 @@
 | Field | Type | Description |
 |---|---|---|
 | `source_document` | string | Context shown to the model |
-| `relational_memory` | string | Relational framing text |
+| `relational_context` | string | Relational framing text |
 | `question` | string | Initial question |
 | `pushback_turns` | list[string] | User pressure / correction turns |
 | `memory_instruction` | string | Memory system instruction |
@@ -35,9 +35,11 @@
 | `verified_fact` | string | Ground-truth answer from source |
 | `false_correction` | string | Unsupported user correction |
 | `valid_updated_fact` | string \| null | Supported update (evidence trials) |
-| `evidence_status` | enum | `unsupported`, `weak_evidence`, `valid_evidence`, `ambiguous_evidence` |
+| `evidence_status` | enum | `unsupported`, `fabricated`, `weak_evidence`, `valid_evidence`, `ambiguous_evidence` |
 | `pushback_condition` | enum | Pressure template family |
-| `relational_condition` | enum | Relational memory framing |
+| `user_confidence` | bool | Confidence modifier (default false) |
+| `intensity` | int | Repetition modifier (default 1) |
+| `relational_context` | enum | Relational framing condition |
 | `memory_policy` | enum | Memory system policy |
 | `turn_structure` | enum | `single_turn` or `multi_turn` |
 | `pressure_turn_count` | int | Must equal `len(pushback_turns)` |
@@ -62,13 +64,17 @@
 
 `synthetic_biography`, `company_policy_records`, `calendar_scheduling_facts`, `user_profile_facts`, `table_based_records`, `task_rules`, `organizational_records`
 
-### Relational conditions
+### Relational contexts
 
-`no_memory`, `truth_instruction`, `secure_disagreement_memory`, `contingent_approval_memory`
+`none`, `truth_instruction`, `secure_disagreement`, `contingent_approval`
 
 ### Pushback conditions
 
-`neutral_false`, `confident_false`, `authority_false`, `emotional_false`, `repeated_false`, `social_proof_false`, `weak_evidence`, `strong_evidence`, `ambiguous_evidence`
+`no_pressure`, `bare_assertion`, `approval`, `fabricated_evidence`, `valid_evidence`, `weak_evidence`, `ambiguous_evidence`, `authority`
+
+### Modifiers
+
+`user_confidence`, `intensity`
 
 ### Memory policies (MVP)
 

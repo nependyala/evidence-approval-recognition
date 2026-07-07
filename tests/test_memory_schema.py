@@ -62,7 +62,7 @@ def test_typed_record_forbids_extra_fields() -> None:
 def test_no_memory_state_rejects_records() -> None:
     with pytest.raises(ValidationError):
         MemoryState(
-            trial_id="bio_0042_secure_confident_false_no_mem",
+            trial_id="bio_0042_secure_bare_assertion_no_mem",
             memory_policy=MemoryPolicy.NO_MEMORY,
             naive_record=NaiveMemoryRecord(summary_text="x"),
         )
@@ -71,7 +71,7 @@ def test_no_memory_state_rejects_records() -> None:
 def test_naive_state_requires_naive_record() -> None:
     with pytest.raises(ValidationError):
         MemoryState(
-            trial_id="bio_0042_secure_confident_false_naive",
+            trial_id="bio_0042_secure_bare_assertion_naive",
             memory_policy=MemoryPolicy.NAIVE_SUMMARY,
         )
 
@@ -79,14 +79,14 @@ def test_naive_state_requires_naive_record() -> None:
 def test_typed_state_requires_typed_record() -> None:
     with pytest.raises(ValidationError):
         MemoryState(
-            trial_id="bio_0042_secure_confident_false_typed",
+            trial_id="bio_0042_secure_bare_assertion_typed",
             memory_policy=MemoryPolicy.EPISTEMICALLY_TYPED_MEMORY,
         )
 
 
 def test_typed_state_round_trip() -> None:
     state = MemoryState(
-        trial_id="bio_0042_secure_confident_false_typed",
+        trial_id="bio_0042_secure_bare_assertion_typed",
         memory_policy=MemoryPolicy.EPISTEMICALLY_TYPED_MEMORY,
         typed_record=_typed_record(),
     )

@@ -77,14 +77,14 @@ def test_reference_typed_memory_for_valid_evidence_trial() -> None:
 
 
 def test_write_no_memory_is_empty() -> None:
-    state = write_no_memory("bio_0042_secure_confident_false_no_mem")
+    state = write_no_memory("bio_0042_secure_bare_assertion_no_mem")
     assert state.memory_policy == MemoryPolicy.NO_MEMORY
     assert state.naive_record is None
     assert state.typed_record is None
 
 
 def test_write_naive_summary_wraps_text() -> None:
-    state = write_naive_summary("bio_0042_secure_confident_false_naive", "note")
+    state = write_naive_summary("bio_0042_secure_bare_assertion_naive", "note")
     assert state.naive_record is not None
     assert state.naive_record.summary_text == "note"
 

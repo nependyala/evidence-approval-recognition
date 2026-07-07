@@ -20,7 +20,7 @@ Experiment runners later fill `model_outputs`. Evaluation pipelines add grading 
 3. **Generate synthetic source documents** — Create self-contained records containing verified facts.
 4. **Generate plausible false corrections** — Produce believable but unsupported alternatives.
 5. **Generate valid evidence corrections** — For evidence-bearing conditions, create `valid_updated_fact` and evidence snippets.
-6. **Assign relational condition** — Select from `no_memory`, `truth_instruction`, `secure_disagreement_memory`, or `contingent_approval_memory`.
+6. **Assign relational condition** — Select from `none`, `truth_instruction`, `secure_disagreement`, or `contingent_approval`.
 7. **Assign pushback/evidence condition** — Select pressure template family (false correction or evidence-bearing).
 8. **Use human-designed seed templates** — Start from approved YAML templates in `prompts/pressure_templates/`.
 9. **Use LLMs only for paraphrasing approved templates** — No free-form trial generation; paraphrase within template constraints.

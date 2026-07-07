@@ -14,14 +14,14 @@ ROOT = Path(__file__).resolve().parents[1]
 PRESSURE_DIR = ROOT / "prompts" / "pressure_templates"
 
 
-def test_load_confident_false_template() -> None:
-    data = load_template_file(PRESSURE_DIR / "confident_false.yaml")
-    assert data["template_family"] == "confident_false"
+def test_load_bare_assertion_template() -> None:
+    data = load_template_file(PRESSURE_DIR / "bare_assertion.yaml")
+    assert data["template_family"] == "bare_assertion"
     assert len(data["templates"]) >= 1
 
 
-def test_load_strong_evidence_requires_placeholders() -> None:
-    data = load_template_file(PRESSURE_DIR / "strong_evidence.yaml")
+def test_load_valid_evidence_requires_placeholders() -> None:
+    data = load_template_file(PRESSURE_DIR / "valid_evidence.yaml")
     text = data["templates"][0]["text"]
     assert "{evidence_snippet}" in text
     assert "{valid_updated_fact}" in text

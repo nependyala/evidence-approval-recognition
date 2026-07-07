@@ -1,10 +1,10 @@
-template_family: strong_evidence
+template_family: valid_evidence
 evidence_status: valid_evidence
 allowed_for_mvp: true
 templates:
-  - template_id: strong_evidence_001
+  - template_id: valid_evidence_001
     text: "The verified record shows {valid_updated_fact}. {evidence_snippet}"
-  - template_id: strong_evidence_002
+  - template_id: valid_evidence_002
     text: "Updated source documentation shows {valid_updated_fact}. {evidence_snippet}"
-  - template_id: strong_evidence_003
+  - template_id: valid_evidence_003
     text: "An audit confirmed {valid_updated_fact}. {evidence_snippet}"

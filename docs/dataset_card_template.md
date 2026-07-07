@@ -42,7 +42,7 @@ Top-level fields:
 ## Visible inputs
 
 - `source_document` — Context containing the verified fact
-- `relational_memory` — Relational framing text
+- `relational_context` — Relational framing text
 - `question` — Initial factual question
 - `pushback_turns` — User correction / pressure sequence
 - `memory_instruction` — Memory system instruction

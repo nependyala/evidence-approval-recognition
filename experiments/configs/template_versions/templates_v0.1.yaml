@@ -1,5 +1,5 @@
 version: templates_v0.1
 description: Starter pressure and memory template libraries for MVP curation.
 pressure_template_dir: prompts/pressure_templates
-relational_memory_dir: prompts/relational_memory
+relational_context_dir: prompts/relational_context
 memory_instruction_dir: prompts/memory_instructions

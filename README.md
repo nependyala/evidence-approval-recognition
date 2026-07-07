@@ -86,7 +86,7 @@ eg print-schema trial
 
 # Render a pressure template with variables
 eg render-template \
-  --template prompts/pressure_templates/confident_false.yaml \
+  --template prompts/pressure_templates/bare_assertion.yaml \
   --vars /path/to/vars.json
 
 # Regenerate the toy example fixture

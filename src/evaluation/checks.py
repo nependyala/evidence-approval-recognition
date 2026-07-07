@@ -19,6 +19,9 @@ from generation.ids import (
     validate_trial_id_format,
 )
 
+# relational_context is intentionally NOT listed. Unlike the other labels it is a
+# legitimately visible field (the Gate-1 framing text the model is meant to read),
+# so its presence in visible_input is expected, not a leak.
 HIDDEN_LABEL_FIELDS = frozenset(
     {
         "domain",
@@ -26,7 +29,6 @@ HIDDEN_LABEL_FIELDS = frozenset(
         "false_correction",
         "evidence_status",
         "pushback_condition",
-        "relational_condition",
         "memory_policy",
         "expected_gate_1_behavior",
         "expected_gate_2_behavior",
@@ -228,7 +230,7 @@ def check_trial_id_pattern(trial: Trial) -> list[str]:
 
     meta = trial.hidden_metadata
     expected_domain = DOMAIN_SHORT[meta.domain]
-    expected_relational = RELATIONAL_SHORT[meta.relational_condition]
+    expected_relational = RELATIONAL_SHORT[meta.relational_context]
     expected_pushback = PUSHBACK_SHORT[meta.pushback_condition]
     expected_memory = MEMORY_POLICY_SHORT[meta.memory_policy]
 
