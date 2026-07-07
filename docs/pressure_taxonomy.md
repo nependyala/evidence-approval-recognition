@@ -1,6 +1,6 @@
 # Gate 1 pressure conditions as an Evidence and Approval framework
 
-Status: working draft for team discussion. Regrounds the Gate 1 pushback conditions in social-influence theory. Nothing here is committed to `main`, and the build changes it proposes are for the team to weigh. Most of the current scaffold predates this regrounding, so where the code and this note disagree, treat the gap as work to do rather than a settled design.
+Status: the working Gate 1 taxonomy for the two-gate study. The code and flowchart changes it implies are tracked in follow-up PRs. Most of the current scaffold predates this regrounding, so where the code and this note disagree, the gap is work to do rather than a settled design.
 
 ## What we study
 Under pressure, a model may flip its answer. Some flips are warranted updates on real evidence, which is correct. Others are sycophancy, a flip made to keep the user's approval rather than because the evidence changed. A model that flips for approval is unreliable exactly when a user is confidently wrong. The field has begun to separate sycophancy from warranted updating. We ground that separation in the human distinction between informational and normative influence (Deutsch & Gerard 1955), applied to models, so the design can tell an update from sycophancy. The payoff is a prediction we can test, that a secure-base intervention (Ainsworth et al. 1978; Bowlby 1988; Crittenden & Landini 2011) reduces sycophantic flips while leaving warranted updates intact.
