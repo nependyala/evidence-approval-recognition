@@ -46,4 +46,3 @@ FRZ --> RDY[Completed trial ready for model run]
 - Modifiers cross the pressure conditions only. No pressure and valid evidence skip the modifier step to keep the baseline and the control clean; valid-plus-modifier cells are an optional extension, not the base grid.
 - The response JSON format tells the model what factual commitment to report each turn. It does **not** include grading labels such as `gate_1_label` or `answer_state`.
 - `relational_context` (renamed from `relational_memory`) is part of `visible_input`; the relational **condition** label is stored only in `hidden_metadata`. "Memory" now refers only to the Gate-2 storage policy.
-```
