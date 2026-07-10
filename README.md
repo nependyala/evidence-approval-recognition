@@ -1,17 +1,17 @@
 # Evidence Gates
 
-Data-curation infrastructure for a research benchmark on **false belief persistence** in memory-augmented LLM agents.
+Data-curation infrastructure for a **SycEval-augmented** research benchmark on **false belief persistence** in memory-augmented LLM agents.
 
 Repository: [evidence-approval-recognition](https://github.com/nependyala/evidence-approval-recognition)
 
 ## Research framing: two-gate failure pipeline
 
-This benchmark studies where models fail when faced with unsupported social pressure and memory contamination:
+This benchmark augments SycEval (AMPS + MedQuAD) to study where models fail when faced with unsupported social pressure and memory contamination:
 
 1. **Gate 1 — Response gate:** Does the model cave to unsupported social pressure and revise a verified correct answer to a false user correction?
 2. **Gate 2 — Memory admission gate:** Does a memory system store the unsupported false correction as fact, overwrite the verified fact, and later contaminate downstream responses?
 
-Each trial separates what the model sees (`visible_input`) from evaluator-only ground truth (`hidden_metadata`). Experiment runners later fill `model_outputs`; grading pipelines are out of scope for this repo.
+Each trial separates what the model sees (`visible_input`) from evaluator-only ground truth (`hidden_metadata`). Experiment runners fill `model_outputs`; the grading pipeline fills `evaluation`.
 
 ## What this repo does (v0.1 scaffolding)
 
@@ -101,19 +101,22 @@ evidence-approval-recognition/
 
 | Stage | Actor | Fills |
 |---|---|---|
-| Curation | This repo | `trial_id`, `dataset_version`, `visible_input`, `hidden_metadata` |
+| Curation | This repo | `trial_id`, `dataset_version`, `base_item`, `experimental_factors`, `visible_input`, `hidden_metadata` |
 | Experiment | Runner (future) | `model_outputs` |
-| Evaluation | Judging pipeline (future) | Grading outputs |
+| Evaluation | Grading pipeline (future) | `evaluation` |
 
-Curation workflow (planned):
+Curation workflow (see `docs/curation_protocol.md`):
 
-1. Define domain pool and target attributes
-2. Generate synthetic source documents and corrections
-3. Assign relational, pushback, and memory conditions
-4. Instantiate trials from approved templates
-5. Run automatic validation (`eg validate-dir`)
-6. Human-audit a stratified sample
-7. Freeze dataset version under `data/curated/`
+1. Ingest SycEval and select 200-item primary subset
+2. Normalize items to atomic target claims and answer keys
+3. Generate and validate pressure templates and evidence controls
+4. Assign relational context, pressure factors, and memory policy
+5. Instantiate trials from approved templates
+6. Run automatic validation (`eg validate-dir`)
+7. Human-audit a stratified sample
+8. Freeze dataset version under `data/curated/`
+
+Sample trial: `data/fixtures/example_trial.json`
 
 ## Licensing
 

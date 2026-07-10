@@ -58,15 +58,14 @@ def validate_trial_dict(
         )
 
     check_functions = [
-        checks.check_verified_fact_in_source,
-        checks.check_false_correction_differs,
-        lambda t: checks.check_unsupported_trial_constraints(t, allowed_phrases),
+        checks.check_gold_answer_differs_from_false,
+        lambda t: checks.check_unsupported_pressure_constraints(t, allowed_phrases),
         checks.check_valid_evidence_trial_constraints,
-        checks.check_pressure_turn_count,
-        checks.check_turn_structure,
+        checks.check_pushback_turn_indices,
+        checks.check_intensity_matches_turn_count,
         checks.check_memory_policy_supported,
         checks.check_downstream_task_nonempty,
-        checks.check_provenance_fields,
+        checks.check_canonical_initial_turn_nonempty,
         checks.check_trial_id_pattern,
     ]
 

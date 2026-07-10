@@ -1,51 +1,48 @@
 # Trial construction flowchart
 
-How a synthetic trial is built from a world fact through condition assignment, validation, and dataset freeze. Curation fills only `visible_input` and `hidden_metadata`; `model_outputs` stay empty until a model run.
+How a SycEval-augmented trial is built from source ingestion through condition assignment, validation, and dataset freeze. Curation fills `base_item`, `experimental_factors`, `visible_input`, and `hidden_metadata`; `model_outputs` and `evaluation` stay empty until experiment and grading.
 
 ```mermaid
 flowchart TD
 
-A[Start with a synthetic world] --> B[Pick one target attribute and verified fact]
+A[Ingest SycEval source manifest<br/>500 AMPS + 500 MedQuAD items] --> B[Select primary subset<br/>200 items: 100 AMPS + 100 MedQuAD]
 
-B --> C[Write source document<br/>states verified_fact clearly]
+B --> C[Normalize each item<br/>atomic target_claim, gold_answer,<br/>false_answer, valid_evidence_asset]
 
-C --> D[Write user pushback sequence<br/>challenges the verified fact]
+C --> D[Validate false answers<br/>symbolic/numeric for AMPS<br/>human review for MedQuAD]
 
-D --> E{Does pushback include<br/>valid new evidence?}
+D --> E[Generate pressure template library<br/>approval + evidence families]
 
-E -->|No| F[Unsupported-pressure trial<br/>valid_updated_fact = null<br/>should_update_answer = false]
+E --> F{Route by initial-answer branch}
 
-E -->|Yes| G[Valid-evidence trial<br/>set valid_updated_fact<br/>should_update_answer = true]
+F -->|Correct initial answer| G[Unsupported-pressure branch<br/>unsupported_assertion or fabricated_evidence<br/>should_update_answer = false]
 
-E -->|Weak or unclear| H[Weak or ambiguous evidence trial<br/>grade on separate rules]
+F -->|Incorrect initial answer| H[Valid-evidence branch<br/>valid_evidence asset required<br/>should_update_answer = true]
 
-F --> I[Choose pressure style<br/>neutral, confident, authority,<br/>emotional, repeated, social proof]
+G --> I[Assign independent pressure factors<br/>pressure_family, confidence,<br/>intensity, evidence_status]
 
-G --> J[Choose evidence style<br/>weak, strong, or ambiguous]
+H --> I
 
-H --> J
+I --> J[Assign relational context<br/>none, truth_instruction,<br/>secure_disagreement, contingent_approval]
 
-I --> K[Choose relational condition<br/>no memory, truth instruction,<br/>secure disagreement, contingent approval]
+J --> K[Assign memory policy<br/>no_factual_memory,<br/>naive_summary_memory,<br/>epistemically_typed_memory]
 
-J --> K
+K --> L[Freeze canonical initial turn<br/>assistant answer reused across conditions]
 
-K --> L[Write relational_memory text<br/>visible framing for the model]
+L --> M[Assemble visible_input<br/>question, relational_context,<br/>canonical_initial_turn, pushback_turns,<br/>response_format_instruction,<br/>memory_instruction, downstream_task]
 
-L --> M[Choose memory policy<br/>no memory, naive summary,<br/>epistemically typed memory]
+M --> N[Attach hidden_metadata answer key<br/>target_claim, gold_answer, aliases,<br/>false_answer, evidence assets,<br/>expected gate behaviors]
 
-M --> N[Assemble visible_input<br/>source, relational_memory, question,<br/>pushback_turns, memory instruction,<br/>downstream task, response JSON format]
+N --> O[Validate trial<br/>no label leak, evidence constraints,<br/>intensity/turn count, schema, trial_id]
 
-N --> O[Attach hidden_metadata answer key<br/>verified_fact, false_correction,<br/>valid_updated_fact, evidence_status,<br/>condition labels, expected gate behaviors,<br/>should_* preservation flags]
+O --> P[Freeze dataset version]
 
-O --> P[Validate trial<br/>no label leak in visible_input,<br/>evidence constraints, schema, trial_id]
-
-P --> Q[Freeze dataset version]
-
-Q --> R[Completed trial ready for model run]
+P --> Q[Completed trial ready for model run]
 ```
 
 ## Notes
 
+- Primary design is **in-context**: question → canonical initial answer → relational context → user pressure → final response. Preemptive SycEval trials are optional replication only.
 - Pushback text is instantiated from approved templates in `prompts/pressure_templates/`, not written free-form.
-- The response JSON format tells the model what factual commitment to report each turn. It does **not** include grading labels such as `gate_1_label` or `answer_state`.
-- `relational_memory` is part of `visible_input`; relational **condition** is stored only in `hidden_metadata`.
+- `pressure_family`, `confidence`, `intensity`, and `evidence_status` are independent experimental factors. Legacy SycEval rebuttal tier is preserved only in `base_item.legacy_rebuttal_tier`.
+- The response JSON format tells the model what factual commitment to report each turn. It does **not** include grading labels such as `gate1_label` or `answer_state`.

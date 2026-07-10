@@ -3,70 +3,74 @@
 import re
 
 from coding.enums import (
-    Domain,
+    Confidence,
+    Intensity,
     MemoryPolicy,
-    PushbackCondition,
-    RelationalCondition,
+    PressureFamily,
+    RelationalContextLabel,
 )
 
-DOMAIN_SHORT: dict[Domain, str] = {
-    Domain.SYNTHETIC_BIOGRAPHY: "bio",
-    Domain.COMPANY_POLICY_RECORDS: "policy",
-    Domain.CALENDAR_SCHEDULING_FACTS: "calendar",
-    Domain.USER_PROFILE_FACTS: "profile",
-    Domain.TABLE_BASED_RECORDS: "table",
-    Domain.TASK_RULES: "rules",
-    Domain.ORGANIZATIONAL_RECORDS: "org",
+RELATIONAL_SHORT: dict[RelationalContextLabel, str] = {
+    RelationalContextLabel.NONE: "none",
+    RelationalContextLabel.TRUTH_INSTRUCTION: "truth",
+    RelationalContextLabel.SECURE_DISAGREEMENT: "secure",
+    RelationalContextLabel.CONTINGENT_APPROVAL: "contingent",
 }
 
-RELATIONAL_SHORT: dict[RelationalCondition, str] = {
-    RelationalCondition.NO_MEMORY: "no_mem",
-    RelationalCondition.TRUTH_INSTRUCTION: "truth",
-    RelationalCondition.SECURE_DISAGREEMENT_MEMORY: "secure",
-    RelationalCondition.CONTINGENT_APPROVAL_MEMORY: "contingent",
+PRESSURE_FAMILY_SHORT: dict[PressureFamily, str] = {
+    PressureFamily.APPROVAL: "approval",
+    PressureFamily.EVIDENCE: "evidence",
 }
 
-PUSHBACK_SHORT: dict[PushbackCondition, str] = {
-    PushbackCondition.NEUTRAL_FALSE: "neutral_false",
-    PushbackCondition.CONFIDENT_FALSE: "confident_false",
-    PushbackCondition.AUTHORITY_FALSE: "authority_false",
-    PushbackCondition.EMOTIONAL_FALSE: "emotional_false",
-    PushbackCondition.REPEATED_FALSE: "repeated_false",
-    PushbackCondition.SOCIAL_PROOF_FALSE: "social_proof_false",
-    PushbackCondition.WEAK_EVIDENCE: "weak_evidence",
-    PushbackCondition.STRONG_EVIDENCE: "strong_evidence",
-    PushbackCondition.AMBIGUOUS_EVIDENCE: "ambiguous_evidence",
+CONFIDENCE_SHORT: dict[Confidence, str] = {
+    Confidence.LOW: "low",
+    Confidence.HIGH: "high",
+}
+
+INTENSITY_SHORT: dict[Intensity, str] = {
+    Intensity.SINGLE: "single",
+    Intensity.REPEATED: "repeated",
 }
 
 MEMORY_POLICY_SHORT: dict[MemoryPolicy, str] = {
-    MemoryPolicy.NO_MEMORY: "no_mem",
-    MemoryPolicy.NAIVE_SUMMARY: "naive",
+    MemoryPolicy.NO_FACTUAL_MEMORY: "no_mem",
+    MemoryPolicy.NAIVE_SUMMARY_MEMORY: "naive",
     MemoryPolicy.EPISTEMICALLY_TYPED_MEMORY: "typed",
 }
 
 TRIAL_ID_PATTERN = re.compile(
-    r"^(?P<domain>[a-z]+)_(?P<entity>\d{4})_"
-    r"(?P<relational>no_mem|truth|secure|contingent)_"
-    r"(?P<pushback>neutral_false|confident_false|authority_false|emotional_false|"
-    r"repeated_false|social_proof_false|weak_evidence|strong_evidence|ambiguous_evidence)_"
+    r"^(?P<dataset>[a-z0-9_]+)_(?P<item>\d{6})_"
+    r"(?P<model>[a-z0-9]+)_"
+    r"(?P<relational>none|truth|secure|contingent)_"
+    r"(?P<pressure>approval|evidence)_"
+    r"(?P<confidence>low|high)_"
+    r"(?P<intensity>single|repeated)_"
     r"(?P<memory>no_mem|naive|typed)$"
 )
 
 
 def build_trial_id(
-    domain: Domain,
-    entity_number: int,
-    relational_condition: RelationalCondition,
-    pushback_condition: PushbackCondition,
+    dataset_version: str,
+    base_item_number: int,
+    model_short: str,
+    relational_context_label: RelationalContextLabel,
+    pressure_family: PressureFamily,
+    confidence: Confidence,
+    intensity: Intensity,
     memory_policy: MemoryPolicy,
 ) -> str:
     """Build a trial ID from structured components."""
-    domain_short = DOMAIN_SHORT[domain]
-    entity_part = f"{entity_number:04d}"
-    relational_short = RELATIONAL_SHORT[relational_condition]
-    pushback_short = PUSHBACK_SHORT[pushback_condition]
+    item_part = f"{base_item_number:06d}"
+    relational_short = RELATIONAL_SHORT[relational_context_label]
+    pressure_short = PRESSURE_FAMILY_SHORT[pressure_family]
+    confidence_short = CONFIDENCE_SHORT[confidence]
+    intensity_short = INTENSITY_SHORT[intensity]
     memory_short = MEMORY_POLICY_SHORT[memory_policy]
-    return f"{domain_short}_{entity_part}_{relational_short}_{pushback_short}_{memory_short}"
+    return (
+        f"{dataset_version}_{item_part}_{model_short}_"
+        f"{relational_short}_{pressure_short}_{confidence_short}_"
+        f"{intensity_short}_{memory_short}"
+    )
 
 
 def validate_trial_id_format(trial_id: str) -> bool:

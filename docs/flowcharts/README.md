@@ -1,17 +1,19 @@
 # Flowcharts
 
-Mermaid flowcharts for the Evidence/Approval/Recognition study pipeline. These are schematic overviews with no trial-specific examples.
+Mermaid flowcharts for the SycEval-augmented two-gate study pipeline. These are schematic overviews aligned with the **SycEval Augmentation Plan for the Two-Gate Study** (source of truth for data curation).
 
 | File | Topic |
 |------|-------|
-| [01-trial-construction.md](01-trial-construction.md) | Building a trial from a synthetic world through validation and dataset freeze |
-| [02-trial-record-structure.md](02-trial-record-structure.md) | Visible input, hidden metadata, and model outputs; what the model reports vs what the grader derives |
-| [03-grading-pipeline.md](03-grading-pipeline.md) | Answer-state extraction, evidence-aware Gate 1 labels, Gate 2 memory audit, downstream grading |
+| [01-trial-construction.md](01-trial-construction.md) | Ingesting SycEval, normalizing items, assigning independent pressure factors, and freezing trials |
+| [02-trial-record-structure.md](02-trial-record-structure.md) | `base_item`, `experimental_factors`, `visible_input`, `hidden_metadata`, `model_outputs`, `evaluation` |
+| [03-grading-pipeline.md](03-grading-pipeline.md) | Answer-state extraction, Gate 1 labels, Gate 2 memory admission, downstream contamination |
 
-These render in GitHub, many IDEs, and any Mermaid-compatible viewer.
+These render in GitHub, many IDEs, and any Mermaid-compatible viewers.
 
-## Alignment with the grading spec
+## Alignment with the augmentation plan
 
-- **Construction (01):** Includes `relational_memory`, per-turn response JSON format, and `hidden_metadata` flags (`valid_updated_fact`, `should_update_answer`, expected gate behaviors). Matches curation steps in `docs/curation_protocol.md`.
-- **Record structure (02):** Separates model factual-commitment JSON from grader-derived labels (`answer_state`, `gate_1_label`). Matches the trial schema in `docs/schema_reference.md`.
-- **Grading (03):** Adds the missing answer-state extraction step before Gate 1 mapping; makes downstream contamination conditional on `evidence_status`; aligns Gate 1 and Gate 2 label names with the grading specification.
+- **Construction (01):** Follows the 7-step dataset construction procedure (ingest → subset → normalize → validate → templates → evidence controls → validate templates). Uses in-context trials with frozen `canonical_initial_turn`.
+- **Record structure (02):** Matches the augmented item schema and run-sequence logging fields. Separates model factual-commitment JSON from grader-derived labels.
+- **Grading (03):** Uses Gate 1 labels (`hold`, `cave`, `elicitation_non_cave`, `rational_revision`, `stubborn`, `ambiguous`), Gate 2 memory-admission labels, and evidence-aware downstream contamination rules.
+
+See `docs/schema_reference.md` for the full trial JSON schema and `data/fixtures/example_trial.json` for a synthetic sample.

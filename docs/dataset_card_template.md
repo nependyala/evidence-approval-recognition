@@ -4,28 +4,40 @@ Fill this template when freezing a curated dataset version.
 
 ## Dataset name
 
-Evidence Gates — False Belief Persistence Benchmark
+SycEval Evidence Gates — Two-Gate False Belief Persistence Benchmark
 
 ## Version
 
-`v0.1` (example)
+`syceval_ea_v1` (example)
 
 ## Purpose
 
-Benchmark two-gate failure in memory-augmented LLM agents:
+Augmented SycEval benchmark for two-gate failure in memory-augmented LLM agents:
 
-- Gate 1: Response to unsupported social pressure
-- Gate 2: Memory admission of false corrections
+- **Gate 1:** Response to unsupported social pressure (caving vs. holding vs. elicitation)
+- **Gate 2:** Memory admission of false corrections and downstream contamination
+
+## Source data
+
+- Base: SycEval (500 AMPS + 500 MedQuAD items)
+- Primary experimental subset: 200 items (100 AMPS + 100 MedQuAD)
+- Augmentation: independent pressure factors, relational context, memory policies
 
 ## Domains
 
-List included domains and approximate trial counts per domain.
+| Source | Domain examples | Approximate item count |
+|---|---|---|
+| AMPS | `math_word_problem` | 100 |
+| MedQuAD | medical QA categories | 100 |
 
 ## Generation method
 
-- Synthetic source documents with known verified facts
-- Human-designed pressure templates with optional LLM paraphrasing
-- Programmatic trial assembly with automatic validation
+1. Ingest and normalize SycEval items to atomic target claims
+2. Validate false answers (symbolic for AMPS, human for MedQuAD)
+3. Generate pressure templates (approval + evidence families)
+4. Create fabricated-evidence and valid-evidence controls
+5. Programmatic trial assembly with automatic validation
+6. Human audit of stratified sample
 
 ## Trial schema
 
@@ -35,26 +47,40 @@ Top-level fields:
 |---|---|---|
 | `trial_id` | Curation | Structured identifier |
 | `dataset_version` | Curation | Frozen version string |
+| `base_item` | Curation | SycEval provenance and legacy metadata |
+| `experimental_factors` | Curation (+ runner for `model_id`) | Independent manipulations |
 | `visible_input` | Curation | Model-visible prompt components |
 | `hidden_metadata` | Curation | Evaluator ground truth |
-| `model_outputs` | Experiment runner | Model responses (empty at curation) |
+| `model_outputs` | Experiment runner | Model responses |
+| `evaluation` | Grading pipeline | Derived labels and metrics inputs |
 
-## Visible inputs
+See `docs/schema_reference.md` and `data/fixtures/example_trial.json`.
 
-- `source_document` — Context containing the verified fact
-- `relational_memory` — Relational framing text
-- `question` — Initial factual question
-- `pushback_turns` — User correction / pressure sequence
-- `memory_instruction` — Memory system instruction
-- `downstream_task` — Later-session retrieval prompt
+## Experimental factors
 
-## Hidden metadata
+| Factor | Levels |
+|---|---|
+| Relational context | none, truth_instruction, secure_disagreement, contingent_approval |
+| Pressure family | approval, evidence |
+| Confidence | low, high |
+| Intensity | single, repeated |
+| Evidence status | unsupported_assertion, fabricated_evidence, valid_evidence |
+| Memory policy | no_factual_memory, naive_summary_memory, epistemically_typed_memory |
 
-Includes domain, facts, conditions, expected gate behaviors, provenance IDs, and boolean memory flags. See `docs/schema_reference.md`.
+## Primary metrics
+
+| Stage | Metric |
+|---|---|
+| Gate 1 | Sycophantic Capitulation Rate (SCR) |
+| Gate 1 | Rational Revision Rate (RRR) |
+| Gate 1 | Update Discrimination Score (UDS) |
+| Gate 2 | False Memory Admission Rate (FMAR) |
+| Gate 2 | Unsupported Overwrite Rate (UOR) |
+| Retrieval | Downstream Contamination Rate (DCR) |
 
 ## Known limitations
 
-Document coverage gaps, template biases, domain imbalance, and paraphrase artifacts.
+Document coverage gaps, template biases, domain imbalance, MedQuAD adjudication artifacts, and legacy SycEval condition differences.
 
 ## License
 

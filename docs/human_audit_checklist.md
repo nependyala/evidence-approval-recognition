@@ -1,37 +1,45 @@
 # Human Audit Checklist
 
-Use this checklist when reviewing a stratified sample of curated trials before freezing a dataset version.
+Use this checklist when reviewing a stratified sample of curated trials before freezing a dataset version. Aligned with the SycEval Augmentation Plan.
 
-## Source and facts
+## Source and claims
 
-- [ ] Is the source document clear and self-contained?
-- [ ] Is the verified fact explicit and unambiguous in the source document?
-- [ ] Is the false correction plausible but clearly unsupported (for unsupported conditions)?
-- [ ] Does `valid_updated_fact` differ from both `verified_fact` and `false_correction` (for evidence conditions)?
+- [ ] Is the item traceable to its SycEval and source-dataset identifiers (`base_item`)?
+- [ ] Is `target_claim` atomic and scorable as a single factual claim?
+- [ ] Is `gold_answer` unambiguous with reasonable `true_answer_aliases`?
+- [ ] Is `false_answer` plausible but clearly incorrect (validated for AMPS/MedQuAD)?
+- [ ] Does `valid_evidence_asset` genuinely establish the correct update (for valid-evidence trials)?
 
 ## Pressure and evidence
 
-- [ ] Is the pressure cue isolated (social confidence, authority, emotion, etc.) without confounds?
-- [ ] Does the unsupported condition avoid evidence-bearing language in pushback turns?
-- [ ] Does the evidence condition actually provide evidence (not just assertive language)?
-- [ ] Is `pressure_turn_count` consistent with the number of pushback turns?
+- [ ] Are pressure factors isolated (`pressure_family`, `confidence`, `intensity`, `evidence_status`)?
+- [ ] Does approval pressure avoid evidence-bearing language in pushback turns?
+- [ ] Does fabricated evidence support the false answer rhetorically but remain invalid?
+- [ ] Does valid evidence actually establish the corrected answer (not just assertive language)?
+- [ ] Does `intensity` match the number of pushback turns (single = 1, repeated ≥ 2)?
 
-## Relational and memory context
+## Relational context and memory
 
-- [ ] Is the relational-memory condition understandable and distinct from pushback condition?
+- [ ] Is the relational context condition distinct and understandable?
 - [ ] Is the memory instruction aligned with the assigned `memory_policy`?
-- [ ] Are expected memory behavior flags (`should_*`) consistent with `evidence_status`?
+- [ ] Are `expected_gate_1_behavior` and `expected_gate_2_behavior` consistent with `evidence_status`?
+
+## Canonical initial turn and downstream
+
+- [ ] Is `canonical_initial_turn.assistant_response` a plausible initial answer?
+- [ ] Does routing match the initial answer (correct → unsupported pressure; incorrect → valid evidence)?
+- [ ] Does the downstream task test the same target claim as the initial question?
 
 ## Leakage and quality
 
-- [ ] Does the prompt leak hidden labels (domain, verified_fact, conditions, expected behaviors)?
+- [ ] Does the prompt leak hidden labels (`gold_answer`, `false_answer`, conditions, expected behaviors)?
 - [ ] Is the example too repetitive or artificial compared to sibling trials?
-- [ ] Does the downstream task test the same target fact as the initial question?
+- [ ] Does `pressure_template_id` change only its assigned pressure variables?
 
 ## Provenance
 
-- [ ] Are `template_id`, `paraphrase_id`, `generator_id`, and `random_seed` recorded?
-- [ ] Does `trial_id` follow naming conventions and match hidden metadata?
+- [ ] Are `syceval_item_id`, `source_dataset`, and `source_item_id` recorded?
+- [ ] Does `trial_id` follow naming conventions and match `experimental_factors`?
 
 ## Sign-off
 
