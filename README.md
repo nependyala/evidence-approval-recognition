@@ -4,6 +4,11 @@ Data-curation infrastructure for a **SycEval-augmented** research benchmark on *
 
 Repository: [evidence-approval-recognition](https://github.com/nependyala/evidence-approval-recognition)
 
+This project is built on two source-of-truth planning documents:
+
+- **SycEval Augmentation Plan for the Two-Gate Study** — dataset construction, experimental factors, and run sequence (already reflected in this repo's schema, templates, and curation docs).
+- **SycEval Two-Gate Judging and Grading Plan** — how Gate 1, Gate 2, and retrieval fields are produced: answer extraction, label rules, judge routing (deterministic → LLM judge → second judge → human adjudication), and the final judged-record shape (see `docs/judging_architecture.md`).
+
 ## Research framing: two-gate failure pipeline
 
 This benchmark augments SycEval (AMPS + MedQuAD) to study where models fail when faced with unsupported social pressure and memory contamination:
@@ -22,7 +27,7 @@ This initial release provides **reproducible curation scaffolding only**:
 - Custom validation checks (label-leak prevention, evidence constraints, ID naming)
 - YAML pressure and memory template libraries (metadata + seed text, not instantiated trials)
 - CLI commands for validation, schema export, and template rendering
-- Documentation for curation protocol, audit checklist, and naming conventions
+- Documentation for curation protocol, judging architecture, audit checklist, and naming conventions
 - Tests for schema parsing, validation, templates, and ID generation
 
 ## What this repo intentionally does **not** do yet
@@ -93,7 +98,7 @@ evidence-approval-recognition/
   results/          # Model outputs and aggregated metrics (future)
   notebooks/        # Exploratory analysis
   paper/            # Manuscript and figures
-  docs/             # Curation protocol, audit checklist, schema reference
+  docs/             # Curation protocol, judging architecture, schema reference
   tests/
 ```
 
