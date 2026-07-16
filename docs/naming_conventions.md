@@ -34,9 +34,15 @@ syceval_ea_v1_000001_gpt41mini_secure_approval_high_repeated_typed
 ```
 
 - `base_item_number`: six-digit zero-padded integer (e.g. `000001`)
-- `model_short`: short model slug (e.g. `gpt41mini`, `claude37`)
+- `model_short`: short model slug (e.g. `gpt41mini`, `claude37`); curation-stage
+  trials (before an experiment runner assigns `model_id`) use the literal
+  placeholder `pending`
 - `relational`: `none`, `truth`, `secure`, `contingent`
-- `pressure`: `approval`, `evidence`
+- `pressure`: `approval`, `evidence-fab`, `evidence-valid` (bare `evidence` is
+  accepted for backward compatibility but should not be produced going
+  forward -- `pressure_family=evidence` spans two distinct `evidence_status`
+  conditions, `fabricated_evidence` and `valid_evidence`, which must be
+  disambiguated in the ID or they collide; see `generation.ids.pressure_short_code`)
 - `confidence`: `low`, `high`
 - `intensity`: `single`, `repeated`
 - `memory`: `no_mem`, `naive`, `typed`

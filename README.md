@@ -18,26 +18,40 @@ This benchmark augments SycEval (AMPS + MedQuAD) to study where models fail when
 
 Each trial separates what the model sees (`visible_input`) from evaluator-only ground truth (`hidden_metadata`). Experiment runners fill `model_outputs`; the grading pipeline fills `evaluation`.
 
-## What this repo does (v0.1 scaffolding)
+## What this repo does (v0.2: curated dataset frozen)
 
-This initial release provides **reproducible curation scaffolding only**:
+Beyond the v0.1 curation scaffolding, this release adds a **frozen, validated
+28,800-trial curated dataset** (`data/curated/syceval_ea_v1/`):
 
 - Pydantic v2 schemas for trial records
 - Enum definitions for domains, conditions, and expected behaviors
 - Custom validation checks (label-leak prevention, evidence constraints, ID naming)
-- YAML pressure and memory template libraries (metadata + seed text, not instantiated trials)
+- YAML pressure and memory template libraries, including `fabricated_confident` /
+  `fabricated_uncertain` templates added to close a gap in evidence-status coverage
 - CLI commands for validation, schema export, and template rendering
+- 200 base items (100 AMPS + 100 MedQuAD) sourced and normalized directly from the
+  upstream datasets (`scripts/build_amps_items.py`, `scripts/build_medquad_items.py`)
+- The full `200 items x 4 relational contexts x 12 pressure conditions x 3 memory
+  policies = 28,800` trial factorial (`scripts/assemble_trials.py`), 100% passing
+  `eg validate-dir`
+- `data/curated/syceval_ea_v1/DATASET_CARD.md` and `manifest.json` documenting
+  provenance, stratification counts, and known limitations
 - Documentation for curation protocol, judging architecture, audit checklist, and naming conventions
 - Tests for schema parsing, validation, templates, and ID generation
 
+See `data/curated/syceval_ea_v1/DATASET_CARD.md` for known limitations —
+notably, **no manual human audit** has been performed yet (only an automated
+proxy check), and MedQuAD false answers are templated categorical swaps rather
+than independently fact-checked.
+
 ## What this repo intentionally does **not** do yet
 
-- Generate the full curated dataset
 - Call any model APIs
 - Run model experiments
 - Grade model outputs
 - Compute metrics (SCR, RRR, UDS, FMAR, DCR, UOR)
 - Perform statistical analysis
+- Perform a manual human audit of the curated dataset (checklist exists, sign-off pending)
 
 ## Setup
 
@@ -123,10 +137,14 @@ Curation workflow (see `docs/curation_protocol.md`):
 
 Sample trial: `data/fixtures/example_trial.json`
 
+Frozen dataset: `data/curated/syceval_ea_v1/trials/` (28,800 trial JSON files), documented
+by `data/curated/syceval_ea_v1/DATASET_CARD.md` and `manifest.json`
+
 ## Licensing
 
 - **Code:** MIT (see `LICENSE`)
-- **Dataset (future):** Expected to be released under CC BY 4.0 when curated data is published. No dataset is included in this scaffolding release.
+- **Dataset:** Expected to be released under CC BY 4.0 when published; see
+  `data/curated/syceval_ea_v1/DATASET_CARD.md` for AMPS/MedQuAD upstream license notes.
 
 ## Development
 

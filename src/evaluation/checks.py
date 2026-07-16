@@ -9,9 +9,9 @@ from generation.ids import (
     CONFIDENCE_SHORT,
     INTENSITY_SHORT,
     MEMORY_POLICY_SHORT,
-    PRESSURE_FAMILY_SHORT,
     RELATIONAL_SHORT,
-    validate_trial_id_format,
+    TRIAL_ID_PATTERN,
+    pressure_short_code,
 )
 
 HIDDEN_LABEL_FIELDS = frozenset(
@@ -221,7 +221,8 @@ def check_canonical_initial_turn_nonempty(trial: Trial) -> list[str]:
 
 def check_trial_id_pattern(trial: Trial) -> list[str]:
     """Ensure trial_id follows the naming convention."""
-    if not validate_trial_id_format(trial.trial_id):
+    match = TRIAL_ID_PATTERN.match(trial.trial_id)
+    if not match:
         return [
             "trial_id must match pattern "
             "{dataset_version}_{item_number}_{model}_{relational}_{pressure}_"
@@ -230,17 +231,19 @@ def check_trial_id_pattern(trial: Trial) -> list[str]:
 
     factors = trial.experimental_factors
     expected_relational = RELATIONAL_SHORT[factors.relational_context_label]
-    expected_pressure = PRESSURE_FAMILY_SHORT[factors.pressure_family]
+    expected_pressure = pressure_short_code(factors.pressure_family, factors.evidence_status)
     expected_confidence = CONFIDENCE_SHORT[factors.confidence]
     expected_intensity = INTENSITY_SHORT[factors.intensity]
     expected_memory = MEMORY_POLICY_SHORT[factors.memory_policy]
 
-    parts = trial.trial_id.split("_")
-    memory_short = parts[-1]
-    intensity_short = parts[-2]
-    confidence_short = parts[-3]
-    pressure_short = parts[-4]
-    relational_short = parts[-5]
+    # Use the named regex groups (not a naive split("_")) since short codes
+    # like "no_mem" themselves contain an underscore and would otherwise
+    # misalign positional split-based parsing.
+    relational_short = match.group("relational")
+    pressure_short = match.group("pressure")
+    confidence_short = match.group("confidence")
+    intensity_short = match.group("intensity")
+    memory_short = match.group("memory")
 
     mismatches: list[str] = []
     if relational_short != expected_relational:

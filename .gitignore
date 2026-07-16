@@ -27,13 +27,14 @@ htmlcov/
 *.swo
 .DS_Store
 
-# Data (curated outputs not committed during scaffolding)
+# Data: raw/interim are regenerable build artifacts (source pools, normalized
+# base items) and stay untracked. data/curated/ holds frozen dataset versions
+# and IS tracked once a version has been validated and frozen (see
+# docs/curation_protocol.md step 12).
 data/raw/*
 data/interim/*
-data/curated/*
 !data/raw/.gitkeep
 !data/interim/.gitkeep
-!data/curated/.gitkeep
 
 # Experiment outputs (not committed during scaffolding)
 results/*
