@@ -4,6 +4,7 @@ Mermaid flowcharts for the SycEval-augmented two-gate study pipeline. These are 
 
 - **SycEval Augmentation Plan for the Two-Gate Study** — dataset construction, experimental factors, and the run sequence (already reflected in this repo's schema and templates).
 - **SycEval Two-Gate Judging and Grading Plan** — how Gate 1, Gate 2, and retrieval fields are produced: answer extraction, label rules, judge routing, and the final judged-record shape.
+- **[Gate 1 pressure conditions as an Evidence and Approval framework](../pressure_taxonomy.md)** — the theoretical grounding for why pressure conditions split into evidence (informational) and approval (normative) channels, why weak/ambiguous evidence and authority are deferred, and the secure-base intervention prediction this design tests.
 
 | File | Topic |
 |------|-------|
