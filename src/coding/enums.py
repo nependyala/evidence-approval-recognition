@@ -3,72 +3,75 @@
 from enum import StrEnum
 
 
-class Domain(StrEnum):
-    SYNTHETIC_BIOGRAPHY = "synthetic_biography"
-    COMPANY_POLICY_RECORDS = "company_policy_records"
-    CALENDAR_SCHEDULING_FACTS = "calendar_scheduling_facts"
-    USER_PROFILE_FACTS = "user_profile_facts"
-    TABLE_BASED_RECORDS = "table_based_records"
-    TASK_RULES = "task_rules"
-    ORGANIZATIONAL_RECORDS = "organizational_records"
+class SourceDataset(StrEnum):
+    AMPS = "AMPS"
+    MEDQUAD = "MedQuAD"
 
 
-class RelationalCondition(StrEnum):
-    NO_MEMORY = "no_memory"
+class LegacyContextMode(StrEnum):
+    IN_CONTEXT = "in_context"
+    PREEMPTIVE = "preemptive"
+
+
+class RelationalContextLabel(StrEnum):
+    NONE = "none"
     TRUTH_INSTRUCTION = "truth_instruction"
-    SECURE_DISAGREEMENT_MEMORY = "secure_disagreement_memory"
-    CONTINGENT_APPROVAL_MEMORY = "contingent_approval_memory"
+    SECURE_DISAGREEMENT = "secure_disagreement"
+    CONTINGENT_APPROVAL = "contingent_approval"
 
 
-class PushbackCondition(StrEnum):
-    NEUTRAL_FALSE = "neutral_false"
-    CONFIDENT_FALSE = "confident_false"
-    AUTHORITY_FALSE = "authority_false"
-    EMOTIONAL_FALSE = "emotional_false"
-    REPEATED_FALSE = "repeated_false"
-    SOCIAL_PROOF_FALSE = "social_proof_false"
-    WEAK_EVIDENCE = "weak_evidence"
-    STRONG_EVIDENCE = "strong_evidence"
-    AMBIGUOUS_EVIDENCE = "ambiguous_evidence"
+class PressureFamily(StrEnum):
+    APPROVAL = "approval"
+    EVIDENCE = "evidence"
+
+
+class Confidence(StrEnum):
+    LOW = "low"
+    HIGH = "high"
+
+
+class Intensity(StrEnum):
+    SINGLE = "single"
+    REPEATED = "repeated"
 
 
 class EvidenceStatus(StrEnum):
-    UNSUPPORTED = "unsupported"
-    WEAK_EVIDENCE = "weak_evidence"
+    UNSUPPORTED_ASSERTION = "unsupported_assertion"
+    FABRICATED_EVIDENCE = "fabricated_evidence"
     VALID_EVIDENCE = "valid_evidence"
-    AMBIGUOUS_EVIDENCE = "ambiguous_evidence"
 
 
 class MemoryPolicy(StrEnum):
-    NO_MEMORY = "no_memory"
-    NAIVE_SUMMARY = "naive_summary"
+    NO_FACTUAL_MEMORY = "no_factual_memory"
+    NAIVE_SUMMARY_MEMORY = "naive_summary_memory"
     EPISTEMICALLY_TYPED_MEMORY = "epistemically_typed_memory"
 
 
-class TurnStructure(StrEnum):
-    SINGLE_TURN = "single_turn"
-    MULTI_TURN = "multi_turn"
-
-
 class ExpectedGate1Behavior(StrEnum):
-    HOLD = "hold"
-    REVISE = "revise"
-    UNCERTAIN_OR_ASK_FOR_EVIDENCE = "uncertain_or_ask_for_evidence"
+    HOLD_OR_ELICITATION = "hold_or_elicitation"
+    CAVE = "cave"
+    RATIONAL_REVISION = "rational_revision"
+    STUBBORN = "stubborn"
+    AMBIGUOUS = "ambiguous"
 
 
 class ExpectedGate2Behavior(StrEnum):
-    REJECT_OR_STORE_DISPUTED = "reject_or_store_disputed"
+    DO_NOT_STORE_FALSE_ANSWER_AS_FACT = "do_not_store_false_answer_as_fact"
     STORE_VERIFIED_UPDATE = "store_verified_update"
     NO_MEMORY_WRITE = "no_memory_write"
+    STORE_AS_DISPUTED = "store_as_disputed"
 
 
-class ExpectedVerificationStatus(StrEnum):
-    VERIFIED = "verified"
-    UNVERIFIED = "unverified"
-    DISPUTED = "disputed"
-    NOT_APPLICABLE = "not_applicable"
+class Gate1Label(StrEnum):
+    HOLD = "hold"
+    CAVE = "cave"
+    ELICITATION_NON_CAVE = "elicitation_non_cave"
+    RATIONAL_REVISION = "rational_revision"
+    STUBBORN = "stubborn"
+    AMBIGUOUS = "ambiguous"
 
 
+<<<<<<< HEAD
 class ExpectedEvidenceLevel(StrEnum):
     UNSUPPORTED = "unsupported"
     WEAK_EVIDENCE = "weak_evidence"
@@ -99,3 +102,13 @@ class VerificationStatus(StrEnum):
     VERIFIED = "verified"
     UNVERIFIED = "unverified"
     DISPUTED = "disputed"
+=======
+class MemoryAdmissionLabel(StrEnum):
+    FALSE_CLAIM_NOT_STORED = "false_claim_not_stored"
+    STORED_AS_USER_ASSERTION = "stored_as_user_assertion"
+    STORED_AS_DISPUTED = "stored_as_disputed"
+    STORED_AS_UNVERIFIED = "stored_as_unverified"
+    STORED_AS_FACT = "stored_as_fact"
+    VERIFIED_FACT_OVERWRITTEN = "verified_fact_overwritten"
+    NOT_RETRIEVABLE_AS_FACT = "not_retrievable_as_fact"
+>>>>>>> 2ff1fdd9b6940bf2a023f98b325aa3fbf427245a

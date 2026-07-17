@@ -1,50 +1,73 @@
 # Curation Protocol
 
-This document describes the intended future process for curating the Evidence Gates benchmark dataset. **No full dataset is generated in the scaffolding release.**
+This document describes the curation process for the SycEval-augmented two-gate benchmark. **Source of truth:** SycEval Augmentation Plan for the Two-Gate Study.
 
 ## Overview
 
-Trials are synthetic with known ground truth. The curation pipeline fills only:
+Trials augment SycEval items (AMPS + MedQuAD) with independent pressure factors, relational context, memory policies, and evaluation scaffolding. The curation pipeline fills:
 
 - `trial_id`
 - `dataset_version`
+- `base_item`
+- `experimental_factors` (except `model_id`, filled at experiment time)
 - `visible_input`
 - `hidden_metadata`
 
-Experiment runners later fill `model_outputs`. Evaluation pipelines add grading outputs separately.
+Experiment runners later fill `model_outputs`. The grading pipeline fills `evaluation`.
 
-## Steps
+## Dataset construction steps
 
-1. **Define domain pool** — Select from supported domains (biography, policy records, scheduling, etc.).
-2. **Define target attributes** — Choose fact attributes to query and potentially corrupt (e.g., office location).
-3. **Generate synthetic source documents** — Create self-contained records containing verified facts.
-4. **Generate plausible false corrections** — Produce believable but unsupported alternatives.
-5. **Generate valid evidence corrections** — For evidence-bearing conditions, create `valid_updated_fact` and evidence snippets.
-6. **Assign relational condition** — Select from `no_memory`, `truth_instruction`, `secure_disagreement_memory`, or `contingent_approval_memory`.
-7. **Assign pushback/evidence condition** — Select pressure template family (false correction or evidence-bearing).
-8. **Use human-designed seed templates** — Start from approved YAML templates in `prompts/pressure_templates/`.
-9. **Use LLMs only for paraphrasing approved templates** — No free-form trial generation; paraphrase within template constraints.
-10. **Instantiate trials programmatically** — Assemble `visible_input` and `hidden_metadata` from components.
-11. **Create multi-turn pushback sequences** — Build `pushback_turns` consistent with `pressure_turn_count` and `turn_structure`.
-12. **Assign memory policy** — Select `no_memory`, `naive_summary`, or `epistemically_typed_memory`.
-13. **Define expected memory behavior** — Set boolean flags (`should_update_answer`, `should_overwrite_verified_fact`, etc.).
-14. **Create downstream retrieval tasks** — Write `downstream_task` prompts that test memory contamination.
-15. **Generate visible model input** — Ensure no hidden labels leak into `visible_input`.
-16. **Generate hidden evaluator metadata** — Record ground truth, conditions, and expected gate behaviors.
-17. **Run automatic validation** — `eg validate-dir data/interim/`
-18. **Human-audit a stratified sample** — Use `docs/human_audit_checklist.md`.
-19. **Freeze dataset version** — Copy validated trials to `data/curated/{version}/` and update dataset card.
+1. **Ingest SycEval** — Load the 500 AMPS and 500 MedQuAD items. Preserve original identifiers and metadata.
+2. **Select primary subset** — Freeze 200 eligible items (100 AMPS, 100 MedQuAD), stratified by problem family / question type.
+3. **Normalize each item** — Create one atomic `target_claim`, `gold_answer`, aliases, `false_answer`, and `valid_evidence_asset`.
+4. **Validate false answers** — Symbolic/numeric checks for AMPS; human review for MedQuAD.
+5. **Generate pressure templates** — Approval and evidence pressure with low/high confidence and single/repeated intensity.
+6. **Create evidence controls** — Fabricated-evidence variants and verified valid-evidence assets.
+7. **Validate templates** — Remove templates that reveal answers, alter multiple factors, or make false answers defensible.
+
+## Per-trial assembly
+
+1. **Freeze canonical initial turn** — Record the model's initial answer; reuse across all conditions for that model–item pair.
+2. **Route the item** — Correct initial answers → unsupported-pressure trials. Incorrect initial answers → valid-evidence trials.
+3. **Assign relational context** — One of: `none`, `truth_instruction`, `secure_disagreement`, `contingent_approval`.
+4. **Assign pressure factors** — Set `pressure_family`, `confidence`, `intensity`, `evidence_status`, and `pressure_template_id`.
+5. **Instantiate pushback turns** — From approved YAML templates in `prompts/pressure_templates/`.
+6. **Assign memory policy** — `no_factual_memory`, `naive_summary_memory`, or `epistemically_typed_memory`.
+7. **Set expected behaviors** — `expected_gate_1_behavior`, `expected_gate_2_behavior`, `should_update_answer`.
+8. **Write downstream task** — Fresh-session retrieval prompt using only memory state.
+9. **Attach response format instruction** — Per-turn JSON schema for factual commitment (no grading labels).
+10. **Run automatic validation** — `eg validate-dir data/interim/`
+11. **Human-audit a stratified sample** — Use `docs/human_audit_checklist.md`.
+12. **Freeze dataset version** — Copy validated trials to `data/curated/{version}/`.
+
+## Pressure construction rules
+
+| Condition | Required behavior |
+|---|---|
+| Approval pressure | Disagreement, disappointment, praise withdrawal, or agreement-seeking — no evidence |
+| Evidence pressure | Reasoning, citation-like text, derivation, or source claims |
+| Fabricated evidence | Supports false answer rhetorically but remains invalid |
+| Valid evidence | Genuinely establishes that the initial answer should be revised |
+| Low confidence | Tentative or uncertain language |
+| High confidence | Explicit certainty without changing evidence status |
+| Single intensity | Apply pressure once |
+| Repeated intensity | Repeat the same false claim across turns without adding new evidence |
 
 ## Quality gates
 
 - All trials must pass Pydantic schema validation.
 - All trials must pass custom validation checks (see `docs/schema_reference.md`).
-- Unsupported trials must not contain evidence-bearing language in pushback turns.
-- Valid-evidence trials must include `valid_updated_fact` and evidence language.
+- Approval-pressure trials must not contain evidence-bearing language in pushback turns.
+- Valid-evidence trials must include `valid_evidence_asset` and evidence language.
 - Trial IDs must follow naming conventions (see `docs/naming_conventions.md`).
+- No transcript, model state, or memory output is shared between experimental conditions.
 
 ## Out of scope for curation
 
 - Model inference
 - Memory system execution
 - Grading or metric computation
+
+## Unit of analysis
+
+One trial record = one **model × item × relational context × pressure condition × memory policy** run.
