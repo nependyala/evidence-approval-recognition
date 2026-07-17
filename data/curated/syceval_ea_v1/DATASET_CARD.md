@@ -48,14 +48,19 @@ third-party SycEval mirror:
 | AMPS | `algebra_multiply_polynomials` | 11 |
 | AMPS | `algebra_polynomial_arithmetic` | 11 |
 | AMPS | `algebra_polynomial_gcd` | 11 |
-| AMPS | `algebra_complex_norm_and_arg` | 9 |
+| AMPS | `algebra_complex_norm` (complex-number norm only) | 5 |
+| AMPS | `algebra_complex_argument` (complex-number argument only) | 4 |
 | AMPS | `algebra_exponential_equations` | 9 |
 | AMPS | `algebra_system_of_equations` | 9 |
 | AMPS | `algebra_solve_abs_value_equation` | 7 |
 | MedQuAD | `medquad_inheritance` (inheritance-pattern facts) | 55 |
 | MedQuAD | `medquad_frequency` (prevalence-ratio facts) | 45 |
 
-AMPS totals 100 items across 10 sub-topics; MedQuAD totals 100 items across 2 fact types.
+AMPS totals 100 items across 11 sub-topics; MedQuAD totals 100 items across 2 fact types.
+`algebra_complex_norm` / `algebra_complex_argument` are two single-fact sub-topics (norm only,
+argument only) drawn from the underlying dataset's one combined "complex norm and argument"
+item family, split so each base item's `target_claim` states exactly one atomic fact instead of
+bundling both into a single claim.
 
 ## Generation method
 
@@ -66,7 +71,15 @@ AMPS totals 100 items across 10 sub-topics; MedQuAD totals 100 items across 2 fa
    and a programmatically-derived, verified `false_answer` (integer-literal perturbation for
    AMPS; categorical swap — e.g. inheritance pattern — for MedQuAD). AMPS false answers are
    symbolically verified distinct from gold at generation time; MedQuAD false answers are
-   drawn from a fixed set of plausible-but-incorrect categorical alternatives.
+   drawn from a fixed set of plausible-but-incorrect categorical alternatives. `true_answer_aliases`
+   is populated with real alternate phrasings for every base item (not left empty): LaTeX/spacing
+   variants and English number-words for AMPS (`scripts/lib_amps.py::build_amps_aliases`),
+   inheritance-pattern abbreviations (`AD`/`AR`/`XLD`/`XLR`) and "per"/"/" ratio rewordings for
+   MedQuAD (`scripts/lib_medquad.py::build_inheritance_aliases` /
+   `build_frequency_aliases`). MedQuAD frequency extraction also rejects (rather than silently
+   collapses) source sentences that state a numeric range (e.g. "2 to 6 in 100,000") or open on
+   a dangling pronoun with no in-sentence referent, and derives `gold_answer` from the literal
+   matched source text so it is always a substring of `target_claim` by construction.
 3. Generated `valid_evidence_asset` and `fabricated_evidence_asset` text per item
    (`scripts/merge_base_items.py`).
 4. Added the two missing pressure templates required by the augmentation plan
@@ -90,12 +103,25 @@ AMPS totals 100 items across 10 sub-topics; MedQuAD totals 100 items across 2 fa
    `gold_answer`/`false_answer` pairs with `sympy`, cross-referenced all 100 MedQuAD
    `gold_answer` values against stored raw source text, and checked pressure-template
    isolation, routing, and gate-behavior consistency across the full trial set. It found
-   several concrete quality gaps (`true_answer_aliases` empty for 145/200 base items;
+   several concrete quality gaps: `true_answer_aliases` empty for 145/200 base items;
    9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range
    claims; residual authority/consensus framing in two approval-pressure template
-   families) — see `docs/human_audit_checklist.md` for the full itemized results.
-   **A full manual human audit per `docs/human_audit_checklist.md` still has not been
-   performed** — the AI-assisted pass is not a substitute for one; see Known limitations.
+   families; a hedged-rumor phrasing question in the low-confidence valid-evidence
+   template; a fixed, non-repeated `downstream_task` carrier sentence; and one base item
+   with a cosmetic routing-phrasing mismatch.
+9. Addressed every gap from step 8 and regenerated the dataset from the fixed generation
+   code (same 200-base-item / 28,800-trial factorial, re-validated 28,800/28,800): populated
+   `true_answer_aliases` for all 200 base items; split `algebra_complex_norm_and_arg` into two
+   single-fact sub-topics (`algebra_complex_norm`, `algebra_complex_argument`); reworked
+   MedQuAD frequency extraction to reject range-collapsed and dangling-pronoun source
+   sentences and to derive `gold_answer` from the literal matched text (which incidentally
+   also fixed the one cosmetic routing mismatch); rewrote `authority_false.yaml` /
+   `social_proof_false.yaml` to pure belonging/deference language with no
+   records/headcount framing; rewrote `weak_evidence.yaml` to anchor its hedge to a minor
+   named source instead of pure rumor; and gave `downstream_task` three rotating phrasings.
+   See `docs/human_audit_checklist.md` for the current, item-by-item state of the dataset
+   after this pass. **A full manual human audit per that checklist still has not been
+   performed** — no AI-assisted pass is a substitute for one; see Known limitations.
 
 ## Trial schema
 
@@ -145,21 +171,29 @@ runner and grading pipeline against this frozen trial set.
 ## Known limitations
 
 - **No manual human audit performed.** An automated proxy audit (stratified,
-  n=40) and, later, a broader AI-assisted audit covering every checklist item
-  (see generation step 8 above and `docs/human_audit_checklist.md`) were run
-  against the `docs/human_audit_checklist.md` criteria, and turned up several
-  concrete gaps (notably non-functional `true_answer_aliases` for most items,
-  and a handful of non-atomic/range-collapsed claims). Neither is a substitute
-  for a qualified human (or, for MedQuAD, clinical) reviewer. The sign-off
-  table in that checklist has an AI-assisted row but still needs a genuine
-  human sign-off row before using this version for any published result.
+  n=40) and, later, two rounds of a broader AI-assisted audit covering every
+  checklist item (see generation steps 8–9 above and
+  `docs/human_audit_checklist.md`) were run against the
+  `docs/human_audit_checklist.md` criteria. The concrete gaps the first round
+  found (non-functional `true_answer_aliases`, non-atomic/range-collapsed
+  claims, residual authority/consensus template framing, a hedged-rumor
+  phrasing question, a repetitive `downstream_task` sentence, one cosmetic
+  routing mismatch) were subsequently fixed in the generation code and the
+  dataset regenerated; see `docs/human_audit_checklist.md` for the current
+  per-item state. No AI-assisted pass is a substitute for a qualified human
+  (or, for MedQuAD, clinical) reviewer — the checklist's sign-off table still
+  needs a genuine human sign-off row before using this version for any
+  published result, and the remaining open items below (clinical review,
+  second-rater agreement, exhaustive per-trial reading, residual
+  authority/consensus flavor inherent to those template families) are
+  substantive, not just process gaps.
 - **MedQuAD false answers are templated categorical swaps**, not independently
   fact-checked against a second medical source; they are plausible-but-wrong by
   construction (e.g. swapping `autosomal dominant` for `x-linked dominant`) but
   have not had clinical review.
-- **AMPS domain coverage is limited to 10 algebra sub-topics** with closed-form
+- **AMPS domain coverage is limited to 11 algebra sub-topics** with closed-form
   numeric/symbolic answers; no calculus, geometry, or word-problem AMPS items are
-  included, and per-sub-topic item counts are uneven (7–11) due to availability
+  included, and per-sub-topic item counts are uneven (4–11) due to availability
   of clean, unambiguous candidates in the sampled pool.
 - **No official "SycEval" dataset release was found** at generation time; this
   version re-sources AMPS/MedQuAD directly and re-implements the paper's item
@@ -198,7 +232,8 @@ runner and grading pipeline against this frozen trial set.
 | Auditor | Date | Sample size | Pass rate | Notes |
 |---|---|---|---|---|
 | automated proxy (not a substitute for human review) | 2026-07-15 | 40 (stratified, seed=42) | 100% (0 issues / 40) | Checked leakage, evidence-asset presence, turn-count/intensity consistency, downstream-task/question consistency. |
-| AI agent, checklist-driven (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural checks over all 28,800 trials; targeted rendered-trial sampling | 100% on automated validator re-run; ~95% (191/200 base items) on qualitative checks | Full results in `docs/human_audit_checklist.md`. Found: `true_answer_aliases` empty/non-functional for 145/200 base items; 9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range-collapsed claims; residual authority/consensus framing in `authority_false`/`social_proof_false` templates; 1 base item with a cosmetic routing-phrasing mismatch. Full manual **human** audit per `docs/human_audit_checklist.md` still pending — sign-off row there still needs a human, not just an AI, entry. |
+| AI agent, checklist-driven (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural checks over all 28,800 trials; targeted rendered-trial sampling | 100% on automated validator re-run; ~95% (191/200 base items) on qualitative checks | First pass. Full results in `docs/human_audit_checklist.md`. Found: `true_answer_aliases` empty/non-functional for 145/200 base items; 9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range-collapsed claims; residual authority/consensus framing in `authority_false`/`social_proof_false` templates; 1 base item with a cosmetic routing-phrasing mismatch. |
+| AI agent, fix + re-audit (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural + routing checks over all 28,800 regenerated trials | 100% on automated validator re-run (28,800/28,800); 100% (200/200 base items) on the atomicity/alias/routing checks the first pass had flagged | Second pass, after generation-code fixes and a full dataset regeneration. Current per-item state in `docs/human_audit_checklist.md`. Full manual **human** audit per that checklist is still pending — its sign-off table still needs a human, not just an AI, entry, and MedQuAD clinical review / second-rater agreement remain open regardless of this pass. |
 
 ## Excluded trials and reasons
 

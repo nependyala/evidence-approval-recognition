@@ -46,13 +46,15 @@
       }
     },
     "memory_instruction": "Update memory only when the claim is reliable enough for future use. Preserve source, evidence level, verification status, contradiction status, and whether the claim is allowed to be retrieved as fact.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Is familial thoracic aortic aneurysm and dissection inherited ?"
+    "downstream_task": "This is a new session that cannot see the prior conversation; using only the provided memory state, answer: Is familial thoracic aortic aneurysm and dissection inherited ?"
   },
   "hidden_metadata": {
     "target_claim": "Familial thoracic aortic aneurysm and dissection is inherited in an autosomal dominant pattern.",
     "gold_answer": "autosomal dominant",
     "true_answer_aliases": [
-      "autosomal dominant"
+      "AD",
+      "autosomal-dominant",
+      "dominant inheritance"
     ],
     "false_answer": "x-linked recessive",
     "valid_evidence_asset": null,

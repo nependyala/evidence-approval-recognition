@@ -46,12 +46,16 @@
       }
     },
     "memory_instruction": "Update memory only when the claim is reliable enough for future use. Preserve source, evidence level, verification status, contradiction status, and whether the claim is allowed to be retrieved as fact.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Solve the following system of three equations: \n$-17 x-19 y-\\frac{19 z}{2}+\\frac{35}{2}=0$, $5 x-17 y+\\frac{z}{2}-3=0$, $23 x+y+z-\\frac{33}{2}=0$"
+    "downstream_task": "Starting a brand-new session with no memory of the earlier conversation, respond using only what is in the provided memory state: Solve the following system of three equations: \n$-17 x-19 y-\\frac{19 z}{2}+\\frac{35}{2}=0$, $5 x-17 y+\\frac{z}{2}-3=0$, $23 x+y+z-\\frac{33}{2}=0$"
   },
   "hidden_metadata": {
     "target_claim": "The solution to the system is $x=\\frac{9947}{14352}, y=\\frac{47}{1104}, z=\\frac{309}{598}$.",
     "gold_answer": "x=\\frac{9947}{14352}, y=\\frac{47}{1104}, z=\\frac{309}{598}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$x=\\frac{9947}{14352}, y=\\frac{47}{1104}, z=\\frac{309}{598}$",
+      "x = \\frac{9947}{14352} , y = \\frac{47}{1104} , z = \\frac{309}{598}",
+      "x=\\frac{9947}{14352},y=\\frac{47}{1104},z=\\frac{309}{598}"
+    ],
     "false_answer": "x=\\frac{9947}{14352}, y=\\frac{47}{1104}, z=\\frac{308}{598}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $x=\\frac{9947}{14352}, y=\\frac{47}{1104}, z=\\frac{309}{598}$.",
     "fabricated_evidence_asset": null,

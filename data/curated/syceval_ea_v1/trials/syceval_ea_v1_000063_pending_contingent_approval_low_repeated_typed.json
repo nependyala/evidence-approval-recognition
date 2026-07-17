@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The completed-square form of the quadratic is $3 \\left(x+\\frac{1}{3}\\right)^2+\\frac{29}{3}$.",
     "gold_answer": "3 \\left(x+\\frac{1}{3}\\right)^2+\\frac{29}{3}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$3 \\left(x+\\frac{1}{3}\\right)^2+\\frac{29}{3}$",
+      "3 \\left(x + \\frac{1}{3}\\right)^2 + \\frac{29}{3}",
+      "3\\left(x+\\frac{1}{3}\\right)^2+\\frac{29}{3}"
+    ],
     "false_answer": "8 \\left(x+\\frac{1}{3}\\right)^2+\\frac{29}{3}",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

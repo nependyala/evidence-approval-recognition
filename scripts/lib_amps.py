@@ -71,18 +71,93 @@ def derive_false_claim(target_claim: str, gold_answer: str, false_answer: str, s
     frozen initial answer is assumed wrong and valid evidence should correct
     it). Reuses the same sentence shape as target_claim wherever possible.
     """
-    if sub_topic == "complex_norm_and_arg":
-        m = re.match(r"norm=(.+), argument=(.+)", false_answer)
-        if m:
-            norm, arg = m.groups()
-            return f"The complex number has norm ${norm}$ and argument ${arg}$."
     # Replace the right-most occurrence of gold_answer with false_answer so a
     # coincidental earlier match (e.g. inside the problem statement embedded
-    # in target_claim) is not corrupted.
+    # in target_claim) is not corrupted. Every sub_topic's gold_answer is a
+    # single atomic value that appears verbatim in target_claim, so no
+    # per-sub_topic special-casing is needed here.
     idx = target_claim.rfind(gold_answer)
     if idx != -1:
         return target_claim[:idx] + false_answer + target_claim[idx + len(gold_answer) :]
     return f"The answer is {false_answer}."
+
+
+NUMBER_WORDS_ONES = [
+    "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+    "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+    "seventeen", "eighteen", "nineteen",
+]
+NUMBER_WORDS_TENS = [
+    "", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
+]
+
+
+def _small_int_to_words(n: int) -> str:
+    """English words for 0 <= n < 1000."""
+    if n < 20:
+        return NUMBER_WORDS_ONES[n]
+    if n < 100:
+        tens, ones = divmod(n, 10)
+        return NUMBER_WORDS_TENS[tens] + (f"-{NUMBER_WORDS_ONES[ones]}" if ones else "")
+    hundreds, rest = divmod(n, 100)
+    prefix = f"{NUMBER_WORDS_ONES[hundreds]} hundred"
+    return f"{prefix} {_small_int_to_words(rest)}" if rest else prefix
+
+
+def integer_to_words(n: int) -> str | None:
+    """English words for an integer, up to the low millions. Returns None for
+    values outside the range this simple, dependency-free converter supports.
+    """
+    if abs(n) >= 1_000_000:
+        return None
+    sign = "negative " if n < 0 else ""
+    n = abs(n)
+    if n == 0:
+        return "zero"
+    chunks = []
+    for scale, name in ((1_000_000, "million"), (1_000, "thousand")):
+        if n >= scale:
+            count, n = divmod(n, scale)
+            chunks.append(f"{_small_int_to_words(count)} {name}")
+    if n or not chunks:
+        chunks.append(_small_int_to_words(n))
+    return sign + " ".join(chunks)
+
+
+def build_amps_aliases(gold_answer: str) -> list[str]:
+    """Generate real alternate-phrasing aliases for an AMPS gold_answer, so
+    `true_answer_aliases` is not an empty no-op. Covers the two ways a
+    correct-but-differently-formatted answer could plausibly be graded: a
+    LaTeX-dollar-wrapped form, an operator-spacing variant, and (for plain
+    integers) an English words form.
+    """
+    aliases: list[str] = []
+    seen = {gold_answer}
+
+    def add(candidate: str) -> None:
+        if candidate and candidate not in seen:
+            seen.add(candidate)
+            aliases.append(candidate)
+
+    add(f"${gold_answer}$")
+    spaced = re.sub(r"\s*([+\-=,])\s*", r" \1 ", gold_answer).strip()
+    spaced = re.sub(r"\s+", " ", spaced)
+    add(spaced)
+    compact = gold_answer.replace(" ", "")
+    add(compact)
+
+    if re.fullmatch(r"-?\d+", gold_answer):
+        words = integer_to_words(int(gold_answer))
+        if words:
+            add(words)
+    else:
+        m = re.fullmatch(r"x\s*=\s*(-?\d+)", gold_answer)
+        if m:
+            words = integer_to_words(int(m.group(1)))
+            if words:
+                add(f"x = {words}")
+
+    return aliases
 
 
 @dataclass

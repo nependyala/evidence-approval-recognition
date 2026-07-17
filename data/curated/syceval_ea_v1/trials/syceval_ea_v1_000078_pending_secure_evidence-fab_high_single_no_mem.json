@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "The real solutions to the equation are $x=1 or x=3$.",
     "gold_answer": "x=1 or x=3",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$x=1 or x=3$",
+      "x = 1 or x = 3",
+      "x=1orx=3"
+    ],
     "false_answer": "x=1 or x=7",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": "A solution walkthrough I found shows this problem simplifying to $x=1 or x=7$ after combining the terms in a different order.",

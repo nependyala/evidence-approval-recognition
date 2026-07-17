@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "The value of $((16-13)-20)-\\left((10+19)^2+6\\right)$ is -864.",
     "gold_answer": "-864",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-864$",
+      "- 864",
+      "negative eight hundred sixty-four"
+    ],
     "false_answer": "-863",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": "A solution walkthrough I found shows this problem simplifying to $-863$ after combining the terms in a different order.",

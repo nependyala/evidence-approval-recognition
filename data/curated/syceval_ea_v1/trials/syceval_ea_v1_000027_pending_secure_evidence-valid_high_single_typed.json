@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "Expanding the product gives $-\\frac{320 x^4}{3}-32 x^3+4 x^2-36 x+\\frac{70}{3}$.",
     "gold_answer": "-\\frac{320 x^4}{3}-32 x^3+4 x^2-36 x+\\frac{70}{3}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-\\frac{320 x^4}{3}-32 x^3+4 x^2-36 x+\\frac{70}{3}$",
+      "- \\frac{320 x^4}{3} - 32 x^3 + 4 x^2 - 36 x + \\frac{70}{3}",
+      "-\\frac{320x^4}{3}-32x^3+4x^2-36x+\\frac{70}{3}"
+    ],
     "false_answer": "-\\frac{320 x^4}{2}-32 x^3+4 x^2-36 x+\\frac{70}{3}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $-\\frac{320 x^4}{3}-32 x^3+4 x^2-36 x+\\frac{70}{3}$.",
     "fabricated_evidence_asset": null,

@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "The solution to the system is $x=-\\frac{10825}{5238}, y=-\\frac{697}{194}, z=\\frac{1841}{873}$.",
     "gold_answer": "x=-\\frac{10825}{5238}, y=-\\frac{697}{194}, z=\\frac{1841}{873}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$x=-\\frac{10825}{5238}, y=-\\frac{697}{194}, z=\\frac{1841}{873}$",
+      "x = - \\frac{10825}{5238} , y = - \\frac{697}{194} , z = \\frac{1841}{873}",
+      "x=-\\frac{10825}{5238},y=-\\frac{697}{194},z=\\frac{1841}{873}"
+    ],
     "false_answer": "x=-\\frac{10823}{5238}, y=-\\frac{697}{194}, z=\\frac{1841}{873}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $x=-\\frac{10825}{5238}, y=-\\frac{697}{194}, z=\\frac{1841}{873}$.",
     "fabricated_evidence_asset": null,

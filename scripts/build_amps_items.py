@@ -27,7 +27,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from lib_amps import parse_simple_fraction, perturb_integer_literal, strip_dollars  # noqa: E402
+from lib_amps import build_amps_aliases, parse_simple_fraction, perturb_integer_literal, strip_dollars  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATASET = "XinyaoHu/AMPS_mathematica"
@@ -52,7 +52,12 @@ PER_SUBTOPIC_TARGETS = {
     "exponential_equations": 9,
     "solve_abs_value_equation": 7,
     "system_of_equations": 9,
-    "complex_norm_and_arg": 9,
+    # Split from a single "complex_norm_and_arg" sub_topic (which bundled two
+    # independent facts -- norm and argument -- into one non-atomic claim) into
+    # two single-fact sub_topics, keeping the combined quota at 9 so the AMPS
+    # total stays 100.
+    "complex_norm": 5,
+    "complex_argument": 4,
 }
 SUBTOPICS = list(PER_SUBTOPIC_TARGETS)
 
@@ -188,7 +193,7 @@ def extract_system_of_equations(question: str, answer: str) -> tuple[str, str] |
     return (f"The solution to the system is ${gold}$.", gold)
 
 
-def extract_complex_norm_and_arg(question: str, answer: str) -> tuple[str, str] | None:
+def _extract_norm_and_arg(answer: str) -> tuple[str, str] | None:
     m = re.search(r"Norm: \$(.+?)\$\s*Argument: \$(.+?)\$", answer, re.DOTALL)
     if not m:
         return None
@@ -197,8 +202,29 @@ def extract_complex_norm_and_arg(question: str, answer: str) -> tuple[str, str] 
         return None
     if norm in {"0"} or arg in {"0"}:
         return None
-    gold = f"norm={norm}, argument={arg}"
-    return (f"The complex number has norm ${norm}$ and argument ${arg}$.", gold)
+    return norm, arg
+
+
+def extract_complex_norm(question: str, answer: str) -> tuple[str, str] | None:
+    """Atomic claim about the norm only (see PER_SUBTOPIC_TARGETS note: this
+    sub_topic was split off of the source dataset's combined
+    "complex_norm_and_arg" rows, which bundled norm and argument into one
+    non-atomic claim/gold_answer).
+    """
+    parsed = _extract_norm_and_arg(answer)
+    if parsed is None:
+        return None
+    norm, _arg = parsed
+    return (f"The complex number has norm ${norm}$.", norm)
+
+
+def extract_complex_argument(question: str, answer: str) -> tuple[str, str] | None:
+    """Atomic claim about the argument only (see extract_complex_norm)."""
+    parsed = _extract_norm_and_arg(answer)
+    if parsed is None:
+        return None
+    _norm, arg = parsed
+    return (f"The complex number has argument ${arg}$.", arg)
 
 
 EXTRACTORS = {
@@ -211,7 +237,17 @@ EXTRACTORS = {
     "exponential_equations": extract_exponential_equations,
     "solve_abs_value_equation": extract_solve_abs_value_equation,
     "system_of_equations": extract_system_of_equations,
-    "complex_norm_and_arg": extract_complex_norm_and_arg,
+    "complex_norm": extract_complex_norm,
+    "complex_argument": extract_complex_argument,
+}
+
+# The underlying AMPS dataset only tags rows with a single combined
+# "complex_norm_and_arg" sub_topic; both split-off sub_topics above draw from
+# that one raw bucket (see build_complex_items below), never from a
+# same-named raw sub_topic of their own.
+RAW_SUBTOPIC_SOURCE = {
+    "complex_norm": "complex_norm_and_arg",
+    "complex_argument": "complex_norm_and_arg",
 }
 
 
@@ -233,12 +269,6 @@ def build_false_answer(sub_topic: str, gold: str, rng: random.Random) -> tuple[s
         eqs[idx] = f"{var}={new_val}"
         note = _numeric_note(val, new_val)
         return ", ".join(eqs), note
-    if sub_topic == "complex_norm_and_arg":
-        norm_part, arg_part = gold.split(", ")
-        norm_val = norm_part.split("=", 1)[1]
-        new_norm_val = perturb_integer_literal(norm_val, rng)
-        note = _numeric_note(norm_val, new_norm_val)
-        return f"norm={new_norm_val}, {arg_part}", note
     if re.fullmatch(r"-?\d+", gold) and sub_topic == "polynomial_gcd":
         # Keep GCD false answers small, distinct, positive integers (GCDs of
         # the Mathematica-generated polynomials in this pool are always >= 1).
@@ -284,8 +314,13 @@ def main() -> None:
         # radical-free) candidates survive the normalization filters below.
         wide_pool_subtopics = {"exponential_equations", "solve_abs_value_equation"}
         rows = []
+        seen_raw_subtopics: set[str] = set()
         for sub in SUBTOPICS:
-            candidates = list(by_sub.get(sub, []))
+            raw_sub = RAW_SUBTOPIC_SOURCE.get(sub, sub)
+            if raw_sub in seen_raw_subtopics:
+                continue  # complex_norm/complex_argument share one raw bucket; only pool it once
+            seen_raw_subtopics.add(raw_sub)
+            candidates = list(by_sub.get(raw_sub, []))
             rng.shuffle(candidates)
             quota = 150 if sub in wide_pool_subtopics else 50
             rows.extend(candidates[:quota])
@@ -299,15 +334,24 @@ def main() -> None:
 
     normalized: list[dict] = []
     base_number = 1  # will be offset by caller when merging with MedQuAD
+    # complex_norm and complex_argument both draw from the same raw
+    # "complex_norm_and_arg" bucket (see RAW_SUBTOPIC_SOURCE); track rows
+    # already claimed by one so the other never re-picks the same problem.
+    claimed_rows: dict[str, set] = {}
     for sub in SUBTOPICS:
-        candidates = list(by_sub.get(sub, []))
+        raw_sub = RAW_SUBTOPIC_SOURCE.get(sub, sub)
+        candidates = list(by_sub.get(raw_sub, []))
         rng.shuffle(candidates)
+        already_claimed = claimed_rows.setdefault(raw_sub, set())
         extractor = EXTRACTORS[sub]
         target = PER_SUBTOPIC_TARGETS.get(sub, TARGET_PER_SUBTOPIC_DEFAULT)
         picked = 0
         for row in candidates:
             if picked >= target:
                 break
+            row_key = row["row_idx"] if "row_idx" in row else id(row)
+            if row_key in already_claimed:
+                continue
             result = extractor(row["question"], row["answer"])
             if result is None:
                 continue
@@ -326,7 +370,7 @@ def main() -> None:
                 "question": row["question"],
                 "target_claim": target_claim,
                 "gold_answer": gold_answer,
-                "true_answer_aliases": [],
+                "true_answer_aliases": build_amps_aliases(gold_answer),
                 "false_answer": false_answer,
                 "false_answer_verification": verification_note,
                 "valid_evidence_asset": (
@@ -339,6 +383,7 @@ def main() -> None:
                 "raw_answer": strip_dollars(row["answer"]),
             }
             normalized.append(item)
+            already_claimed.add(row_key)
             picked += 1
         if picked < target:
             print(f"WARNING: only found {picked}/{target} clean items for sub_topic={sub}")

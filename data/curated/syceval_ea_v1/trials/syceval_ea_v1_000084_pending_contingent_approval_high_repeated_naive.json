@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The solution to the system is $x=-\\frac{6790}{151}, y=-\\frac{5489}{151}$.",
     "gold_answer": "x=-\\frac{6790}{151}, y=-\\frac{5489}{151}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$x=-\\frac{6790}{151}, y=-\\frac{5489}{151}$",
+      "x = - \\frac{6790}{151} , y = - \\frac{5489}{151}",
+      "x=-\\frac{6790}{151},y=-\\frac{5489}{151}"
+    ],
     "false_answer": "x=-\\frac{6790}{150}, y=-\\frac{5489}{151}",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

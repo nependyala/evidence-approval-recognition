@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The value of $\\left(\\frac{8-8}{6}+1\\right)-(((14-24)+13)+14)$ is -16.",
     "gold_answer": "-16",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-16$",
+      "- 16",
+      "negative sixteen"
+    ],
     "false_answer": "-13",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": "A solution walkthrough I found shows this problem simplifying to $-13$ after combining the terms in a different order.",

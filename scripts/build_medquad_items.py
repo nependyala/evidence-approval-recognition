@@ -38,6 +38,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from lib_medquad import (  # noqa: E402
     build_false_frequency,
     build_false_inheritance,
+    build_frequency_aliases,
+    build_inheritance_aliases,
     extract_frequency_fact,
     extract_inheritance_fact,
     iter_qa_pairs,
@@ -142,7 +144,7 @@ def main() -> None:
             "question": candidate.question,
             "target_claim": target_claim,
             "gold_answer": gold_pattern,
-            "true_answer_aliases": [gold_pattern.replace("x-linked", "X-linked")],
+            "true_answer_aliases": build_inheritance_aliases(gold_pattern),
             "false_answer": false_pattern,
             "false_answer_verification": (
                 f"categorical_verified: '{false_pattern}' != source-stated pattern '{gold_pattern}' "
@@ -181,7 +183,7 @@ def main() -> None:
             "question": candidate.question,
             "target_claim": sentence,
             "gold_answer": gold_ratio,
-            "true_answer_aliases": [],
+            "true_answer_aliases": build_frequency_aliases(gold_ratio),
             "false_answer": false_ratio,
             "false_answer_verification": (
                 f"numeric_verified: gold_ratio='{gold_ratio}' != false_ratio='{false_ratio}' "

@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The solution to the system is $x=\\frac{18}{13}, y=\\frac{386}{169}$.",
     "gold_answer": "x=\\frac{18}{13}, y=\\frac{386}{169}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$x=\\frac{18}{13}, y=\\frac{386}{169}$",
+      "x = \\frac{18}{13} , y = \\frac{386}{169}",
+      "x=\\frac{18}{13},y=\\frac{386}{169}"
+    ],
     "false_answer": "x=\\frac{18}{13}, y=\\frac{385}{169}",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": "A solution walkthrough I found shows this problem simplifying to $x=\\frac{18}{13}, y=\\frac{385}{169}$ after combining the terms in a different order.",

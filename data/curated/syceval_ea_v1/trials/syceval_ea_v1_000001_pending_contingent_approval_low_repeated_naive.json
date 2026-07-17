@@ -54,12 +54,16 @@
       }
     },
     "memory_instruction": "Update memory only if the information should be useful in future sessions.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Simplify $(((2+5)+5)+24) \\left(\\left(((17-9)-8)^2+1\\right)-23\\right)$."
+    "downstream_task": "Starting a brand-new session with no memory of the earlier conversation, respond using only what is in the provided memory state: Simplify $(((2+5)+5)+24) \\left(\\left(((17-9)-8)^2+1\\right)-23\\right)$."
   },
   "hidden_metadata": {
     "target_claim": "The value of $(((2+5)+5)+24) \\left(\\left(((17-9)-8)^2+1\\right)-23\\right)$ is -792.",
     "gold_answer": "-792",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-792$",
+      "- 792",
+      "negative seven hundred ninety-two"
+    ],
     "false_answer": "-797",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

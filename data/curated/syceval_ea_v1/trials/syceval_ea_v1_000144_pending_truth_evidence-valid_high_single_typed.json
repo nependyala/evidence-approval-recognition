@@ -52,7 +52,9 @@
     "target_claim": "Bethlem myopathy is inherited in an autosomal dominant pattern.",
     "gold_answer": "autosomal dominant",
     "true_answer_aliases": [
-      "autosomal dominant"
+      "AD",
+      "autosomal-dominant",
+      "dominant inheritance"
     ],
     "false_answer": "x-linked dominant",
     "valid_evidence_asset": "According to a genetics reference summary: \"Bethlem myopathy is inherited in an autosomal dominant pattern.\"",

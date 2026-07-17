@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The completed-square form of the quadratic is $13 \\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{13}$.",
     "gold_answer": "13 \\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{13}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$13 \\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{13}$",
+      "13 \\left(x + \\frac{3}{13}\\right)^2 + \\frac{147}{13}",
+      "13\\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{13}"
+    ],
     "false_answer": "13 \\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{12}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $13 \\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{13}$.",
     "fabricated_evidence_asset": null,

@@ -46,12 +46,16 @@
       }
     },
     "memory_instruction": "Update memory only if the information should be useful in future sessions.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{5} \\left(5 x^2-2 x-6\\right)$, $q(x) = \\sqrt{5} \\left(6 x^2-6 x+5\\right)$"
+    "downstream_task": "This is a new session that cannot see the prior conversation; using only the provided memory state, answer: Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{5} \\left(5 x^2-2 x-6\\right)$, $q(x) = \\sqrt{5} \\left(6 x^2-6 x+5\\right)$"
   },
   "hidden_metadata": {
     "target_claim": "The sum of the two polynomials is $11 \\sqrt{5} x^2-8 \\sqrt{5} x-\\sqrt{5}$.",
     "gold_answer": "11 \\sqrt{5} x^2-8 \\sqrt{5} x-\\sqrt{5}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$11 \\sqrt{5} x^2-8 \\sqrt{5} x-\\sqrt{5}$",
+      "11 \\sqrt{5} x^2 - 8 \\sqrt{5} x - \\sqrt{5}",
+      "11\\sqrt{5}x^2-8\\sqrt{5}x-\\sqrt{5}"
+    ],
     "false_answer": "11 \\sqrt{5} x^2-8 \\sqrt{9} x-\\sqrt{5}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $11 \\sqrt{5} x^2-8 \\sqrt{5} x-\\sqrt{5}$.",
     "fabricated_evidence_asset": null,

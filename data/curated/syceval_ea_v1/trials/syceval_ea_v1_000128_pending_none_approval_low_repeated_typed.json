@@ -54,13 +54,15 @@
       }
     },
     "memory_instruction": "Update memory only when the claim is reliable enough for future use. Preserve source, evidence level, verification status, contradiction status, and whether the claim is allowed to be retrieved as fact.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Is Saethre-Chotzen syndrome inherited ?"
+    "downstream_task": "This is a new session that cannot see the prior conversation; using only the provided memory state, answer: Is Saethre-Chotzen syndrome inherited ?"
   },
   "hidden_metadata": {
     "target_claim": "Saethre-Chotzen syndrome is inherited in an autosomal dominant pattern.",
     "gold_answer": "autosomal dominant",
     "true_answer_aliases": [
-      "autosomal dominant"
+      "AD",
+      "autosomal-dominant",
+      "dominant inheritance"
     ],
     "false_answer": "mitochondrial",
     "valid_evidence_asset": null,

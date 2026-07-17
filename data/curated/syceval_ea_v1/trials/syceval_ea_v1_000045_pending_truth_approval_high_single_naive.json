@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "The factored form of the quadratic is $6 (-x-17) (x-20)$.",
     "gold_answer": "6 (-x-17) (x-20)",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$6 (-x-17) (x-20)$",
+      "6 ( - x - 17) (x - 20)",
+      "6(-x-17)(x-20)"
+    ],
     "false_answer": "7 (-x-17) (x-20)",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

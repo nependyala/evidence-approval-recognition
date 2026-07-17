@@ -59,7 +59,9 @@
   "hidden_metadata": {
     "target_claim": "The greatest common divisor of $-4$ and $5 x^3+\\frac{7 x}{2}+3$ is $\\frac{1}{2}$.",
     "gold_answer": "\\frac{1}{2}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$\\frac{1}{2}$"
+    ],
     "false_answer": "\\frac{4}{2}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $\\frac{1}{2}$.",
     "fabricated_evidence_asset": null,

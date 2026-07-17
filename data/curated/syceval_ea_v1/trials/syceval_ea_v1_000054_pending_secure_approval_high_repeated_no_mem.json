@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The factored form of the quadratic is $-6 (x-3) \\left(x+\\frac{90}{7}\\right)$.",
     "gold_answer": "-6 (x-3) \\left(x+\\frac{90}{7}\\right)",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-6 (x-3) \\left(x+\\frac{90}{7}\\right)$",
+      "- 6 (x - 3) \\left(x + \\frac{90}{7}\\right)",
+      "-6(x-3)\\left(x+\\frac{90}{7}\\right)"
+    ],
     "false_answer": "-6 (x-3) \\left(x+\\frac{90}{8}\\right)",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

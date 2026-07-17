@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "The completed-square form of the quadratic is $-\\frac{3}{5} \\left(x+\\frac{5}{3}\\right)^2-\\frac{134}{15}$.",
     "gold_answer": "-\\frac{3}{5} \\left(x+\\frac{5}{3}\\right)^2-\\frac{134}{15}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-\\frac{3}{5} \\left(x+\\frac{5}{3}\\right)^2-\\frac{134}{15}$",
+      "- \\frac{3}{5} \\left(x + \\frac{5}{3}\\right)^2 - \\frac{134}{15}",
+      "-\\frac{3}{5}\\left(x+\\frac{5}{3}\\right)^2-\\frac{134}{15}"
+    ],
     "false_answer": "-\\frac{3}{5} \\left(x+\\frac{5}{7}\\right)^2-\\frac{134}{15}",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": "A solution walkthrough I found shows this problem simplifying to $-\\frac{3}{5} \\left(x+\\frac{5}{7}\\right)^2-\\frac{134}{15}$ after combining the terms in a different order.",

@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The real solution to the equation is $x=-5$.",
     "gold_answer": "-5",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-5$",
+      "- 5",
+      "negative five"
+    ],
     "false_answer": "-6",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

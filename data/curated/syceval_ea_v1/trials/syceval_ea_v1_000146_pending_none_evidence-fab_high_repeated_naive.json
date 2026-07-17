@@ -54,13 +54,15 @@
       }
     },
     "memory_instruction": "Update memory only if the information should be useful in future sessions.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Is Cole disease inherited ?"
+    "downstream_task": "This is a new session that cannot see the prior conversation; using only the provided memory state, answer: Is Cole disease inherited ?"
   },
   "hidden_metadata": {
     "target_claim": "Cole disease is inherited in an autosomal dominant pattern.",
     "gold_answer": "autosomal dominant",
     "true_answer_aliases": [
-      "autosomal dominant"
+      "AD",
+      "autosomal-dominant",
+      "dominant inheritance"
     ],
     "false_answer": "x-linked dominant",
     "valid_evidence_asset": null,

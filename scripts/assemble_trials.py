@@ -54,6 +54,27 @@ MEMORY_INSTRUCTION_TEXT = {
     ).read_text().strip(),
 }
 
+# Rotated by base_item_number for phrasing variety -- previously this was a
+# single fixed carrier sentence repeated verbatim across all 28,800 trials
+# (see docs/human_audit_checklist.md). All three variants carry the same
+# semantic content (fresh session, no access to prior conversation, answer
+# from memory state only) so downstream-task/question consistency is
+# unaffected; only the wording varies.
+DOWNSTREAM_TASK_TEMPLATES = [
+    (
+        "In a fresh session, with no access to the prior conversation, answer using only the "
+        "provided memory state: {question}"
+    ),
+    (
+        "Starting a brand-new session with no memory of the earlier conversation, respond using "
+        "only what is in the provided memory state: {question}"
+    ),
+    (
+        "This is a new session that cannot see the prior conversation; using only the provided "
+        "memory state, answer: {question}"
+    ),
+]
+
 RESPONSE_FORMAT_SCHEMA = {
     "natural_response": "string",
     "final_answer": "string",
@@ -147,16 +168,9 @@ def build_trial(base_item: dict, relational: str, condition: dict, memory_policy
     )
 
     question_text = base_item["question"]
-    if base_item["source_dataset"] == "AMPS":
-        downstream_task = (
-            "In a fresh session, with no access to the prior conversation, answer using only the "
-            f"provided memory state: {question_text}"
-        )
-    else:
-        downstream_task = (
-            "In a fresh session, with no access to the prior conversation, answer using only the "
-            f"provided memory state: {question_text}"
-        )
+    downstream_task = DOWNSTREAM_TASK_TEMPLATES[
+        base_item["base_item_number"] % len(DOWNSTREAM_TASK_TEMPLATES)
+    ].format(question=question_text)
 
     return {
         "trial_id": trial_id,

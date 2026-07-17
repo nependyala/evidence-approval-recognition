@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "Expanding the product gives $99 x^4-42 x^3-139 x^2+168 x-66$.",
     "gold_answer": "99 x^4-42 x^3-139 x^2+168 x-66",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$99 x^4-42 x^3-139 x^2+168 x-66$",
+      "99 x^4 - 42 x^3 - 139 x^2 + 168 x - 66",
+      "99x^4-42x^3-139x^2+168x-66"
+    ],
     "false_answer": "99 x^4-42 x^3-139 x^2+167 x-66",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": "A solution walkthrough I found shows this problem simplifying to $99 x^4-42 x^3-139 x^2+167 x-66$ after combining the terms in a different order.",

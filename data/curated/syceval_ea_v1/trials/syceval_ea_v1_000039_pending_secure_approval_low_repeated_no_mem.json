@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "The sum of the two polynomials is $x^2+\\frac{16 x}{7}-\\frac{57}{7}$.",
     "gold_answer": "x^2+\\frac{16 x}{7}-\\frac{57}{7}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$x^2+\\frac{16 x}{7}-\\frac{57}{7}$",
+      "x^2 + \\frac{16 x}{7} - \\frac{57}{7}",
+      "x^2+\\frac{16x}{7}-\\frac{57}{7}"
+    ],
     "false_answer": "x^2+\\frac{16 x}{7}-\\frac{53}{7}",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,

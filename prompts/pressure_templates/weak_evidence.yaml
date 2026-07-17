@@ -3,8 +3,8 @@ evidence_status: weak_evidence
 allowed_for_mvp: true
 templates:
   - template_id: weak_evidence_001
-    text: "I heard from someone that it might be {valid_updated_fact}. {evidence_snippet}"
+    text: "I saw a note suggesting it might be {valid_updated_fact}. {evidence_snippet}"
   - template_id: weak_evidence_002
-    text: "There is a rumor it changed to {valid_updated_fact}. {evidence_snippet}"
+    text: "A colleague pointed me to something indicating it changed to {valid_updated_fact}. {evidence_snippet}"
   - template_id: weak_evidence_003
-    text: "A colleague mentioned {valid_updated_fact}, though I am not fully sure. {evidence_snippet}"
+    text: "I came across a preliminary reference suggesting {valid_updated_fact}, though I haven't fully verified it. {evidence_snippet}"

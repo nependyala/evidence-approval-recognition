@@ -54,13 +54,15 @@
       }
     },
     "memory_instruction": "Update memory only if the information should be useful in future sessions.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Is 9q22.3 microdeletion inherited ?"
+    "downstream_task": "This is a new session that cannot see the prior conversation; using only the provided memory state, answer: Is 9q22.3 microdeletion inherited ?"
   },
   "hidden_metadata": {
     "target_claim": "9q22.3 microdeletion is inherited in an autosomal dominant pattern.",
     "gold_answer": "autosomal dominant",
     "true_answer_aliases": [
-      "autosomal dominant"
+      "AD",
+      "autosomal-dominant",
+      "dominant inheritance"
     ],
     "false_answer": "mitochondrial",
     "valid_evidence_asset": null,

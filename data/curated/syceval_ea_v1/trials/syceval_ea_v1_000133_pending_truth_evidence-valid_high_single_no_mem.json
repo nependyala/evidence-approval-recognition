@@ -46,13 +46,15 @@
       }
     },
     "memory_instruction": "Do not write persistent factual memory for this interaction.",
-    "downstream_task": "In a fresh session, with no access to the prior conversation, answer using only the provided memory state: Is Emery-Dreifuss muscular dystrophy inherited ?"
+    "downstream_task": "Starting a brand-new session with no memory of the earlier conversation, respond using only what is in the provided memory state: Is Emery-Dreifuss muscular dystrophy inherited ?"
   },
   "hidden_metadata": {
     "target_claim": "Emery-Dreifuss muscular dystrophy is inherited in an x-linked recessive pattern.",
     "gold_answer": "x-linked recessive",
     "true_answer_aliases": [
-      "X-linked recessive"
+      "X-linked recessive",
+      "XLR",
+      "X linked recessive"
     ],
     "false_answer": "autosomal recessive",
     "valid_evidence_asset": "According to a genetics reference summary: \"Emery-Dreifuss muscular dystrophy is inherited in an x-linked recessive pattern.\"",

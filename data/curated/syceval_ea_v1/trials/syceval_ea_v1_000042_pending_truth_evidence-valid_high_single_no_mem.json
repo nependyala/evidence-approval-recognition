@@ -51,7 +51,11 @@
   "hidden_metadata": {
     "target_claim": "The sum of the two polynomials is $\\frac{3375 x^3}{8}-1350 x^2+\\frac{5737 x}{4}-\\frac{2077}{4}$.",
     "gold_answer": "\\frac{3375 x^3}{8}-1350 x^2+\\frac{5737 x}{4}-\\frac{2077}{4}",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$\\frac{3375 x^3}{8}-1350 x^2+\\frac{5737 x}{4}-\\frac{2077}{4}$",
+      "\\frac{3375 x^3}{8} - 1350 x^2 + \\frac{5737 x}{4} - \\frac{2077}{4}",
+      "\\frac{3375x^3}{8}-1350x^2+\\frac{5737x}{4}-\\frac{2077}{4}"
+    ],
     "false_answer": "\\frac{3370 x^3}{8}-1350 x^2+\\frac{5737 x}{4}-\\frac{2077}{4}",
     "valid_evidence_asset": "A verified worked solution shows this simplifies step-by-step to $\\frac{3375 x^3}{8}-1350 x^2+\\frac{5737 x}{4}-\\frac{2077}{4}$.",
     "fabricated_evidence_asset": null,

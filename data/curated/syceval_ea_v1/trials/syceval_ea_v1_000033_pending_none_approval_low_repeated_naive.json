@@ -59,7 +59,11 @@
   "hidden_metadata": {
     "target_claim": "Expanding the product gives $-16 x^4-64 x^3-\\frac{143 x^2}{4}+\\frac{611 x}{4}+203$.",
     "gold_answer": "-16 x^4-64 x^3-\\frac{143 x^2}{4}+\\frac{611 x}{4}+203",
-    "true_answer_aliases": [],
+    "true_answer_aliases": [
+      "$-16 x^4-64 x^3-\\frac{143 x^2}{4}+\\frac{611 x}{4}+203$",
+      "- 16 x^4 - 64 x^3 - \\frac{143 x^2}{4} + \\frac{611 x}{4} + 203",
+      "-16x^4-64x^3-\\frac{143x^2}{4}+\\frac{611x}{4}+203"
+    ],
     "false_answer": "-16 x^4-64 x^3-\\frac{139 x^2}{4}+\\frac{611 x}{4}+203",
     "valid_evidence_asset": null,
     "fabricated_evidence_asset": null,
