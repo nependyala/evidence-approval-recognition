@@ -83,9 +83,19 @@ AMPS totals 100 items across 10 sub-topics; MedQuAD totals 100 items across 2 fa
    ever sees trial JSON files.)
 7. Ran a stratified programmatic proxy audit (n=40, seeded) against the criteria in
    `docs/human_audit_checklist.md` (leakage, evidence-asset presence, turn-count/intensity
-   consistency, downstream-task/question consistency): 0 issues found. **A full manual
-   human audit per `docs/human_audit_checklist.md` has not yet been performed** — see
-   Known limitations.
+   consistency, downstream-task/question consistency): 0 issues found.
+8. An AI agent subsequently ran a broader, checklist-driven audit (2026-07-16) covering
+   every item in `docs/human_audit_checklist.md`: independently re-ran `eg validate-dir`
+   over all 28,800 trials (28,800/28,800 pass), mathematically re-derived all 100 AMPS
+   `gold_answer`/`false_answer` pairs with `sympy`, cross-referenced all 100 MedQuAD
+   `gold_answer` values against stored raw source text, and checked pressure-template
+   isolation, routing, and gate-behavior consistency across the full trial set. It found
+   several concrete quality gaps (`true_answer_aliases` empty for 145/200 base items;
+   9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range
+   claims; residual authority/consensus framing in two approval-pressure template
+   families) — see `docs/human_audit_checklist.md` for the full itemized results.
+   **A full manual human audit per `docs/human_audit_checklist.md` still has not been
+   performed** — the AI-assisted pass is not a substitute for one; see Known limitations.
 
 ## Trial schema
 
@@ -134,10 +144,15 @@ runner and grading pipeline against this frozen trial set.
 
 ## Known limitations
 
-- **No manual human audit performed.** Only an automated proxy audit (stratified,
-  n=40) was run against the `docs/human_audit_checklist.md` criteria. The
-  sign-off table in that checklist is still blank and should be completed by a
-  human reviewer before using this version for any published result.
+- **No manual human audit performed.** An automated proxy audit (stratified,
+  n=40) and, later, a broader AI-assisted audit covering every checklist item
+  (see generation step 8 above and `docs/human_audit_checklist.md`) were run
+  against the `docs/human_audit_checklist.md` criteria, and turned up several
+  concrete gaps (notably non-functional `true_answer_aliases` for most items,
+  and a handful of non-atomic/range-collapsed claims). Neither is a substitute
+  for a qualified human (or, for MedQuAD, clinical) reviewer. The sign-off
+  table in that checklist has an AI-assisted row but still needs a genuine
+  human sign-off row before using this version for any published result.
 - **MedQuAD false answers are templated categorical swaps**, not independently
   fact-checked against a second medical source; they are plausible-but-wrong by
   construction (e.g. swapping `autosomal dominant` for `x-linked dominant`) but
@@ -182,7 +197,8 @@ runner and grading pipeline against this frozen trial set.
 
 | Auditor | Date | Sample size | Pass rate | Notes |
 |---|---|---|---|---|
-| automated proxy (not a substitute for human review) | 2026-07-15 | 40 (stratified, seed=42) | 100% (0 issues / 40) | Checked leakage, evidence-asset presence, turn-count/intensity consistency, downstream-task/question consistency. Full manual audit per `docs/human_audit_checklist.md` still pending — sign-off row there remains blank. |
+| automated proxy (not a substitute for human review) | 2026-07-15 | 40 (stratified, seed=42) | 100% (0 issues / 40) | Checked leakage, evidence-asset presence, turn-count/intensity consistency, downstream-task/question consistency. |
+| AI agent, checklist-driven (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural checks over all 28,800 trials; targeted rendered-trial sampling | 100% on automated validator re-run; ~95% (191/200 base items) on qualitative checks | Full results in `docs/human_audit_checklist.md`. Found: `true_answer_aliases` empty/non-functional for 145/200 base items; 9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range-collapsed claims; residual authority/consensus framing in `authority_false`/`social_proof_false` templates; 1 base item with a cosmetic routing-phrasing mismatch. Full manual **human** audit per `docs/human_audit_checklist.md` still pending — sign-off row there still needs a human, not just an AI, entry. |
 
 ## Excluded trials and reasons
 
