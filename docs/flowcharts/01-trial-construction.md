@@ -7,9 +7,9 @@ flowchart TD
 
 A[Ingest SycEval source manifest<br/>500 AMPS + 500 MedQuAD items] --> B[Select primary subset<br/>200 items: 100 AMPS + 100 MedQuAD]
 
-B --> C[Normalize each item<br/>atomic target_claim, gold_answer,<br/>false_answer, valid_evidence_asset]
+B --> C[Normalize each item<br/>atomic target_claim, gold_answer,<br/>false_answer, valid_evidence_asset,<br/>fabricated_evidence_asset]
 
-C --> D[Validate false answers<br/>symbolic/numeric for AMPS<br/>human review for MedQuAD]
+C --> D[Validate false answers<br/>AMPS: symbolic/numeric perturbation check<br/>MedQuAD: categorical swap, human review pending]
 
 D --> E[Generate pressure template library<br/>approval + evidence families<br/>weak/ambiguous/authority deferred, see below]
 
@@ -48,11 +48,15 @@ O --> P[Freeze dataset version]
 P --> Q[Completed trial ready for model run]
 ```
 
+`syceval_ea_v1` is the first frozen pass through this pipeline: 200 base items (100 AMPS + 100 MedQuAD, sourced directly from Hugging Face and the MedQuAD GitHub repo) × 4 relational contexts × 12 pressure conditions (3 `evidence_status` × 2 `confidence` × 2 `intensity`) × 3 memory policies = **28,800 trials**, all passing `eg validate-dir` — see `data/curated/syceval_ea_v1/DATASET_CARD.md` and `manifest.json`.
+
 ## Notes
 
 - Primary design is **in-context**: question → canonical initial answer → relational context → user pressure → final response. Preemptive SycEval trials are optional replication only.
 - Pushback text is instantiated from approved templates in `prompts/pressure_templates/`, not written free-form.
 - `pressure_family`, `confidence`, `intensity`, and `evidence_status` are independent experimental factors. Legacy SycEval rebuttal tier is preserved only in `base_item.legacy_rebuttal_tier`.
 - The no-pressure baseline establishes that the model held the correct answer to begin with; it is the reference point the update-vs-flip discrimination metric is measured against, not itself a pressure condition. It is not yet wired into the schema as an explicit `experimental_factors` value — see [`docs/pressure_taxonomy.md`](../pressure_taxonomy.md).
-- Weak/ambiguous evidence and pure authority/credential appeals are deferred for the MVP and not generated: each is confounded across the approval/evidence channels (an authority cue could be resisted as evidence or as status, and the design can't tell which), so they aren't sorted into the template library at step E. `authority` and `social_proof` items are instead re-sorted into `fabricated_evidence` or `approval` pressure by the mechanism their wording invokes. See [`docs/pressure_taxonomy.md`](../pressure_taxonomy.md) for the full rationale and the re-sort table.
+- Weak/ambiguous evidence as a standalone `evidence_status` value, and a standalone authority/credential-appeal condition, are deferred for the MVP and not generated — the `EvidenceStatus` enum has only three values (`unsupported_assertion`, `fabricated_evidence`, `valid_evidence`; see `src/coding/enums.py`).
+- `syceval_ea_v1`'s approval-pressure wording uses `neutral_false` for `confidence=low`, and for `confidence=high` rotates across five template files by `base_item_number` for stylistic variety (`confident_false`, `authority_false`, `emotional_false`, `social_proof_false`, `repeated_false` — see `scripts/pressure_manifest.py::APPROVAL_HIGH_FAMILIES`). All six are tagged `pressure_family=approval` / `evidence_status=unsupported_assertion` in the schema, so at the **experimental-factors level** the authority/social-proof re-sort described in `docs/pressure_taxonomy.md` has happened. The template **wording** itself, however, is still the original, unmodified SycEval-era text (e.g. `authority_false`: "As the team lead, I can confirm...") and has not yet been rewritten to strip the residual credential/status framing down to pure belonging/approval-seeking language — see the top-of-file note in [`docs/pressure_taxonomy.md`](../pressure_taxonomy.md) for this known gap.
+- The `valid_evidence` condition's low-confidence variant (`valid_low_single`/`valid_low_repeated`) is delivered via the `weak_evidence.yaml` template family (hedging language: "I heard from someone...", "There is a rumor..."). This reuses the *wording* of the deferred `weak_evidence` construct as the tentative-delivery voice for `confidence=low`, but the trial's `evidence_status` is still `valid_evidence` (`should_update_answer=true`) — `weak_evidence`/`ambiguous_evidence` do not exist as `EvidenceStatus` enum values. Whether hedged/rumor-style phrasing "genuinely establishes" the correction as required by [`docs/human_audit_checklist.md`](../human_audit_checklist.md) has not yet been human-audited; see `data/curated/syceval_ea_v1/DATASET_CARD.md` known limitations.
 - The response JSON format tells the model what factual commitment to report each turn. It does **not** include grading labels such as `gate1_label` or `answer_state`.

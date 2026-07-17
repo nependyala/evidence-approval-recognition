@@ -45,15 +45,16 @@ Filled at curation time. `base_item` traces the trial back to SycEval; `experime
 flowchart TB
   subgraph base_item["base_item"]
     direction TB
+    B0[base_item_id]
     B1[syceval_item_id]
-    B2[source_dataset]
+    B2[source_dataset · domain]
     B3[source_item_id]
     B4[legacy_context_mode · legacy_rebuttal_tier]
   end
 
   subgraph experimental_factors["experimental_factors"]
     direction TB
-    C1[relational_context_label]
+    C1[relational_context_label · condition]
     C2[pressure_family · confidence · intensity]
     C3[evidence_status · memory_policy]
     C4[pressure_template_id · model_id]
@@ -133,6 +134,9 @@ flowchart LR
 ## Notes
 
 - During curation, `model_outputs` and `evaluation` are empty/null. Runners and graders fill them later.
+- `condition` is a high-level, human-readable label derived from `evidence_status` at generation time (`approval_pressure`, `fabricated_evidence_pressure`, `valid_evidence_pressure`); it does not add information beyond `pressure_family`/`evidence_status`, but makes filtering trial files easier.
+- Every trial ID also encodes `evidence_status` for the two `pressure_family=evidence` conditions specifically (`evidence-fab` vs. `evidence-valid`), not just `pressure_family`. Without this, `fabricated_evidence` and `valid_evidence` trials that share confidence/intensity/relational-context/memory-policy would collide on the same `trial_id`. See `docs/naming_conventions.md` and `generation.ids.pressure_short_code`.
+- The frozen `syceval_ea_v1` dataset (`data/curated/syceval_ea_v1/trials/`) contains 28,800 records with `model_outputs` and `evaluation` empty by design — see `data/curated/syceval_ea_v1/manifest.json` and `DATASET_CARD.md`.
 - Each turn's JSON captures the model's **factual commitment**, not experimental labels. The grading script extracts `answer_state_by_turn` and assigns `gate1_label`.
 - `extracted_answer` is normalized from `final_answer` into one of five classes: `gold`, `false`, `other`, `no_answer`, `ambiguous` (see the [SycEval Two-Gate Judging and Grading Plan](../judging_architecture.md)).
 - The `gate2` block (`stored_claim`, `source`, `verification_status`, `contradiction_status`, `memory_action`, `retrievable_as_fact`) is produced for **every** `memory_policy`, including `no_factual_memory`, which always yields a fixed rejection record.

@@ -18,7 +18,7 @@ These render in GitHub, many IDEs, and any Mermaid-compatible viewers.
 
 ## Alignment with the augmentation plan
 
-- **Construction (01):** Follows the 7-step dataset construction procedure (ingest → subset → normalize → validate → templates → evidence controls → validate templates). Uses in-context trials with frozen `canonical_initial_turn`.
+- **Construction (01):** Follows the 7-step dataset construction procedure (ingest → subset → normalize → validate → templates → evidence controls → validate templates). Uses in-context trials with frozen `canonical_initial_turn`. This procedure has been run once end-to-end and frozen as `data/curated/syceval_ea_v1/` (28,800 trials); see the Notes section at the bottom of [01-trial-construction.md](01-trial-construction.md) for where the frozen dataset still diverges from this flowchart's target design (MedQuAD human review, authority/social-proof template wording, low-confidence valid-evidence phrasing).
 - **Record structure (02):** Matches the augmented item schema and run-sequence logging fields. Separates model factual-commitment JSON from grader-derived labels.
 - **Grading (03):** Uses Gate 1 labels (`hold`, `cave`, `elicitation_non_cave`, `rational_revision`, `stubborn`, `ambiguous`), a unified Gate 2 schema (`stored_claim`, `source`, `verification_status`, `contradiction_status`, `memory_action`, `retrievable_as_fact`), and evidence-aware downstream contamination rules.
 
