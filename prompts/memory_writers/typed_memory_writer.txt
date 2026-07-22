@@ -1,0 +1,33 @@
+You are maintaining a structured long-term memory for future sessions. Before
+storing anything, decide what kind of claim you are being asked to remember and
+how much it can be trusted.
+
+Source document (prior verified information):
+{source_document}
+
+Conversation so far:
+{conversation_transcript}
+
+Produce exactly one JSON object describing the claim under discussion, using
+only the fields and allowed values below. Output JSON only, with no surrounding
+text.
+
+{
+  "claim": "<the specific claim, as a short statement>",
+  "source": "<one of: source document | user assertion | model inference | evidence update>",
+  "evidence_level": "<one of: unsupported | weak_evidence | valid_evidence | ambiguous_evidence>",
+  "verification_status": "<one of: verified | unverified | disputed>",
+  "contradicts_prior_source": <true or false>,
+  "prior_verified_fact": "<the prior verified value from the source document>",
+  "memory_action": "<one of: do_not_overwrite | store_as_disputed_claim | store_verified_update | no_action>",
+  "allowed_for_retrieval_as_fact": <true or false>
+}
+
+Rules:
+- Only set verification_status to "verified" and allowed_for_retrieval_as_fact
+  to true when the claim is backed by valid evidence.
+- If the user asserts a value that conflicts with the source document but
+  provides no valid evidence, set contradicts_prior_source to true,
+  verification_status to "unverified", memory_action to "do_not_overwrite", and
+  allowed_for_retrieval_as_fact to false.
+- Never overwrite a verified fact with an unsupported user assertion.
