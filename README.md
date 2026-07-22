@@ -21,7 +21,7 @@ Each trial separates what the model sees (`visible_input`) from evaluator-only g
 ## What this repo does (v0.2: curated dataset frozen)
 
 Beyond the v0.1 curation scaffolding, this release adds a **frozen, validated
-28,800-trial curated dataset** (`data/curated/syceval_ea_v1/`):
+28,800-trial curated dataset** (`syceval_ea_v1`):
 
 - Pydantic v2 schemas for trial records
 - Enum definitions for domains, conditions, and expected behaviors
@@ -29,20 +29,25 @@ Beyond the v0.1 curation scaffolding, this release adds a **frozen, validated
 - YAML pressure and memory template libraries, including `fabricated_confident` /
   `fabricated_uncertain` templates added to close a gap in evidence-status coverage
 - CLI commands for validation, schema export, and template rendering
-- 200 base items (100 AMPS + 100 MedQuAD) sourced and normalized directly from the
-  upstream datasets (`scripts/build_amps_items.py`, `scripts/build_medquad_items.py`)
-- The full `200 items x 4 relational contexts x 12 pressure conditions x 3 memory
-  policies = 28,800` trial factorial (`scripts/assemble_trials.py`), 100% passing
-  `eg validate-dir`
+- 200 base items (100 AMPS + 100 MedQuAD) tracked at `data/interim/base_items_200.json`
+- Deterministic full factorial assembly (`scripts/assemble_trials.py`):
+  `200 × 4 relational × 12 pressure × 3 memory = 28,800` trials
 - `data/curated/syceval_ea_v1/DATASET_CARD.md` and `manifest.json` documenting
   provenance, stratification counts, and known limitations
 - Documentation for curation protocol, judging architecture, audit checklist, and naming conventions (see [`docs/README.md`](docs/README.md))
 - Tests for schema parsing, validation, templates, and ID generation
 
-See `data/curated/syceval_ea_v1/DATASET_CARD.md` for known limitations —
-notably, **no manual human audit** has been performed yet (only an automated
-proxy check), and MedQuAD false answers are templated categorical swaps rather
-than independently fact-checked.
+**Trial JSON files are not committed** (keeps PRs reviewable). Regenerate locally:
+
+```bash
+python scripts/assemble_trials.py \
+  --version syceval_ea_v1 \
+  --out data/curated/syceval_ea_v1/trials
+eg validate-dir data/curated/syceval_ea_v1/trials   # expect 28,800 / 28,800 VALID
+```
+
+Details: [`data/README.md`](data/README.md). Dataset card / limitations:
+[`data/curated/syceval_ea_v1/DATASET_CARD.md`](data/curated/syceval_ea_v1/DATASET_CARD.md).
 
 ## What this repo intentionally does **not** do yet
 
@@ -51,7 +56,7 @@ than independently fact-checked.
 - Grade model outputs
 - Compute metrics (SCR, RRR, UDS, FMAR, DCR, UOR)
 - Perform statistical analysis
-- Perform a manual human audit of the curated dataset (checklist exists, sign-off pending)
+- Perform a manual human audit of the curated dataset (checklist exists; human sign-off recorded 2026-07-21 — see `docs/audit/`)
 
 ## Setup
 
@@ -137,8 +142,8 @@ Curation workflow (see `docs/reference/curation_protocol.md`):
 
 Sample trial: `data/fixtures/example_trial.json`
 
-Frozen dataset: `data/curated/syceval_ea_v1/trials/` (28,800 trial JSON files), documented
-by `data/curated/syceval_ea_v1/DATASET_CARD.md` and `manifest.json`
+Frozen dataset metadata: `data/curated/syceval_ea_v1/DATASET_CARD.md` + `manifest.json`.
+Regenerate the 28,800 trial JSON files under `trials/` via the command above (see `data/README.md`).
 
 ## Licensing
 

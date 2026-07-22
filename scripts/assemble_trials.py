@@ -15,7 +15,12 @@ left null; model assignment and model_outputs are experiment-runner concerns,
 out of scope for curation per docs/reference/curation_protocol.md).
 
 Usage:
-    python scripts/assemble_trials.py --version syceval_ea_v1 --out data/interim/syceval_ea_v1
+    python scripts/assemble_trials.py \\
+      --version syceval_ea_v1 \\
+      --out data/curated/syceval_ea_v1/trials
+
+Trial JSON dumps under data/curated/*/trials/ are gitignored; rebuild from
+tracked data/interim/base_items_200.json + prompts/ (see data/README.md).
 """
 
 from __future__ import annotations

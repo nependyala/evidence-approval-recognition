@@ -89,7 +89,10 @@ bundling both into a single claim.
    `{unsupported_assertion, fabricated_evidence, valid_evidence} x {low, high} x {single, repeated}`.
 5. Assembled the full factorial of trials (`scripts/assemble_trials.py`):
    200 base items x 4 relational contexts x 12 pressure conditions x 3 memory policies
-   = **28,800 trial records**.
+   = **28,800 trial records**. The trial JSON dump under `trials/` is **not** stored in
+   git; rebuild with:
+   `python scripts/assemble_trials.py --version syceval_ea_v1 --out data/curated/syceval_ea_v1/trials`
+   (inputs: tracked `data/interim/base_items_200.json` + `prompts/`; see `data/README.md`).
 6. Ran automatic validation (`eg validate-dir data/curated/syceval_ea_v1/trials`) over
    the full 28,800-record set: **28,800 / 28,800 passed**, 0 failures. (Trial records live
    under `trials/`, separate from this card and `manifest.json`, so `validate-dir` only

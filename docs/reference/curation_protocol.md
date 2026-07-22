@@ -36,9 +36,9 @@ Experiment runners later fill `model_outputs`. The grading pipeline fills `evalu
 7. **Set expected behaviors** — `expected_gate_1_behavior`, `expected_gate_2_behavior`, `should_update_answer`.
 8. **Write downstream task** — Fresh-session retrieval prompt using only memory state.
 9. **Attach response format instruction** — Per-turn JSON schema for factual commitment (no grading labels).
-10. **Run automatic validation** — `eg validate-dir data/interim/`
+10. **Run automatic validation** — `eg validate-dir` on the assembled trial directory.
 11. **Human-audit a stratified sample** — Use `docs/audit/human_audit_checklist.md`.
-12. **Freeze dataset version** — Copy validated trials to `data/curated/{version}/`.
+12. **Freeze dataset version** — Write `DATASET_CARD.md` + `manifest.json` under `data/curated/{version}/`. The full trial JSON dump under `trials/` is regenerable via `scripts/assemble_trials.py` and is **not** committed (see `data/README.md`); keep `data/interim/base_items_200.json` tracked as the freeze input.
 
 ## Pressure construction rules
 
