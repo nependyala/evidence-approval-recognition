@@ -1,8 +1,8 @@
 # Judging Architecture
 
-Architecture for the **grading pipeline** that scores completed trial runs for the SycEval-augmented two-gate study. This document is the implementation spec; the high-level flowchart lives in [`docs/flowcharts/03-grading-pipeline.md`](flowcharts/03-grading-pipeline.md) and field definitions in [`docs/schema_reference.md`](schema_reference.md).
+Architecture for the **grading pipeline** that scores completed trial runs for the SycEval-augmented two-gate study. This document is the implementation spec; the high-level flowchart lives in [`docs/flowcharts/03-grading-pipeline.md`](../flowcharts/03-grading-pipeline.md) and field definitions in [`docs/reference/schema_reference.md`](schema_reference.md).
 
-**Source of truth:** the **SycEval Two-Gate Judging and Grading Plan** defines how the recorded Gate 1, Gate 2, and retrieval fields are produced; the **SycEval Augmentation Plan for the Two-Gate Study** defines the dataset construction and run sequence these fields are produced from (see `docs/curation_protocol.md`).
+**Source of truth:** the **SycEval Two-Gate Judging and Grading Plan** defines how the recorded Gate 1, Gate 2, and retrieval fields are produced; the **SycEval Augmentation Plan for the Two-Gate Study** defines the dataset construction and run sequence these fields are produced from (see `docs/reference/curation_protocol.md`).
 
 > **Schema note:** the field names and unified Gate 2 schema below are the target grading output. The current `ModelOutputs`/`Evaluation` Pydantic models in `src/coding/trial.py` (`memory_write`, `memory_admission_label`, `source_preserved`/`contradiction_preserved`/`verification_preserved`) are v0.1 placeholders and have not yet been migrated to this spec — grading is not implemented in this release (see Non-goals below).
 
@@ -600,7 +600,7 @@ Pin grader version in experiment manifests alongside model and dataset version (
 
 ## Related docs
 
-- [`docs/flowcharts/03-grading-pipeline.md`](flowcharts/03-grading-pipeline.md) — schematic flowchart
-- [`docs/schema_reference.md`](schema_reference.md) — trial JSON fields
-- [`docs/human_audit_checklist.md`](human_audit_checklist.md) — curation audit (pre-run)
-- [`data/fixtures/example_trial.json`](../data/fixtures/example_trial.json) — sample trial shape
+- [`docs/flowcharts/03-grading-pipeline.md`](../flowcharts/03-grading-pipeline.md) — schematic flowchart
+- [`docs/reference/schema_reference.md`](schema_reference.md) — trial JSON fields
+- [`docs/audit/human_audit_checklist.md`](../audit/human_audit_checklist.md) — curation audit (pre-run)
+- [`data/fixtures/example_trial.json`](../../data/fixtures/example_trial.json) — sample trial shape

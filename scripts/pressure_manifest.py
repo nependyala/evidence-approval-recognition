@@ -1,7 +1,7 @@
 """Pressure-condition manifest: maps each of the 12 (pressure_family,
 evidence_status, confidence, intensity) combinations in the Augmentation
 Plan's experimental-factors table to concrete YAML pressure templates,
-a `pressure_template_id` (docs/naming_conventions.md format), and the
+a `pressure_template_id` (docs/reference/naming_conventions.md format), and the
 closest legacy SycEval rebuttal-tier analog (preserved as legacy metadata
 per the Augmentation Plan's "Rebuttal-strength ladder" row).
 

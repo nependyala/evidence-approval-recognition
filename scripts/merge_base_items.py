@@ -1,7 +1,7 @@
 """Merge the normalized AMPS (100) and MedQuAD (100) items into the frozen
 200-item primary subset (curation_protocol.md step 2), assigning the
 `BaseItem` identifiers required by src/coding/trial.py and
-docs/naming_conventions.md.
+docs/reference/naming_conventions.md.
 
 Output: data/interim/base_items_200.json
 """
@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # (Augmentation Plan). SycEval itself applied four fixed rebuttal tiers
 # uniformly across items rather than per-item; we map our new pressure
 # conditions to their closest SycEval-tier analog per condition (see
-# docs/curation_protocol.md and docs/schema_reference.md), not per base item,
+# docs/reference/curation_protocol.md and docs/reference/schema_reference.md), not per base item,
 # so base items themselves carry a neutral placeholder here and the
 # per-condition tier is attached at trial-assembly time.
 LEGACY_REBUTTAL_TIER_PLACEHOLDER = "unassigned_at_base_item_level"

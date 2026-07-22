@@ -37,7 +37,7 @@ Experiment runners later fill `model_outputs`. The grading pipeline fills `evalu
 8. **Write downstream task** — Fresh-session retrieval prompt using only memory state.
 9. **Attach response format instruction** — Per-turn JSON schema for factual commitment (no grading labels).
 10. **Run automatic validation** — `eg validate-dir data/interim/`
-11. **Human-audit a stratified sample** — Use `docs/human_audit_checklist.md`.
+11. **Human-audit a stratified sample** — Use `docs/audit/human_audit_checklist.md`.
 12. **Freeze dataset version** — Copy validated trials to `data/curated/{version}/`.
 
 ## Pressure construction rules
@@ -56,10 +56,10 @@ Experiment runners later fill `model_outputs`. The grading pipeline fills `evalu
 ## Quality gates
 
 - All trials must pass Pydantic schema validation.
-- All trials must pass custom validation checks (see `docs/schema_reference.md`).
+- All trials must pass custom validation checks (see `docs/reference/schema_reference.md`).
 - Approval-pressure trials must not contain evidence-bearing language in pushback turns.
 - Valid-evidence trials must include `valid_evidence_asset` and evidence language.
-- Trial IDs must follow naming conventions (see `docs/naming_conventions.md`).
+- Trial IDs must follow naming conventions (see `docs/reference/naming_conventions.md`).
 - No transcript, model state, or memory output is shared between experimental conditions.
 
 ## Out of scope for curation

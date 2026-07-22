@@ -317,6 +317,6 @@ Manually label a stratified subset containing every AMPS/MedQuAD item type, ever
 
 ## Related docs
 
-For the full implementation spec (modules, CLI, escalation triggers, metrics), see [`docs/judging_architecture.md`](../judging_architecture.md).
+For the full implementation spec (modules, CLI, escalation triggers, metrics), see [`docs/reference/judging_architecture.md`](../reference/judging_architecture.md).
 
-For why `fabricated_evidence` is graded like `unsupported_assertion` but kept as a separate tag (it's the confounded condition — a flip on it may be informational or normative, and the driver is read from the intervention, not from grading), see [`docs/pressure_taxonomy.md`](../pressure_taxonomy.md#the-confounded-condition).
+For why `fabricated_evidence` is graded like `unsupported_assertion` but kept as a separate tag (it's the confounded condition — a flip on it may be informational or normative, and the driver is read from the intervention, not from grading), see [`docs/theory/pressure_taxonomy.md`](../theory/pressure_taxonomy.md#the-confounded-condition).

@@ -4,7 +4,7 @@ Mermaid flowcharts for the SycEval-augmented two-gate study pipeline. These are 
 
 - **SycEval Augmentation Plan for the Two-Gate Study** — dataset construction, experimental factors, and the run sequence (already reflected in this repo's schema and templates).
 - **SycEval Two-Gate Judging and Grading Plan** — how Gate 1, Gate 2, and retrieval fields are produced: answer extraction, label rules, judge routing, and the final judged-record shape.
-- **[Gate 1 pressure conditions as an Evidence and Approval framework](../pressure_taxonomy.md)** — the theoretical grounding for why pressure conditions split into evidence (informational) and approval (normative) channels, why weak/ambiguous evidence and authority are deferred, and the secure-base intervention prediction this design tests.
+- **[Gate 1 pressure conditions as an Evidence and Approval framework](../theory/pressure_taxonomy.md)** — the theoretical grounding for why pressure conditions split into evidence (informational) and approval (normative) channels, why weak/ambiguous evidence and authority are deferred, and the secure-base intervention prediction this design tests.
 
 | File | Topic |
 |------|-------|
@@ -12,7 +12,7 @@ Mermaid flowcharts for the SycEval-augmented two-gate study pipeline. These are 
 | [02-trial-record-structure.md](02-trial-record-structure.md) | `base_item`, `experimental_factors`, `visible_input`, `hidden_metadata`, `model_outputs`, `evaluation` |
 | [03-grading-pipeline.md](03-grading-pipeline.md) | Answer extraction, Gate 1 labels, unified Gate 2 memory judging, downstream contamination, judge routing, final judged record |
 
-For the full implementation spec (modules, CLI, judge-routing tiers, metrics), see [`docs/judging_architecture.md`](../judging_architecture.md).
+For the full implementation spec (modules, CLI, judge-routing tiers, metrics), see [`docs/reference/judging_architecture.md`](../reference/judging_architecture.md).
 
 These render in GitHub, many IDEs, and any Mermaid-compatible viewers.
 
@@ -30,4 +30,4 @@ These render in GitHub, many IDEs, and any Mermaid-compatible viewers.
 - **Retrieval:** `false_memory_used` requires all four conditions in the plan to hold; a false downstream answer alone is not contamination.
 - **Judge routing:** Deterministic scoring → one LLM judge → a second independent judge (for ambiguous/low-confidence/high-stakes outcomes) → human adjudication.
 
-See `docs/schema_reference.md` for the full trial JSON schema and `data/fixtures/example_trial.json` for a synthetic sample.
+See `docs/reference/schema_reference.md` for the full trial JSON schema and `data/fixtures/example_trial.json` for a synthetic sample.

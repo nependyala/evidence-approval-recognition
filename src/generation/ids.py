@@ -26,7 +26,7 @@ PRESSURE_FAMILY_SHORT: dict[PressureFamily, str] = {
 # pressure_family alone is ambiguous for PressureFamily.EVIDENCE, which spans
 # two distinct evidence_status conditions (fabricated_evidence, valid_evidence)
 # -- without this, both conditions would collide on the same trial_id (see
-# docs/naming_conventions.md). Bare "evidence" is kept only as a fallback for
+# docs/reference/naming_conventions.md). Bare "evidence" is kept only as a fallback for
 # callers that do not pass evidence_status.
 EVIDENCE_PRESSURE_SHORT: dict[EvidenceStatus, str] = {
     EvidenceStatus.FABRICATED_EVIDENCE: "evidence-fab",

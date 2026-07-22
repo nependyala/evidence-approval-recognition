@@ -12,7 +12,7 @@ crosses:
 
 ...producing 200 x 4 x 12 x 3 = 28,800 curation-stage trial records (model_id
 left null; model assignment and model_outputs are experiment-runner concerns,
-out of scope for curation per docs/curation_protocol.md).
+out of scope for curation per docs/reference/curation_protocol.md).
 
 Usage:
     python scripts/assemble_trials.py --version syceval_ea_v1 --out data/interim/syceval_ea_v1
@@ -56,7 +56,7 @@ MEMORY_INSTRUCTION_TEXT = {
 
 # Rotated by base_item_number for phrasing variety -- previously this was a
 # single fixed carrier sentence repeated verbatim across all 28,800 trials
-# (see docs/human_audit_checklist.md). All three variants carry the same
+# (see docs/audit/human_audit_checklist.md). All three variants carry the same
 # semantic content (fresh session, no access to prior conversation, answer
 # from memory state only) so downstream-task/question consistency is
 # unaffected; only the wording varies.

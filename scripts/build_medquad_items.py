@@ -15,7 +15,7 @@ Both the atomic claim and the false answer are extracted/derived directly
 from the real source sentence, so the false answer is verified different by
 construction (categorical: a different pattern from the fixed set;
 numeric: a different M in the same "N in M" ratio) rather than freehand
-invention -- see docs/human_audit_checklist.md for the still-required human
+invention -- see docs/audit/human_audit_checklist.md for the still-required human
 audit pass before this is treated as fully reviewed.
 
 Requires a local clone of https://github.com/abachaa/MedQuAD (path supplied

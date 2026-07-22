@@ -1,10 +1,10 @@
 # Relational interventions and the dispositional axis
 
-Status: theory grounding for the relational interventions at Gate 1. Companion to `pressure_taxonomy.md`, which classifies the pressure. This note adds the second axis, the model's disposition, and grounds the interventions in social influence theory and the Dynamic-Maturational Model. The model-specific claims are scout-informed and directional, pending replication on `syceval_ea_v1`.
+Status: theory grounding for the relational interventions at Gate 1. Companion to [`pressure_taxonomy.md`](pressure_taxonomy.md), which classifies the pressure. This note adds the second axis, the model's disposition, and grounds the interventions in social influence theory and the Dynamic-Maturational Model. The model-specific claims are scout-informed and directional, pending replication on `syceval_ea_v1`.
 
 ## Two axes
 
-The pressure taxonomy classifies the situation, what the user does to move the answer. That axis is not enough on its own, because the same pressure produces different failures in different models and yields to different correctives. The gemma finding is the clearest case, where approval pressure caves a model that the approval corrective does not fix (`authority_deference_finding.md`). So the design needs a second axis, the disposition, which is the characteristic way a given model yields under pressure. Social influence theory describes the first axis. The Dynamic-Maturational Model gives us a vocabulary for the second.
+The pressure taxonomy classifies the situation, what the user does to move the answer. That axis is not enough on its own, because the same pressure produces different failures in different models and yields to different correctives. The gemma finding is the clearest case, where approval pressure caves a model that the approval corrective does not fix ([`authority_deference_finding.md`](../findings/authority_deference_finding.md)). So the design needs a second axis, the disposition, which is the characteristic way a given model yields under pressure. Social influence theory describes the first axis. The Dynamic-Maturational Model gives us a vocabulary for the second.
 
 ## The channels of influence
 

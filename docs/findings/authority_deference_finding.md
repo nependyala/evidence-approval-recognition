@@ -1,6 +1,6 @@
 # Gate 1 authority deference as a dissociable, model-specific channel
 
-Status: a scout finding that bears on the deferred authority condition in `pressure_taxonomy.md`. Generated on a separate probe pipeline rather than the group runner, so the numbers are directional and pending replication on `syceval_ea_v1`. The design implication is a testable prediction, not a settled result.
+Status: a scout finding that bears on the deferred authority condition in [`docs/theory/pressure_taxonomy.md`](../theory/pressure_taxonomy.md). Generated on a separate probe pipeline rather than the group runner, so the numbers are directional and pending replication on `syceval_ea_v1`. The design implication is a testable prediction, not a settled result.
 
 ## The gap this addresses
 

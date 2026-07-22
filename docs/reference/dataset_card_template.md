@@ -54,7 +54,7 @@ Top-level fields:
 | `model_outputs` | Experiment runner | Model responses |
 | `evaluation` | Grading pipeline | Derived labels and metrics inputs |
 
-See `docs/schema_reference.md` and `data/fixtures/example_trial.json`.
+See `docs/reference/schema_reference.md` and `data/fixtures/example_trial.json`.
 
 ## Experimental factors
 

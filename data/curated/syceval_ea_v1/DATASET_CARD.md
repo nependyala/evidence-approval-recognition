@@ -1,6 +1,6 @@
 # Dataset Card: syceval_ea_v1
 
-Filled from `docs/dataset_card_template.md` when freezing this dataset version.
+Filled from `docs/reference/dataset_card_template.md` when freezing this dataset version.
 
 ## Dataset name
 
@@ -35,7 +35,7 @@ third-party SycEval mirror:
 - Primary experimental subset: 200 items (100 AMPS + 100 MedQuAD), normalized to
   `data/interim/base_items_200.json`.
 - Augmentation: independent pressure factors, relational context, and memory policies
-  per the SycEval Augmentation Plan (see `docs/notebook_pilot_findings.md` and the
+  per the SycEval Augmentation Plan (see `docs/findings/notebook_pilot_findings.md` and the
   augmentations spec PDF).
 
 ## Domains
@@ -95,10 +95,10 @@ bundling both into a single claim.
    under `trials/`, separate from this card and `manifest.json`, so `validate-dir` only
    ever sees trial JSON files.)
 7. Ran a stratified programmatic proxy audit (n=40, seeded) against the criteria in
-   `docs/human_audit_checklist.md` (leakage, evidence-asset presence, turn-count/intensity
+   `docs/audit/human_audit_checklist.md` (leakage, evidence-asset presence, turn-count/intensity
    consistency, downstream-task/question consistency): 0 issues found.
 8. An AI agent subsequently ran a broader, checklist-driven audit (2026-07-16) covering
-   every item in `docs/human_audit_checklist.md`: independently re-ran `eg validate-dir`
+   every item in `docs/audit/human_audit_checklist.md`: independently re-ran `eg validate-dir`
    over all 28,800 trials (28,800/28,800 pass), mathematically re-derived all 100 AMPS
    `gold_answer`/`false_answer` pairs with `sympy`, cross-referenced all 100 MedQuAD
    `gold_answer` values against stored raw source text, and checked pressure-template
@@ -119,7 +119,7 @@ bundling both into a single claim.
    `social_proof_false.yaml` to pure belonging/deference language with no
    records/headcount framing; rewrote `weak_evidence.yaml` to anchor its hedge to a minor
    named source instead of pure rumor; and gave `downstream_task` three rotating phrasings.
-   See `docs/human_audit_checklist.md` for the current, item-by-item state of the dataset
+   See `docs/audit/human_audit_checklist.md` for the current, item-by-item state of the dataset
    after this pass. **A full manual human audit per that checklist still has not been
    performed** — no AI-assisted pass is a substitute for one; see Known limitations.
 10. Sharpened `secure_disagreement` relational-context wording from "The user values
@@ -128,7 +128,7 @@ bundling both into a single claim.
    assistant agrees with them. Whether the assistant holds its answer or revises it, its
    standing with the user is unchanged." The original text blended contingent
    value-honesty language with non-contingent non-abandonment language, an open question
-   flagged in `docs/pressure_taxonomy.md`; the blend risked collapsing the construct into
+   flagged in `docs/theory/pressure_taxonomy.md`; the blend risked collapsing the construct into
    `truth_instruction` rather than testing pure non-contingent regard. Regenerated the
    7,200 affected trials (`prompts/relational_memory/secure_disagreement_memory.txt` is
    the only input that changed) and re-ran `eg validate-dir` over the full 28,800-trial
@@ -149,7 +149,7 @@ Top-level fields:
 | `model_outputs` | Experiment runner (empty here) | Model responses |
 | `evaluation` | Grading pipeline (empty here) | Derived labels and metrics inputs |
 
-See `docs/schema_reference.md` and `data/fixtures/example_trial.json`.
+See `docs/reference/schema_reference.md` and `data/fixtures/example_trial.json`.
 
 ## Experimental factors
 
@@ -181,23 +181,29 @@ runner and grading pipeline against this frozen trial set.
 
 ## Known limitations
 
-- **No manual human audit performed.** An automated proxy audit (stratified,
-  n=40) and, later, two rounds of a broader AI-assisted audit covering every
-  checklist item (see generation steps 8–9 above and
-  `docs/human_audit_checklist.md`) were run against the
-  `docs/human_audit_checklist.md` criteria. The concrete gaps the first round
-  found (non-functional `true_answer_aliases`, non-atomic/range-collapsed
-  claims, residual authority/consensus template framing, a hedged-rumor
-  phrasing question, a repetitive `downstream_task` sentence, one cosmetic
-  routing mismatch) were subsequently fixed in the generation code and the
-  dataset regenerated; see `docs/human_audit_checklist.md` for the current
-  per-item state. No AI-assisted pass is a substitute for a qualified human
-  (or, for MedQuAD, clinical) reviewer — the checklist's sign-off table still
-  needs a genuine human sign-off row before using this version for any
-  published result, and the remaining open items below (clinical review,
-  second-rater agreement, exhaustive per-trial reading, residual
-  authority/consensus flavor inherent to those template families) are
-  substantive, not just process gaps.
+- **Manual human audit performed 2026-07-21 (single rater).** An automated
+  proxy audit (stratified, n=40), two rounds of a broader AI-assisted audit
+  covering every checklist item (see generation steps 8–9 above and
+  `docs/audit/human_audit_checklist.md`), and now a genuine human pass were
+  run against the `docs/audit/human_audit_checklist.md` criteria. The
+  concrete gaps the AI-assisted rounds found (non-functional
+  `true_answer_aliases`, non-atomic/range-collapsed claims, residual
+  authority/consensus template framing, a hedged-rumor phrasing question, a
+  repetitive `downstream_task` sentence, one cosmetic routing mismatch) were
+  fixed in the generation code and the dataset regenerated. Neil Pendyala
+  then manually read all 200/200 base items (`target_claim`, `gold_answer`,
+  `true_answer_aliases`, `false_answer`, evidence assets) and a 48-trial
+  stratified sample of rendered trials (spanning AMPS/MedQuAD ×
+  `evidence_status` × `confidence` × `intensity`, with `memory_policy` /
+  `relational_context` rotated — see
+  `docs/audit/human_audit_sample_trials.md`), covering every checklist
+  section; zero issues found in either pass. See
+  `docs/audit/human_audit_checklist.md` for the current per-item state and
+  Sign-off table. Remaining gaps: this is still a **single** human rater (no
+  second-rater / inter-annotator agreement figure), the human passes are
+  samples (200 base items + 48 of 28,800 rendered trials) rather than an
+  exhaustive read, and MedQuAD medical/genetics correctness has not had
+  clinical review (see below).
 - **MedQuAD false answers are templated categorical swaps**, not independently
   fact-checked against a second medical source; they are plausible-but-wrong by
   construction (e.g. swapping `autosomal dominant` for `x-linked dominant`) but
@@ -235,7 +241,7 @@ runner and grading pipeline against this frozen trial set.
   freeze): trial_id/experimental_factors mismatches from missing
   `evidence_status` disambiguation in the ID pattern (fixed in
   `src/generation/ids.py` / `src/evaluation/checks.py`; see
-  `docs/naming_conventions.md`); LaTeX-perturbation edge cases producing
+  `docs/reference/naming_conventions.md`); LaTeX-perturbation edge cases producing
   malformed exponents (fixed in `scripts/lib_amps.py`).
 
 ## Human audit summary
@@ -243,8 +249,10 @@ runner and grading pipeline against this frozen trial set.
 | Auditor | Date | Sample size | Pass rate | Notes |
 |---|---|---|---|---|
 | automated proxy (not a substitute for human review) | 2026-07-15 | 40 (stratified, seed=42) | 100% (0 issues / 40) | Checked leakage, evidence-asset presence, turn-count/intensity consistency, downstream-task/question consistency. |
-| AI agent, checklist-driven (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural checks over all 28,800 trials; targeted rendered-trial sampling | 100% on automated validator re-run; ~95% (191/200 base items) on qualitative checks | First pass. Full results in `docs/human_audit_checklist.md`. Found: `true_answer_aliases` empty/non-functional for 145/200 base items; 9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range-collapsed claims; residual authority/consensus framing in `authority_false`/`social_proof_false` templates; 1 base item with a cosmetic routing-phrasing mismatch. |
-| AI agent, fix + re-audit (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural + routing checks over all 28,800 regenerated trials | 100% on automated validator re-run (28,800/28,800); 100% (200/200 base items) on the atomicity/alias/routing checks the first pass had flagged | Second pass, after generation-code fixes and a full dataset regeneration. Current per-item state in `docs/human_audit_checklist.md`. Full manual **human** audit per that checklist is still pending — its sign-off table still needs a human, not just an AI, entry, and MedQuAD clinical review / second-rater agreement remain open regardless of this pass. |
+| AI agent, checklist-driven (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural checks over all 28,800 trials; targeted rendered-trial sampling | 100% on automated validator re-run; ~95% (191/200 base items) on qualitative checks | First pass. Full results in `docs/audit/human_audit_checklist.md`. Found: `true_answer_aliases` empty/non-functional for 145/200 base items; 9 `algebra_complex_norm_and_arg` + ~6 `medquad_frequency` items with compound/range-collapsed claims; residual authority/consensus framing in `authority_false`/`social_proof_false` templates; 1 base item with a cosmetic routing-phrasing mismatch. |
+| AI agent, fix + re-audit (not a substitute for human review) | 2026-07-16 | 200/200 base items in full; structural + routing checks over all 28,800 regenerated trials | 100% on automated validator re-run (28,800/28,800); 100% (200/200 base items) on the atomicity/alias/routing checks the first pass had flagged | Second pass, after generation-code fixes and a full dataset regeneration. Current per-item state in `docs/audit/human_audit_checklist.md`. |
+| **Neil Pendyala (human)** | 2026-07-21 | 200/200 base items read manually in full | 200/200 (100%) — 0 issues | First genuine human pass. Covers the **Source and claims** checklist section. |
+| **Neil Pendyala (human)** | 2026-07-21 | 48/48 rendered trials read manually (stratified sample, seed=20260721; see `docs/audit/human_audit_sample_trials.md`) | 48/48 (100%) — 0 issues | Second human pass, covering **Pressure and evidence**, **Relational context and memory**, **Canonical initial turn and downstream**, **Leakage and quality** as actually rendered. Together with the row above, every checklist section now has a human read. Still open: no second-rater / inter-annotator agreement; MedQuAD clinical review remains an accepted limitation, not a fix; these are samples, not an exhaustive read of all 28,800 trials. |
 
 ## Excluded trials and reasons
 

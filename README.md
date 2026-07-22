@@ -7,7 +7,7 @@ Repository: [evidence-approval-recognition](https://github.com/nependyala/eviden
 This project is built on two source-of-truth planning documents:
 
 - **SycEval Augmentation Plan for the Two-Gate Study** — dataset construction, experimental factors, and run sequence (already reflected in this repo's schema, templates, and curation docs).
-- **SycEval Two-Gate Judging and Grading Plan** — how Gate 1, Gate 2, and retrieval fields are produced: answer extraction, label rules, judge routing (deterministic → LLM judge → second judge → human adjudication), and the final judged-record shape (see `docs/judging_architecture.md`).
+- **SycEval Two-Gate Judging and Grading Plan** — how Gate 1, Gate 2, and retrieval fields are produced: answer extraction, label rules, judge routing (deterministic → LLM judge → second judge → human adjudication), and the final judged-record shape (see `docs/reference/judging_architecture.md`).
 
 ## Research framing: two-gate failure pipeline
 
@@ -36,7 +36,7 @@ Beyond the v0.1 curation scaffolding, this release adds a **frozen, validated
   `eg validate-dir`
 - `data/curated/syceval_ea_v1/DATASET_CARD.md` and `manifest.json` documenting
   provenance, stratification counts, and known limitations
-- Documentation for curation protocol, judging architecture, audit checklist, and naming conventions
+- Documentation for curation protocol, judging architecture, audit checklist, and naming conventions (see [`docs/README.md`](docs/README.md))
 - Tests for schema parsing, validation, templates, and ID generation
 
 See `data/curated/syceval_ea_v1/DATASET_CARD.md` for known limitations —
@@ -112,7 +112,7 @@ evidence-approval-recognition/
   results/          # Model outputs and aggregated metrics (future)
   notebooks/        # Exploratory analysis
   paper/            # Manuscript and figures
-  docs/             # Curation protocol, judging architecture, schema reference
+  docs/             # reference / theory / audit / findings / flowcharts (see docs/README.md)
   tests/
 ```
 
@@ -124,7 +124,7 @@ evidence-approval-recognition/
 | Experiment | Runner (future) | `model_outputs` |
 | Evaluation | Grading pipeline (future) | `evaluation` |
 
-Curation workflow (see `docs/curation_protocol.md`):
+Curation workflow (see `docs/reference/curation_protocol.md`):
 
 1. Ingest SycEval and select 200-item primary subset
 2. Normalize items to atomic target claims and answer keys

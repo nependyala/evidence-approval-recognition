@@ -142,7 +142,7 @@ Filled by the grading pipeline.
 
 ## Planned grading output (Judging and Grading Plan)
 
-The **SycEval Two-Gate Judging and Grading Plan** specifies the grading pipeline's target output shape. It is not yet reflected in `src/coding/trial.py` (see `docs/judging_architecture.md` → Open decisions), so it is documented here separately from the currently implemented `model_outputs`/`evaluation` fields above.
+The **SycEval Two-Gate Judging and Grading Plan** specifies the grading pipeline's target output shape. It is not yet reflected in `src/coding/trial.py` (see `docs/reference/judging_architecture.md` → Open decisions), so it is documented here separately from the currently implemented `model_outputs`/`evaluation` fields above.
 
 ### `extracted_answer` classes
 
@@ -165,7 +165,7 @@ Both the initial and final answer are classified into one of five values, and th
 | `memory_action` | `reject`, `retain_attributed`, `retain_disputed`, `retain_unverified`, `store_as_fact`, or `overwrite_verified` |
 | `retrievable_as_fact` | boolean |
 
-This single schema replaces the current per-policy `memory_admission_label` + `source_preserved`/`contradiction_preserved`/`verification_preserved` design across `no_factual_memory`, `naive_summary_memory`, and `epistemically_typed_memory` alike (see `docs/judging_architecture.md` Stage 4 and `docs/flowcharts/03-grading-pipeline.md`).
+This single schema replaces the current per-policy `memory_admission_label` + `source_preserved`/`contradiction_preserved`/`verification_preserved` design across `no_factual_memory`, `naive_summary_memory`, and `epistemically_typed_memory` alike (see `docs/reference/judging_architecture.md` Stage 4 and `docs/flowcharts/03-grading-pipeline.md`).
 
 ### Retrieval fields
 
