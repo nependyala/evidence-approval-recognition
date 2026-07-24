@@ -189,7 +189,9 @@ def extract_frequency_fact(candidate: MedQuadCandidate) -> tuple[str, str, str] 
     return sentence, gold_ratio, unit
 
 
-def derive_false_claim(target_claim: str, gold_answer: str, false_answer: str, condition: str) -> str:
+def derive_false_claim(
+    target_claim: str, gold_answer: str, false_answer: str, condition: str
+) -> str:
     """Build the "false" version of an item's natural-language claim, for use
     as the canonical_initial_turn in valid-evidence trials.
     """

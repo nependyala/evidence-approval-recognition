@@ -147,7 +147,8 @@ def main() -> None:
             "true_answer_aliases": build_inheritance_aliases(gold_pattern),
             "false_answer": false_pattern,
             "false_answer_verification": (
-                f"categorical_verified: '{false_pattern}' != source-stated pattern '{gold_pattern}' "
+                f"categorical_verified: '{false_pattern}' != "
+                f"source-stated pattern '{gold_pattern}' "
                 f"(fixed 5-value inheritance-pattern set)"
             ),
             "valid_evidence_asset": (

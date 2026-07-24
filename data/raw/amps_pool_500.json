@@ -1,0 +1,4062 @@
+[
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{\\frac{142 x}{7}-\\frac{106}{7}}}{9^{\\frac{85 x}{7}-\\frac{30}{7}}} = 9^{\\frac{166}{7}-\\frac{164 x}{7}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{242}{221}\\right\\}\\right\\}$",
+    "row_idx": 4310000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -\\frac{8}{343} (4 x+3)^3, q(x) = 2 x+\\frac{26}{7}$",
+    "answer": "$-\\frac{512 x^3}{343}-\\frac{1152 x^2}{343}-\\frac{178 x}{343}+\\frac{1058}{343}$",
+    "row_idx": 4250013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $5 \\sqrt{5} x^2+4 \\sqrt{5} x-5 \\sqrt{5}$",
+    "answer": "$5 \\sqrt{5} \\left(x+\\frac{2}{5}\\right)^2-5 \\sqrt{5}-\\frac{4}{\\sqrt{5}}$",
+    "row_idx": 4400022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-4$ and $5 x^3+\\frac{7 x}{2}+3$.",
+    "answer": "$\\frac{1}{2}$",
+    "row_idx": 4475006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{-15 x-23}}{9^{24 x-11}} = 81^{20-11 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{52}{17}\\right\\}\\right\\}$",
+    "row_idx": 4310029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-\\frac{x^2}{2}-\\frac{21 x}{2}-\\frac{23}{2}$",
+    "answer": "$\\frac{349}{8}-\\frac{1}{2} \\left(x+\\frac{21}{2}\\right)^2$",
+    "row_idx": 4400019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $20 e^{-1-\\frac{i \\pi }{30}}$.",
+    "answer": "Norm: $\\frac{20}{e}$\nArgument: $-\\frac{\\pi }{30}$",
+    "row_idx": 4055022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 20 x+7| =21$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{7}{5}\\right\\},\\left\\{x\\to \\frac{7}{10}\\right\\}\\right\\}$",
+    "row_idx": 3980021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $3 \\sqrt{2} x^2+\\sqrt{2} x+\\frac{9}{\\sqrt{2}}$",
+    "answer": "$3 \\sqrt{2} \\left(x+\\frac{1}{6}\\right)^2+\\frac{53}{6 \\sqrt{2}}$",
+    "row_idx": 4415011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-10 x^2-160 \\sqrt{2} x-1200$",
+    "answer": "$-10 \\left(-x-10 \\sqrt{2}\\right) \\left(-x-6 \\sqrt{2}\\right)$",
+    "row_idx": 4580027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\left(\\left(\\frac{17+8}{19}+25\\right)+24\\right)^2}{\\frac{1}{22} ((17-4)-13)+7}$.",
+    "answer": "$\\frac{913936}{2527}$",
+    "row_idx": 3710000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = \\frac{23 x^2}{\\sqrt{3}}-\\frac{17 x}{\\sqrt{3}}-\\frac{11}{\\sqrt{3}}$ and $q(x) = -\\frac{19 x^2}{\\sqrt{3}}-3 \\sqrt{3} x-\\frac{10}{\\sqrt{3}}$",
+    "answer": "$-\\frac{437 x^4}{3}+\\frac{116 x^3}{3}+44 x^2+\\frac{269 x}{3}+\\frac{110}{3}$",
+    "row_idx": 3650028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-x-16 y+5=0$, $22 x-3 y-7=0$",
+    "answer": "$x=\\frac{127}{355}$, $y=\\frac{103}{355}$",
+    "row_idx": 4640017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following cubic polynomial: $7 x^3-217 x+210$",
+    "answer": "$-7 (-x-6) (1-x) (5-x)$",
+    "row_idx": 4595027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{23 x+12}3^{17-7 x} = 9^{21-17 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{13}{50}\\right\\}\\right\\}$",
+    "row_idx": 4325000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{\\frac{19 x}{2}+23}6^{\\frac{41 x}{2}-\\frac{1}{2}} = 36^{-\\frac{17 x}{2}-17}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{113}{94}\\right\\}\\right\\}$",
+    "row_idx": 4310020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{5} \\left(-2 x^2+6 x+3\\right)$, $q(x) = \\sqrt{5} \\left(2 x^2-4 x+1\\right)$",
+    "answer": "$2 \\sqrt{5} x+4 \\sqrt{5}$",
+    "row_idx": 4265022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((12+1)-22)+\\left(14 \\frac{1}{1}-19\\right)^2$.",
+    "answer": "$16$",
+    "row_idx": 3710027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{9 e^{-\\frac{47 i \\pi }{180}}}{\\sqrt{2}}$.",
+    "answer": "Norm: $\\frac{9}{\\sqrt{2}}$\nArgument: $\\frac{133 \\pi }{180}$",
+    "row_idx": 4055009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{-\\frac{22 x}{5}-\\frac{26}{5}}}{4^{\\frac{109 x}{5}-\\frac{76}{5}}} = 16^{\\frac{122 x}{5}+\\frac{22}{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{125}\\right\\}\\right\\}$",
+    "row_idx": 4310026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(11-21) (((14+6)-24)-25)$.",
+    "answer": "$290$",
+    "row_idx": 3710013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -\\frac{5 x}{3}-\\frac{59}{3}\\right| =17$",
+    "answer": "$\\left\\{\\{x\\to -22\\},\\left\\{x\\to -\\frac{8}{5}\\right\\}\\right\\}$",
+    "row_idx": 4010014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{17-9 x}3^{-13 x-1} = 3^{12 x+12}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{17}\\right\\}\\right\\}$",
+    "row_idx": 4310002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-14 x+7 y-12=0$, $11 y-8 x=0$",
+    "answer": "$x=-\\frac{66}{49}$, $y=-\\frac{48}{49}$",
+    "row_idx": 4640016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 13-20 x| =-20$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3995025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\left(((5+12)-24)^2+1\\right)+\\frac{9-8}{4}$.",
+    "answer": "$\\frac{201}{4}$",
+    "row_idx": 3695002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{5^{14 x+25}}{5^{15 x-5}} = 5^{-25 x-2}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{4}{3}\\right\\}\\right\\}$",
+    "row_idx": 4295026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{64 x^2}{5}+\\frac{76 x}{5}+\\frac{82}{5}\\right| =\\frac{18}{5}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3980006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-9 x^2+279 x-1980$",
+    "answer": "$9 (11-x) (x-20)$",
+    "row_idx": 4565006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $6 x^2-x-4$",
+    "answer": "$6 \\left(x-\\frac{1}{12}\\right)^2-\\frac{97}{24}$",
+    "row_idx": 4430004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{13 x^2}{e}-\\frac{34 x}{e}-\\frac{16}{e}$ and $q(x) = \\frac{20 x^2}{e}-\\frac{33 x}{e}+\\frac{36}{e}$",
+    "answer": "$-\\frac{260 x^4}{e^2}-\\frac{251 x^3}{e^2}+\\frac{334 x^2}{e^2}-\\frac{696 x}{e^2}-\\frac{576}{e^2}$",
+    "row_idx": 3650006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{21 e^{-\\frac{i \\pi }{36}}}{\\pi }$.",
+    "answer": "Norm: $\\frac{21}{\\pi }$\nArgument: $\\frac{35 \\pi }{36}$",
+    "row_idx": 4055003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{\\frac{61 x}{3}+\\frac{71}{3}}}{9^{-25 x-23}} = 81^{\\frac{49}{3}-21 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{21}{131}\\right\\}\\right\\}$",
+    "row_idx": 4310012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following cubic polynomial: $6 x^3-48 x^2-798 x-2040$",
+    "answer": "$6 (x-17) (x+4) (x+5)$",
+    "row_idx": 4595023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{7 e^{\\frac{23 i \\pi }{60}}}{\\pi }$.",
+    "answer": "Norm: $\\frac{7}{\\pi }$\nArgument: $-\\frac{37 \\pi }{60}$",
+    "row_idx": 4040006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 4 x+1| =8$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{9}{4}\\right\\},\\left\\{x\\to \\frac{7}{4}\\right\\}\\right\\}$",
+    "row_idx": 4010023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -10 x^2+13 x+2$ and $q(x) = 13 x-11 x^2$",
+    "answer": "$110 x^4-273 x^3+147 x^2+26 x$",
+    "row_idx": 3635001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{1}{7} (19 x+62), q(x) = \\frac{1}{49} (43-56 x)^2$",
+    "answer": "$64 x^2-\\frac{669 x}{7}+\\frac{2283}{49}$",
+    "row_idx": 4235029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $7-9 i$.",
+    "answer": "Norm: $\\sqrt{130}$\nArgument: $-\\tan ^{-1}\\left(\\frac{9}{7}\\right)$",
+    "row_idx": 4040011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{7}{2} e^{-\\frac{5 i \\pi }{18}}$.",
+    "answer": "Norm: $\\frac{7}{2}$\nArgument: $-\\frac{5 \\pi }{18}$",
+    "row_idx": 4070016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -14 \\sqrt{3} x^2+5 \\sqrt{3} x-\\sqrt{3}\\right| =6 \\sqrt{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{28} \\left(5-\\sqrt{305}\\right)\\right\\},\\left\\{x\\to \\frac{1}{28} \\left(5+\\sqrt{305}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3995018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{8^{7 \\sqrt{3}-4 \\sqrt{3} x}}{8^{-\\frac{32 x}{\\sqrt{3}}-\\frac{43}{\\sqrt{3}}}} = 64^{\\frac{20 x}{\\sqrt{3}}-3 \\sqrt{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{41}{10}\\right\\}\\right\\}$",
+    "row_idx": 4295007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $11 x^2-154 x+143$",
+    "answer": "$11 (1-x) (13-x)$",
+    "row_idx": 4580026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $10 x^7+23 x^6+9 x^5-2 x^4-25 x^3-22 x^2-9 x-2$ and $-5 x^5+x^4-2 x^3+5 x^2+2 x+1$.",
+    "answer": "$5 x^5-x^4+2 x^3-5 x^2-2 x-1$",
+    "row_idx": 4475024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{8^{-4 x-1}}{8^{16 x+22}} = 8^{22-2 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{5}{2}\\right\\}\\right\\}$",
+    "row_idx": 4310005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$2 \\sqrt{3} x+\\frac{5 y}{\\sqrt{3}}+\\frac{31}{\\sqrt{3}}=0$, $-\\frac{28 x}{\\sqrt{3}}-13 \\sqrt{3} y+\\frac{8}{\\sqrt{3}}=0$",
+    "answer": "$x=-\\frac{1249}{94}$, $y=\\frac{458}{47}$",
+    "row_idx": 4640024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $2 x-6$ and $-2$.",
+    "answer": "$2$",
+    "row_idx": 4475022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\frac{21 x^2}{\\sqrt{2}}-\\frac{3 x}{\\sqrt{2}}-\\frac{11}{\\sqrt{2}}$",
+    "answer": "$\\frac{21 \\left(x-\\frac{1}{14}\\right)^2}{\\sqrt{2}}-\\frac{311}{28 \\sqrt{2}}$",
+    "row_idx": 4400012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -4 x^2-\\frac{5 x}{2}+14$ and $q(x) = 4 x^2+\\frac{27 x}{2}+\\frac{29}{2}$",
+    "answer": "$-16 x^4-64 x^3-\\frac{143 x^2}{4}+\\frac{611 x}{4}+203$",
+    "row_idx": 3635002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-\\frac{27 x^2}{4}-\\frac{3 x}{2}-\\frac{3}{2}$",
+    "answer": "$-\\frac{27}{4} \\left(x+\\frac{1}{9}\\right)^2-\\frac{17}{12}$",
+    "row_idx": 4415018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $10 x^2-140 \\sqrt{2} x+855$",
+    "answer": "$10 \\left(x-\\frac{19}{\\sqrt{2}}\\right) \\left(x-\\frac{9}{\\sqrt{2}}\\right)$",
+    "row_idx": 4565020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -4 x^2+6 x+9$ and $q(x) = 6 x^2-14 x-6$",
+    "answer": "$-24 x^4+92 x^3-6 x^2-162 x-54$",
+    "row_idx": 3650005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-\\frac{3 x^2}{2}+\\frac{x}{2}-1$ and $\\frac{9}{2}-4 x$.",
+    "answer": "$\\frac{1}{2}$",
+    "row_idx": 4475008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $9^{2-6 x}9^{24 x+7} = 81^{13-14 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{17}{46}\\right\\}\\right\\}$",
+    "row_idx": 4310025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $11 x^2-\\frac{363 x}{\\sqrt{2}}+770$",
+    "answer": "$-11 \\left(14 \\sqrt{2}-x\\right) \\left(x-\\frac{5}{\\sqrt{2}}\\right)$",
+    "row_idx": 4595013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 10 x^2-6 x-12$ and $q(x) = x^2-6 x-6$",
+    "answer": "$10 x^4-66 x^3-36 x^2+108 x+72$",
+    "row_idx": 3620029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 2 x^2-4 x-13$, $q(x) = -x^2+3 x+2$",
+    "answer": "$x^2-x-11$",
+    "row_idx": 4280028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = (x+8)^4, q(x) = (x-5)^2$",
+    "answer": "$x^4+32 x^3+385 x^2+2038 x+4121$",
+    "row_idx": 4265004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 6 x^2-12 x-7$, $q(x) = 7 x^2+10$",
+    "answer": "$13 x^2-12 x+3$",
+    "row_idx": 4250000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -7 x^2+23 x-8\\right| =12$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{14} \\left(23-\\sqrt{641}\\right)\\right\\},\\left\\{x\\to \\frac{1}{14} \\left(23+\\sqrt{641}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $4^{9 x-23}4^{-10 x-10} = 16^{-6 x-4}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{25}{11}\\right\\}\\right\\}$",
+    "row_idx": 4295028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-x^5+3 x^4-3 x^3+15 x^2-20 x+6$ and $x^3+x^2+4 x-2$.",
+    "answer": "$x^3+x^2+4 x-2$",
+    "row_idx": 4490020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 14-20 x| =-19$",
+    "answer": "$\\{\\}$",
+    "row_idx": 4010004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $3 x^2-57 x+180$",
+    "answer": "$-3 (15-x) (x-4)$",
+    "row_idx": 4550028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\left(((14+17)+2)^2+6\\right)+5}{(2+5)-11}$.",
+    "answer": "$-275$",
+    "row_idx": 3680029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-12 x^2+\\frac{48 x}{7}+\\frac{132}{7}$",
+    "answer": "$12 \\left(\\frac{11}{7}-x\\right) (x+1)$",
+    "row_idx": 4550019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{10 \\sqrt{2} x-10 \\sqrt{2}}}{4^{3 \\sqrt{2} x-17 \\sqrt{2}}} = 16^{13 \\sqrt{2} x+4 \\sqrt{2}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{1}{19}\\right\\}\\right\\}$",
+    "row_idx": 4295016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{123 x}{5}-\\frac{9}{5}\\right| =\\frac{61}{5}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{52}{123}\\right\\},\\left\\{x\\to \\frac{70}{123}\\right\\}\\right\\}$",
+    "row_idx": 3980020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{15 \\sqrt{2} x-11 \\sqrt{2}}}{6^{3 \\sqrt{2} x-8 \\sqrt{2}}} = 36^{11 \\sqrt{2} x-9 \\sqrt{2}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{3}{2}\\right\\}\\right\\}$",
+    "row_idx": 4310004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{23}{7} e^{\\frac{19 i \\pi }{180}}$.",
+    "answer": "Norm: $\\frac{23}{7}$\nArgument: $-\\frac{161 \\pi }{180}$",
+    "row_idx": 4040016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-6 x^2+18 x+2040$",
+    "answer": "$6 (-x-17) (x-20)$",
+    "row_idx": 4580012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-6 \\sqrt{3} x^2+9 \\sqrt{3} x+4 \\sqrt{3}$",
+    "answer": "$\\frac{59 \\sqrt{3}}{8}-6 \\sqrt{3} \\left(x-\\frac{3}{4}\\right)^2$",
+    "row_idx": 4400024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\frac{8 x^2}{\\sqrt{3}}-4 \\sqrt{3} x+\\frac{4}{\\sqrt{3}}$",
+    "answer": "$\\frac{8 \\left(x-\\frac{3}{4}\\right)^2}{\\sqrt{3}}-\\frac{3 \\sqrt{3}}{2}+\\frac{4}{\\sqrt{3}}$",
+    "row_idx": 4415023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 8 x^2-4 x-2$, $q(x) = 14 x^2-5 x-6$",
+    "answer": "$22 x^2-9 x-8$",
+    "row_idx": 4280015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $10 x^2-\\frac{1430 x}{7}+\\frac{6060}{7}$",
+    "answer": "$-10 (6-x) \\left(x-\\frac{101}{7}\\right)$",
+    "row_idx": 4565026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((16-13)-20)-\\left((10+19)^2+6\\right)$.",
+    "answer": "$-864$",
+    "row_idx": 3710019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -8 x^2+15 x+6$, $q(x) = x^2-4 x-6$",
+    "answer": "$11 x-7 x^2$",
+    "row_idx": 4250019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\left((((15+1)-18)-14)^2-25\\right)-(((11-19)-1)-25)$.",
+    "answer": "$265$",
+    "row_idx": 3710025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 3 \\sqrt{2} x^2-7 \\sqrt{2} x+2 \\sqrt{2}$ and $q(x) = 6 \\sqrt{2} x^2-5 \\sqrt{2} x+5 \\sqrt{2}$",
+    "answer": "$36 x^4-114 x^3+124 x^2-90 x+20$",
+    "row_idx": 3620024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $x^2+18 x+77$",
+    "answer": "$-((-x-7) (x+11))$",
+    "row_idx": 4565021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 5 x+19| =10$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{29}{5}\\right\\},\\left\\{x\\to -\\frac{9}{5}\\right\\}\\right\\}$",
+    "row_idx": 4010013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-12 x^2+264 x-1344$",
+    "answer": "$-12 (x-14) (x-8)$",
+    "row_idx": 4550006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $7 x^2+35 \\sqrt{3} x-\\frac{3472}{3}$",
+    "answer": "$7 \\left(x-\\frac{16}{\\sqrt{3}}\\right) \\left(x+\\frac{31}{\\sqrt{3}}\\right)$",
+    "row_idx": 4550022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following cubic polynomial: $-4 x^3+80 x^2+148 x-4256$",
+    "answer": "$4 (-x-7) (x-19) (x-8)$",
+    "row_idx": 4565022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 13 x^2 \\log (2)+5 x \\log (2)+8 \\log (2)$ and $q(x) = 16 x^2 \\log (2)-7 x \\log (2)+16 \\log (2)$",
+    "answer": "$208 x^4 \\log ^2(2)-11 x^3 \\log ^2(2)+301 x^2 \\log ^2(2)+24 x \\log ^2(2)+128 \\log ^2(2)$",
+    "row_idx": 3620013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 400 (x+1)^4, q(x) = 5 \\sqrt{5} (2 x-1)^3$",
+    "answer": "$400 x^4+40 \\sqrt{5} x^3+1600 x^3-60 \\sqrt{5} x^2+2400 x^2+30 \\sqrt{5} x+1600 x-5 \\sqrt{5}+400$",
+    "row_idx": 4235024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -14 x-21| =16$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{37}{14}\\right\\},\\left\\{x\\to -\\frac{5}{14}\\right\\}\\right\\}$",
+    "row_idx": 3980014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 9 \\sqrt{2}-5 \\sqrt{2} x\\right| =3 \\sqrt{2}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{6}{5}\\right\\},\\left\\{x\\to \\frac{12}{5}\\right\\}\\right\\}$",
+    "row_idx": 4010012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-13 x^2-6 x+12$",
+    "answer": "$\\frac{165}{13}-13 \\left(x+\\frac{3}{13}\\right)^2$",
+    "row_idx": 4430008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $12 x^2+96 x+144$",
+    "answer": "$-12 (-x-6) (x+2)$",
+    "row_idx": 4565001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{39 x^2}{5}-\\frac{69 x}{5}-\\frac{36}{5}$ and $q(x) = \\frac{63 x^2}{5}-11 x-11$",
+    "answer": "$-\\frac{2457 x^4}{25}-\\frac{2202 x^3}{25}+\\frac{3672 x^2}{25}+231 x+\\frac{396}{5}$",
+    "row_idx": 3635018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $9 x^2-7 x-5$",
+    "answer": "$9 \\left(x-\\frac{7}{18}\\right)^2-\\frac{229}{36}$",
+    "row_idx": 4430020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{6-12 x}}{4^{4 x-1}} = 16^{-4 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{7}{8}\\right\\}\\right\\}$",
+    "row_idx": 4325014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\frac{3+2}{13}}{(20-12)+9}$.",
+    "answer": "$\\frac{5}{221}$",
+    "row_idx": 3695018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-x^2+12 x+4$",
+    "answer": "$40-(x-6)^2$",
+    "row_idx": 4415000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $5^{-14 x-\\frac{67}{4}}5^{\\frac{85}{4}-\\frac{79 x}{4}} = 5^{-\\frac{43 x}{2}-7}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{46}{49}\\right\\}\\right\\}$",
+    "row_idx": 4325018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $8 x^2+\\frac{1376 x}{7}+\\frac{45720}{49}$",
+    "answer": "$8 \\left(-x-\\frac{127}{7}\\right) \\left(-x-\\frac{45}{7}\\right)$",
+    "row_idx": 4550011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{7 \\sqrt{5} x-10 \\sqrt{5}}}{4^{-11 \\sqrt{5} x-\\sqrt{5}}} = 4^{-8 \\sqrt{5} x-5 \\sqrt{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{13}\\right\\}\\right\\}$",
+    "row_idx": 4295002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$\\frac{13 x}{2}-\\frac{17 y}{2}+16 z-\\frac{13}{2}=0$, $-\\frac{29 x}{2}-6 y+10 z+\\frac{39}{2}=0$, $-10 x-\\frac{41 y}{2}-18 z-\\frac{39}{2}=0$",
+    "answer": "$x=\\frac{23257}{17798}$, $y=-\\frac{17953}{17798}$, $z=-\\frac{47021}{71192}$",
+    "row_idx": 4655019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -15 x^2+10 x-11$ and $q(x) = -8 x^2+11 x+11$",
+    "answer": "$120 x^4-245 x^3+33 x^2-11 x-121$",
+    "row_idx": 3650011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 13 x^2-3 x-6\\right| =12$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{3}{26} \\left(1-\\sqrt{105}\\right)\\right\\},\\left\\{x\\to \\frac{3}{26} \\left(1+\\sqrt{105}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3995015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 8-25 x| =24$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{16}{25}\\right\\},\\left\\{x\\to \\frac{32}{25}\\right\\}\\right\\}$",
+    "row_idx": 3995000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-13 x^2-2 x+5$",
+    "answer": "$\\frac{66}{13}-13 \\left(x+\\frac{1}{13}\\right)^2$",
+    "row_idx": 4400026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $7^{-17 x-6}7^{22 x-16} = 7^{4 x+17}$",
+    "answer": "$\\{\\{x\\to 39\\}\\}$",
+    "row_idx": 4310001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{15 \\sqrt{2}-13 \\sqrt{2} x}6^{-12 \\sqrt{2} x-7 \\sqrt{2}} = 6^{8 \\sqrt{2}-15 \\sqrt{2} x}$",
+    "answer": "$\\{\\{x\\to 0\\}\\}$",
+    "row_idx": 4295017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 2 \\sqrt{2} x+17 \\sqrt{2}\\right| =0$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{17}{2}\\right\\}\\right\\}$",
+    "row_idx": 3995008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((23+11)-23)-9)+(((24-16)-12)-17)$.",
+    "answer": "$-19$",
+    "row_idx": 3680025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $1$ and $1$.",
+    "answer": "$1$",
+    "row_idx": 4475017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{-21 x-4}3^{16 x+24} = 9^{21 x-22}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{64}{47}\\right\\}\\right\\}$",
+    "row_idx": 4325011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(12+1)+(19+10)$.",
+    "answer": "$42$",
+    "row_idx": 3710022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-\\frac{10 x}{\\sqrt{3}}+2 \\sqrt{3} y+\\frac{19 z}{\\sqrt{3}}+\\frac{19}{\\sqrt{3}}=0$, $2 \\sqrt{3} x-\\frac{26 y}{\\sqrt{3}}+8 \\sqrt{3} z-\\frac{34}{\\sqrt{3}}=0$, $-5 \\sqrt{3} x+\\frac{26 y}{\\sqrt{3}}-5 \\sqrt{3} z-\\frac{31}{\\sqrt{3}}=0$",
+    "answer": "$x=-\\frac{22040}{1863}$, $y=-\\frac{5149}{621}$, $z=-\\frac{8585}{1863}$",
+    "row_idx": 4610017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{3^{9 x+22}}{3^{8 x-10}} = 3^{19-5 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{13}{6}\\right\\}\\right\\}$",
+    "row_idx": 4295025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-11 x+22 y+20 z-5=0$, $9 x+20 y+15 z-7=0$, $-21 x-11 y-23 z-8=0$",
+    "answer": "$x=-\\frac{33}{7289}$, $y=\\frac{6931}{7289}$, $z=-\\frac{5820}{7289}$",
+    "row_idx": 4655026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 12 x^2+12 x+1$, $q(x) = 8 x^2+2 x+13$",
+    "answer": "$20 x^2+14 x+14$",
+    "row_idx": 4235018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{-15 x-3}}{6^{-2 x-18}} = 6^{-10 x-18}$",
+    "answer": "$\\{\\{x\\to 11\\}\\}$",
+    "row_idx": 4325006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-20 x^4-25 x^3+21 x^2+20 x-4$ and $4-5 x^2$.",
+    "answer": "$5 x^2-4$",
+    "row_idx": 4475003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\frac{20 x^2}{\\sqrt{3}}+7 \\sqrt{3} x$",
+    "answer": "$\\frac{20 \\left(x+\\frac{21}{40}\\right)^2}{\\sqrt{3}}-\\frac{147 \\sqrt{3}}{80}$",
+    "row_idx": 4415008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -12 x^2+10 x-15\\right| =-3$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3980011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -8 \\sqrt{3} x^2-4 \\sqrt{3} x+3 \\sqrt{3}$ and $q(x) = -5 \\sqrt{3} x^2-5 \\sqrt{3} x+5 \\sqrt{3}$",
+    "answer": "$120 x^4+180 x^3-105 x^2-105 x+45$",
+    "row_idx": 3635025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$15 x-5 y+9 z+8=0$, $-14 x+6 y+12 z-18=0$, $17 x+5 z-6=0$",
+    "answer": "$x=\\frac{237}{919}$, $y=\\frac{2716}{919}$, $z=\\frac{297}{919}$",
+    "row_idx": 4610026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\frac{1}{15} ((14+3)+4)+7}{12-1}$.",
+    "answer": "$\\frac{42}{55}$",
+    "row_idx": 3695001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $\\frac{33 x^2}{25}+\\frac{3 x}{5}-\\frac{69}{25}$ and $\\frac{3}{5}$.",
+    "answer": "$\\frac{3}{25}$",
+    "row_idx": 4475009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{23}{5}-\\frac{12 i}{5}$.",
+    "answer": "Norm: $\\frac{\\sqrt{673}}{5}$\nArgument: $-\\tan ^{-1}\\left(\\frac{12}{23}\\right)$",
+    "row_idx": 4070015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following cubic polynomial: $-7 x^3+371 x^2-6552 x+38556$",
+    "answer": "$7 (18-x) (x-18) (x-17)$",
+    "row_idx": 4565024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{150 x}{7}+\\frac{96}{7}\\right| =\\frac{141}{7}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{79}{50}\\right\\},\\left\\{x\\to \\frac{3}{10}\\right\\}\\right\\}$",
+    "row_idx": 3980025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 12 x^2+x-20\\right| =-6$",
+    "answer": "$\\{\\}$",
+    "row_idx": 4010001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-7 \\left(-\\cos \\left(\\frac{4 \\pi }{45}\\right)+i \\sin \\left(\\frac{4 \\pi }{45}\\right)\\right)$.",
+    "answer": "Norm: $7 \\sqrt{\\sin ^2\\left(\\frac{4 \\pi }{45}\\right)+\\cos ^2\\left(\\frac{4 \\pi }{45}\\right)}$\nArgument: $-\\frac{4 \\pi }{45}$",
+    "row_idx": 4055012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-2 x^2-72 x-646$",
+    "answer": "$2 (-x-17) (x+19)$",
+    "row_idx": 4580018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -14 x^2-3 x-12$ and $q(x) = 11 x^2+12 x-9$",
+    "answer": "$-154 x^4-201 x^3-42 x^2-117 x+108$",
+    "row_idx": 3620004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $2 x^2+x-3$",
+    "answer": "$2 \\left(x+\\frac{1}{4}\\right)^2-\\frac{25}{8}$",
+    "row_idx": 4430006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $7 x^2+84 \\sqrt{3} x+735$",
+    "answer": "$7 \\left(x+5 \\sqrt{3}\\right) \\left(x+7 \\sqrt{3}\\right)$",
+    "row_idx": 4565002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-4 x^2-x+14$",
+    "answer": "$\\frac{225}{16}-4 \\left(x+\\frac{1}{8}\\right)^2$",
+    "row_idx": 4400021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-24 x-13 y+12=0$, $8-20 x=0$",
+    "answer": "$x=\\frac{2}{5}$, $y=\\frac{12}{65}$",
+    "row_idx": 4625008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-13 x^2+6 x+9$",
+    "answer": "$\\frac{126}{13}-13 \\left(x-\\frac{3}{13}\\right)^2$",
+    "row_idx": 4415006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-5 x^2+4 x-3$ and $4 x^5-5 x^4-x^3+4 x^2+5 x+4$.",
+    "answer": "$1$",
+    "row_idx": 4445012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 10 \\sqrt{3}-11 \\sqrt{3} x\\right| =\\frac{26}{\\sqrt{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{4}{33}\\right\\},\\left\\{x\\to \\frac{56}{33}\\right\\}\\right\\}$",
+    "row_idx": 3980001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $3 x$ and $2-3 x$.",
+    "answer": "$1$",
+    "row_idx": 4490018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{-13 \\sqrt{2} x-3 \\sqrt{2}}}{9^{\\frac{25 x}{\\sqrt{2}}+10 \\sqrt{2}}} = 81^{\\frac{21 x}{\\sqrt{2}}+10 \\sqrt{2}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{22}{31}\\right\\}\\right\\}$",
+    "row_idx": 4310024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $9 x^5+12 x^4+16 x^3-x^2-12 x-4$ and $-3 x^4-2 x^3-4 x^2+3 x+2$.",
+    "answer": "$3 x^4+2 x^3+4 x^2-3 x-2$",
+    "row_idx": 4460002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\sqrt{5} x^2+6 \\sqrt{5} x+\\sqrt{5}$",
+    "answer": "$\\sqrt{5} (x+3)^2-8 \\sqrt{5}$",
+    "row_idx": 4400016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 8 \\sqrt{3} x^2+\\frac{16 x}{\\sqrt{3}}+\\frac{20}{\\sqrt{3}}$ and $q(x) = \\frac{26 x^2}{\\sqrt{3}}+\\frac{11 x}{\\sqrt{3}}-8 \\sqrt{3}$",
+    "answer": "$208 x^4+\\frac{680 x^3}{3}+40 x^2-\\frac{164 x}{3}-160$",
+    "row_idx": 3620007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 13 \\sqrt{2} x-14 \\sqrt{2}\\right| =-10 \\sqrt{2}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3995016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{2^{2-23 x}}{32768} = 4^{5 x-7}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{33}\\right\\}\\right\\}$",
+    "row_idx": 4295013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$19 x-15 y-6=0$, $-16 x-21 y+13=0$",
+    "answer": "$x=\\frac{107}{213}$, $y=\\frac{151}{639}$",
+    "row_idx": 4625018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = \\frac{14 x^2}{\\sqrt{3}}-\\frac{5 x}{\\sqrt{3}}-\\frac{8}{\\sqrt{3}}$ and $q(x) = -\\frac{22 x^2}{\\sqrt{3}}-\\sqrt{3} x+7 \\sqrt{3}$",
+    "answer": "$-\\frac{308 x^4}{3}+\\frac{68 x^3}{3}+\\frac{485 x^2}{3}-27 x-56$",
+    "row_idx": 3635003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{3} (x-4), q(x) = 3 (5 x+2)^2$",
+    "answer": "$75 x^2+\\sqrt{3} x+60 x-4 \\sqrt{3}+12$",
+    "row_idx": 4280004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{-\\frac{71 x}{3}-22}3^{\\frac{58}{3}-\\frac{35 x}{3}} = 9^{\\frac{28 x}{3}-\\frac{53}{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{49}{81}\\right\\}\\right\\}$",
+    "row_idx": 4295009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{6 x-4}}{4^{-10 x-12}} = 4^{7 x-19}$",
+    "answer": "$\\{\\{x\\to -3\\}\\}$",
+    "row_idx": 4325013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-11 \\sqrt{3} x-9 \\sqrt{3} y-9 \\sqrt{3}=0$, $-8 \\sqrt{3} x+5 \\sqrt{3} y-9 \\sqrt{3}=0$",
+    "answer": "$x=-\\frac{126}{127}$, $y=\\frac{27}{127}$",
+    "row_idx": 4610022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $4 x^2-5 x+8$",
+    "answer": "$4 \\left(x-\\frac{5}{8}\\right)^2+\\frac{103}{16}$",
+    "row_idx": 4430016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-x^2-12 x+12$",
+    "answer": "$48-(x+6)^2$",
+    "row_idx": 4415020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $11 x^2-3 x+11$",
+    "answer": "$11 \\left(x-\\frac{3}{22}\\right)^2+\\frac{475}{44}$",
+    "row_idx": 4430013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{12 x+8}}{205891132094649} = 9^{11 x-12}$",
+    "answer": "$\\{\\{x\\to -5\\}\\}$",
+    "row_idx": 4295010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{8^{\\frac{62 x}{3}-\\frac{49}{3}}}{8^{9 x-\\frac{61}{3}}} = 64^{14 x+19}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{102}{49}\\right\\}\\right\\}$",
+    "row_idx": 4295023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{2 x^2}{7}+\\frac{79 x}{7}-14$ and $q(x) = 3 x^2+\\frac{75 x}{7}+\\frac{38}{7}$",
+    "answer": "$-\\frac{6 x^4}{7}+\\frac{1509 x^3}{49}+\\frac{3791 x^2}{49}-\\frac{4348 x}{49}-76$",
+    "row_idx": 3650023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{27 \\left(\\cos \\left(\\frac{\\pi }{18}\\right)-i \\sin \\left(\\frac{\\pi }{18}\\right)\\right)}{\\pi }$.",
+    "answer": "Norm: $\\frac{27 \\sqrt{\\sin ^2\\left(\\frac{\\pi }{18}\\right)+\\cos ^2\\left(\\frac{\\pi }{18}\\right)}}{\\pi }$\nArgument: $-\\frac{\\pi }{18}$",
+    "row_idx": 4055008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-2 e^{-\\frac{17 i \\pi }{60}} \\pi$.",
+    "answer": "Norm: $2 \\pi$\nArgument: $\\frac{43 \\pi }{60}$",
+    "row_idx": 4070020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(11+9)-((14+10)-5)$.",
+    "answer": "$1$",
+    "row_idx": 3680014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{16 x^2}{\\sqrt{3}}+\\frac{25 x}{\\sqrt{3}}-\\frac{1}{\\sqrt{3}}$ and $q(x) = 7 \\sqrt{3} x^2-\\frac{2 x}{\\sqrt{3}}+\\frac{1}{\\sqrt{3}}$",
+    "answer": "$-112 x^4+\\frac{557 x^3}{3}-29 x^2+9 x-\\frac{1}{3}$",
+    "row_idx": 3650015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{4 \\sqrt{5} x+8 \\sqrt{5}}2^{-8 \\sqrt{5} x-7 \\sqrt{5}} = 2^{-\\sqrt{5} x-6 \\sqrt{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{7}{3}\\right\\}\\right\\}$",
+    "row_idx": 4295022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{2 x-12}}{6^{8-4 x}} = 6^{-24 x-13}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{7}{30}\\right\\}\\right\\}$",
+    "row_idx": 4310019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((5-10)-22)-16)+\\left(\\frac{1}{11} (12-14)^2+8\\right)$.",
+    "answer": "$-\\frac{381}{11}$",
+    "row_idx": 3680012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 4 x-13| =19$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{3}{2}\\right\\},\\{x\\to 8\\}\\right\\}$",
+    "row_idx": 3980016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-\\frac{56 x}{5}+13 y-5 z-\\frac{92}{5}=0$, $\\frac{3 x}{5}+\\frac{97 y}{5}+\\frac{98 z}{5}+16=0$, $-\\frac{89 x}{5}-\\frac{72 y}{5}-\\frac{123 z}{5}-\\frac{24}{5}=0$",
+    "answer": "$x=\\frac{9282}{4367}$, $y=\\frac{45982}{21835}$, $z=-\\frac{64758}{21835}$",
+    "row_idx": 4610007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = \\frac{17 x^2}{e}-\\frac{29 x}{e}+\\frac{4}{e}$ and $q(x) = -\\frac{5 x^2}{e}+\\frac{14 x}{e}-\\frac{29}{e}$",
+    "answer": "$-\\frac{85 x^4}{e^2}+\\frac{383 x^3}{e^2}-\\frac{919 x^2}{e^2}+\\frac{897 x}{e^2}-\\frac{116}{e^2}$",
+    "row_idx": 3635017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -3 x^2+4 x+22\\right| =24$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{3} \\left(2-\\sqrt{142}\\right)\\right\\},\\left\\{x\\to \\frac{1}{3} \\left(2+\\sqrt{142}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3995002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$\\frac{65 x}{4}-21 y+\\frac{55 z}{4}+\\frac{5}{2}=0$, $-\\frac{81 x}{4}-\\frac{15 y}{4}+\\frac{33 z}{4}-\\frac{9}{2}=0$, $\\frac{47 x}{4}-\\frac{25 y}{2}+6 z+\\frac{23}{4}=0$",
+    "answer": "$x=\\frac{6223}{17265}$, $y=\\frac{6560}{3453}$, $z=\\frac{39601}{17265}$",
+    "row_idx": 4610006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -(2 x-1)^3, q(x) = x+3$",
+    "answer": "$-8 x^3+12 x^2-5 x+4$",
+    "row_idx": 4265013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $9^{11 \\sqrt{3} x+\\frac{23}{\\sqrt{3}}}9^{\\frac{14 x}{\\sqrt{3}}-\\frac{38}{\\sqrt{3}}} = 81^{12 \\sqrt{3}-\\frac{31 x}{\\sqrt{3}}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{87}{109}\\right\\}\\right\\}$",
+    "row_idx": 4310017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -4 \\sqrt{5} x^2-3 \\sqrt{5} x-2 \\sqrt{5}$ and $q(x) = \\sqrt{5} x^2+\\sqrt{5}$",
+    "answer": "$-20 x^4-15 x^3-30 x^2-15 x-10$",
+    "row_idx": 3650012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -6 \\sqrt{2} x^2+8 \\sqrt{2} x-6 \\sqrt{2}$ and $q(x) = -7 \\sqrt{2} x^2+4 \\sqrt{2} x+2 \\sqrt{2}$",
+    "answer": "$84 x^4-160 x^3+124 x^2-16 x-24$",
+    "row_idx": 3620008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -x^2-5 x+4\\right| =0$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{2} \\left(-5-\\sqrt{41}\\right)\\right\\},\\left\\{x\\to \\frac{1}{2} \\left(-5+\\sqrt{41}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3995009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $4 x+2$ and $1$.",
+    "answer": "$1$",
+    "row_idx": 4445007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{2} (x-2), q(x) = 2 x^2$",
+    "answer": "$2 x^2+\\sqrt{2} x-2 \\sqrt{2}$",
+    "row_idx": 4280012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{2} \\left(2 x^2+2 x+9\\right)$, $q(x) = -\\sqrt{2} \\left(x^2+10 x-10\\right)$",
+    "answer": "$\\sqrt{2} x^2-8 \\sqrt{2} x+19 \\sqrt{2}$",
+    "row_idx": 4235006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $5^{22 x+4}5^{24 x+11} = \\frac{1}{298023223876953125}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{20}{23}\\right\\}\\right\\}$",
+    "row_idx": 4310013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-11 \\sqrt{5} y+9 \\sqrt{5} z+6 \\sqrt{5}=0$, $9 \\sqrt{5} x+8 \\sqrt{5} y-2 \\sqrt{5} z-3 \\sqrt{5}=0$, $2 \\sqrt{5} x+8 \\sqrt{5} y-7 \\sqrt{5} z+2 \\sqrt{5}=0$",
+    "answer": "$x=-\\frac{65}{29}$, $y=\\frac{114}{29}$, $z=\\frac{120}{29}$",
+    "row_idx": 4610001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following cubic polynomial: $-5 x^3+55 x^2+180 x-1980$",
+    "answer": "$-5 (-x-6) (6-x) (x-11)$",
+    "row_idx": 4550004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-x^2-7 x$",
+    "answer": "$\\frac{49}{4}-\\left(x+\\frac{7}{2}\\right)^2$",
+    "row_idx": 4400025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{3}{7} \\left(9 x^2+17 x-6\\right)$, $q(x) = -\\frac{20 x^2}{7}-5 x-\\frac{39}{7}$",
+    "answer": "$x^2+\\frac{16 x}{7}-\\frac{57}{7}$",
+    "row_idx": 4265005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -x^2+10 x+12$ and $q(x) = -7 x^2-7 x-4$",
+    "answer": "$7 x^4-63 x^3-150 x^2-124 x-48$",
+    "row_idx": 3635024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 13 x^2+18 x-9\\right| =21$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{13} \\left(-9-\\sqrt{471}\\right)\\right\\},\\left\\{x\\to \\frac{1}{13} \\left(-9+\\sqrt{471}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3980026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((((10-16)-13)-14)-10) ((4-18)-20)$.",
+    "answer": "$1462$",
+    "row_idx": 3695006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{68 x}{7}+24\\right| =\\frac{8}{7}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{44}{17}\\right\\},\\left\\{x\\to -\\frac{40}{17}\\right\\}\\right\\}$",
+    "row_idx": 3980018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-4 \\sqrt{2} \\left(-\\cos \\left(\\frac{37 \\pi }{180}\\right)-i \\sin \\left(\\frac{37 \\pi }{180}\\right)\\right)$.",
+    "answer": "Norm: $4 \\sqrt{2 \\left(\\sin ^2\\left(\\frac{37 \\pi }{180}\\right)+\\cos ^2\\left(\\frac{37 \\pi }{180}\\right)\\right)}$\nArgument: $\\frac{37 \\pi }{180}$",
+    "row_idx": 4040018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(4+4)+\\left((14+16)^2+19\\right)$.",
+    "answer": "$927$",
+    "row_idx": 3710026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{\\frac{63 x}{4}+\\frac{1}{2}}2^{\\frac{13 x}{2}+\\frac{75}{4}} = 2^{\\frac{23}{2}-\\frac{37 x}{4}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{31}{126}\\right\\}\\right\\}$",
+    "row_idx": 4295001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 13 x-17| =19$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{2}{13}\\right\\},\\left\\{x\\to \\frac{36}{13}\\right\\}\\right\\}$",
+    "row_idx": 3980003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $4 x^2+7 x-3$",
+    "answer": "$4 \\left(x+\\frac{7}{8}\\right)^2-\\frac{97}{16}$",
+    "row_idx": 4415005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(15-20)+(((16+2)+1)-19)$.",
+    "answer": "$-5$",
+    "row_idx": 3695021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -x^2-7 x+3$, $q(x) = -6 x^2-7 x+5$",
+    "answer": "$-7 x^2-14 x+8$",
+    "row_idx": 4265026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $2$ and $-4 x^2-5 x-4$.",
+    "answer": "$1$",
+    "row_idx": 4445000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $13 x^2+6 x+12$",
+    "answer": "$13 \\left(x+\\frac{3}{13}\\right)^2+\\frac{147}{13}$",
+    "row_idx": 4430018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-8 x^2-188 x-1080$",
+    "answer": "$8 \\left(-x-\\frac{27}{2}\\right) (x+10)$",
+    "row_idx": 4595018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 9 (2 x+3)^4, q(x) = \\sqrt{3} (1-4 x)$",
+    "answer": "$144 x^4+864 x^3+1944 x^2-4 \\sqrt{3} x+1944 x+\\sqrt{3}+729$",
+    "row_idx": 4235013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((11-7)-25)-\\left(\\left(\\left(\\frac{18}{19}-1\\right)-5\\right)+5\\right)$.",
+    "answer": "$-\\frac{398}{19}$",
+    "row_idx": 3710003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $3 e \\left(-\\cos \\left(\\frac{17 \\pi }{90}\\right)+i \\sin \\left(\\frac{17 \\pi }{90}\\right)\\right)$.",
+    "answer": "Norm: $3 e \\sqrt{\\sin ^2\\left(\\frac{17 \\pi }{90}\\right)+\\cos ^2\\left(\\frac{17 \\pi }{90}\\right)}$\nArgument: $\\frac{73 \\pi }{90}$",
+    "row_idx": 4040027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-1$ and $-5 x^3+3 x^2+3 x-3$.",
+    "answer": "$1$",
+    "row_idx": 4490010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-4 x^6+19 x^5-9 x^3-16 x^2+24 x-9$ and $x^5-4 x^4-3 x^3+4 x-3$.",
+    "answer": "$x^5-4 x^4-3 x^3+4 x-3$",
+    "row_idx": 4490001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -3 x^2+4 x+\\frac{21}{2}$ and $q(x) = -4 x^2+\\frac{13 x}{2}-\\frac{19}{2}$",
+    "answer": "$12 x^4-\\frac{71 x^3}{2}+\\frac{25 x^2}{2}+\\frac{121 x}{4}-\\frac{399}{4}$",
+    "row_idx": 3635005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $(3+2 i) \\pi$.",
+    "answer": "Norm: $\\sqrt{13} \\pi$\nArgument: $\\tan ^{-1}\\left(\\frac{2}{3}\\right)$",
+    "row_idx": 4055015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-\\frac{17 x^2}{\\sqrt{3}}-\\frac{20 x}{\\sqrt{3}}-\\frac{2}{\\sqrt{3}}$",
+    "answer": "$\\frac{22 \\sqrt{3}}{17}-\\frac{17 \\left(x+\\frac{10}{17}\\right)^2}{\\sqrt{3}}$",
+    "row_idx": 4415007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{5^{7-15 x}}{5^{4 x+2}} = 25^{-13 x-2}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{9}{7}\\right\\}\\right\\}$",
+    "row_idx": 4310014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{1}{625} (1-30 x)^4, q(x) = \\frac{1}{25} (43 x+34)^2$",
+    "answer": "$1296 x^4-\\frac{864 x^3}{5}+\\frac{413 x^2}{5}+\\frac{14596 x}{125}+\\frac{28901}{625}$",
+    "row_idx": 4265016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $8^{x-18}8^{-5 x-18} = 8^{-14 x-7}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{29}{10}\\right\\}\\right\\}$",
+    "row_idx": 4310003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{20 x^2}{\\sqrt{3}}+\\frac{4 x}{\\sqrt{3}}-\\frac{10}{\\sqrt{3}}$ and $q(x) = \\frac{16 x^2}{\\sqrt{3}}+\\frac{8 x}{\\sqrt{3}}-\\frac{7}{\\sqrt{3}}$",
+    "answer": "$-\\frac{320 x^4}{3}-32 x^3+4 x^2-36 x+\\frac{70}{3}$",
+    "row_idx": 3620028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 15 \\sqrt{2} x-16 \\sqrt{2}\\right| =16 \\sqrt{2}$",
+    "answer": "$\\left\\{\\{x\\to 0\\},\\left\\{x\\to \\frac{32}{15}\\right\\}\\right\\}$",
+    "row_idx": 4010005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $(3-2 i) e$.",
+    "answer": "Norm: $\\sqrt{13} e$\nArgument: $-\\tan ^{-1}\\left(\\frac{2}{3}\\right)$",
+    "row_idx": 4040004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-8 x^3-10 x^2+2 x-4$ and $4 x^3+5 x^2-x+2$.",
+    "answer": "$4 x^3+5 x^2-x+2$",
+    "row_idx": 4490000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{\\frac{8 x}{3}-2}}{4^{-20 x-\\frac{73}{3}}} = 4^{4 x+4}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{55}{56}\\right\\}\\right\\}$",
+    "row_idx": 4295024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -11 x^2-14 x+4$ and $q(x) = 3 x^2-6 x-8$",
+    "answer": "$-33 x^4+24 x^3+184 x^2+88 x-32$",
+    "row_idx": 3635020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\frac{2}{6}-22}{(2+5)-14}$.",
+    "answer": "$\\frac{65}{21}$",
+    "row_idx": 3680026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{5 \\sqrt{5}-4 \\sqrt{5} x}}{4^{4 \\sqrt{5}-8 \\sqrt{5} x}} = 4^{-9 \\sqrt{5} x-2 \\sqrt{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{3}{13}\\right\\}\\right\\}$",
+    "row_idx": 4325004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 21 x+3| =9$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{4}{7}\\right\\},\\left\\{x\\to \\frac{2}{7}\\right\\}\\right\\}$",
+    "row_idx": 4010026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 32 (x+1)^2, q(x) = 324 (x+1)^4$",
+    "answer": "$324 x^4+1296 x^3+1976 x^2+1360 x+356$",
+    "row_idx": 4235019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -(2-3 x)^2$, $q(x) = -4 x^2-4 x-9$",
+    "answer": "$-13 x^2+8 x-13$",
+    "row_idx": 4235011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -3 x^2-7 x+1$ and $q(x) = \\frac{29 x^2}{2}+6 x-9$",
+    "answer": "$-\\frac{87 x^4}{2}-\\frac{239 x^3}{2}-\\frac{x^2}{2}+69 x-9$",
+    "row_idx": 3620019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -9 \\sqrt{3} x^2-3 \\sqrt{3} x-\\sqrt{3}\\right| =13 \\sqrt{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{4}{3}\\right\\},\\{x\\to 1\\}\\right\\}$",
+    "row_idx": 4010007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 12 x+\\frac{73}{4}\\right| =\\frac{53}{4}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{21}{8}\\right\\},\\left\\{x\\to -\\frac{5}{12}\\right\\}\\right\\}$",
+    "row_idx": 3980024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $6 x^7+18 x^6+4 x^5-16 x^4-7 x^3+11 x^2+13 x-4$ and $2 x^5+4 x^4-2 x^3-2 x^2-x+4$.",
+    "answer": "$2 x^5+4 x^4-2 x^3-2 x^2-x+4$",
+    "row_idx": 4475028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{1}{4} (-23 x-29), q(x) = \\frac{1}{8} (15 x-16)^3$",
+    "answer": "$\\frac{3375 x^3}{8}-1350 x^2+\\frac{5737 x}{4}-\\frac{2077}{4}$",
+    "row_idx": 4265001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $2 x^2+21 x-245$",
+    "answer": "$-2 (7-x) \\left(x+\\frac{35}{2}\\right)$",
+    "row_idx": 4580008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $3 x^2-36 x+60$",
+    "answer": "$-3 (2-x) (x-10)$",
+    "row_idx": 4565010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-13 x+20 y-16 z-13=0$, $3 x-5 y+10 z-6=0$, $-15 x-9 y+20 z-1=0$",
+    "answer": "$x=\\frac{773}{1219}$, $y=\\frac{2824}{1219}$, $z=\\frac{3823}{2438}$",
+    "row_idx": 4655020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\frac{14+10}{16}}{\\frac{11-13}{19}+9}$.",
+    "answer": "$\\frac{57}{338}$",
+    "row_idx": 3695013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -23 x-15| =4$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{19}{23}\\right\\},\\left\\{x\\to -\\frac{11}{23}\\right\\}\\right\\}$",
+    "row_idx": 3980019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 22 x+5| =21$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{13}{11}\\right\\},\\left\\{x\\to \\frac{8}{11}\\right\\}\\right\\}$",
+    "row_idx": 4010011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((22+15)+4)+12)^2 (((15-2)-23)-23)$.",
+    "answer": "$-92697$",
+    "row_idx": 3695024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $\\frac{x}{2}-2$ and $x^2-\\frac{x}{2}-\\frac{3}{2}$.",
+    "answer": "$\\frac{1}{2}$",
+    "row_idx": 4460000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((14+1)-14)+3)^2 (((16-24)-1)-3)$.",
+    "answer": "$-192$",
+    "row_idx": 3710021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -25 x^2-24 x-12\\right| =24$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{25} \\left(-6-\\sqrt{111}\\right)\\right\\},\\left\\{x\\to \\frac{2}{25} \\left(-6+\\sqrt{111}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3995012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{37}{\\sqrt{3}}-4 \\sqrt{3} x\\right| =14 \\sqrt{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{5}{12}\\right\\},\\left\\{x\\to \\frac{79}{12}\\right\\}\\right\\}$",
+    "row_idx": 3995005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-x-3$ and $3 x+4$.",
+    "answer": "$1$",
+    "row_idx": 4490028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\pi  \\left(\\cos \\left(\\frac{37 \\pi }{180}\\right)+i \\sin \\left(\\frac{37 \\pi }{180}\\right)\\right)$.",
+    "answer": "Norm: $\\pi  \\sqrt{\\sin ^2\\left(\\frac{37 \\pi }{180}\\right)+\\cos ^2\\left(\\frac{37 \\pi }{180}\\right)}$\nArgument: $-\\frac{143 \\pi }{180}$",
+    "row_idx": 4025015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -3 \\sqrt{3} x-12 \\sqrt{3}\\right| =-11 \\sqrt{3}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3995027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $9^{15-19 x}9^{\\frac{x}{7}+\\frac{166}{7}} = 81^{-\\frac{123 x}{7}-\\frac{36}{7}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{343}{114}\\right\\}\\right\\}$",
+    "row_idx": 4325023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-0.421271+0.559045 i$.",
+    "answer": "Norm: $0.7$\nArgument: $2.21657$",
+    "row_idx": 4055002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$7 \\sqrt{3} x-2 \\sqrt{3} y+13 \\sqrt{3}=0$, $-7 \\sqrt{3} x-13 \\sqrt{3} y-2 \\sqrt{3}=0$",
+    "answer": "$x=-\\frac{173}{105}$, $y=\\frac{11}{15}$",
+    "row_idx": 4655013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{\\frac{7 x}{2}-8}6^{13 x-\\frac{3}{2}} = 36^{20 x+\\frac{5}{2}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{29}{47}\\right\\}\\right\\}$",
+    "row_idx": 4325021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 10 x+11| =\\frac{10}{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{43}{30}\\right\\},\\left\\{x\\to -\\frac{23}{30}\\right\\}\\right\\}$",
+    "row_idx": 3995028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-\\frac{10 x^2}{3}-2 x-\\frac{4}{3}$ and $3 x^2+x-2$.",
+    "answer": "$\\frac{1}{3}$",
+    "row_idx": 4490022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $8 e^{-\\frac{14 i \\pi }{15}}$.",
+    "answer": "Norm: $8$\nArgument: $-\\frac{14 \\pi }{15}$",
+    "row_idx": 4070000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-11 x^2+220 x-209$",
+    "answer": "$11 (1-x) (x-19)$",
+    "row_idx": 4595010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -\\frac{7 x^2}{2}-5 x+\\frac{3}{2}\\right| =\\frac{13}{2}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{7} \\left(-5-\\sqrt{137}\\right)\\right\\},\\left\\{x\\to \\frac{1}{7} \\left(-5+\\sqrt{137}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-9 x^2-10 x-\\frac{9}{2}$",
+    "answer": "$-9 \\left(x+\\frac{5}{9}\\right)^2-\\frac{31}{18}$",
+    "row_idx": 4400017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -9 x^2-14 x-14$, $q(x) = -4 x^2-15 x-9$",
+    "answer": "$-13 x^2-29 x-23$",
+    "row_idx": 4265007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{8^{-4 x-\\frac{57}{5}}}{8^{\\frac{124 x}{5}+17}} = 8^{\\frac{93 x}{5}-\\frac{28}{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{38}{79}\\right\\}\\right\\}$",
+    "row_idx": 4310028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -x^2-13 x+12$, $q(x) = -9 x^2-2 x-12$",
+    "answer": "$-10 x^2-15 x$",
+    "row_idx": 4280020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(8+5)+\\frac{24}{3}$.",
+    "answer": "$21$",
+    "row_idx": 3710012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -25 x^2-22 x+12\\right| =0$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{25} \\left(-11-\\sqrt{421}\\right)\\right\\},\\left\\{x\\to \\frac{1}{25} \\left(-11+\\sqrt{421}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -18 x^2-6 x-13\\right| =-14$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3980004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-\\frac{43 x}{2}+\\frac{11 y}{2}-8=0$, $-2 x+10 y-\\frac{5}{2}=0$",
+    "answer": "$x=-\\frac{265}{816}$, $y=\\frac{151}{816}$",
+    "row_idx": 4640004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{13}{6}-((5+9)+22)^2$.",
+    "answer": "$-\\frac{7763}{6}$",
+    "row_idx": 3710001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $8^{10-14 x}8^{11-6 x} = 64^{21 x-12}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{45}{62}\\right\\}\\right\\}$",
+    "row_idx": 4310023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-17 x-19 y-\\frac{19 z}{2}+\\frac{35}{2}=0$, $5 x-17 y+\\frac{z}{2}-3=0$, $23 x+y+z-\\frac{33}{2}=0$",
+    "answer": "$x=\\frac{9947}{14352}$, $y=\\frac{47}{1104}$, $z=\\frac{309}{598}$",
+    "row_idx": 4625015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $3 x^2-75 x+450$",
+    "answer": "$-3 (10-x) (x-15)$",
+    "row_idx": 4565012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 4 (x+3)^2, q(x) = -2 (x+1)$",
+    "answer": "$4 x^2+22 x+34$",
+    "row_idx": 4235021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $5 x^2+10 x+1$",
+    "answer": "$5 (x+1)^2-4$",
+    "row_idx": 4430007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-\\frac{9 x}{4}+\\frac{39 y}{4}+23=0$, $-\\frac{25 x}{2}+\\frac{39 y}{2}-9=0$",
+    "answer": "$x=-\\frac{55}{8}$, $y=-\\frac{1231}{312}$",
+    "row_idx": 4655006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $10 x^2+4 x+10$",
+    "answer": "$10 \\left(x+\\frac{1}{5}\\right)^2+\\frac{48}{5}$",
+    "row_idx": 4415027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $(4-2 i) e$.",
+    "answer": "Norm: $2 \\sqrt{5} e$\nArgument: $-\\tan ^{-1}\\left(\\frac{1}{2}\\right)$",
+    "row_idx": 4025009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-1$ and $2-x$.",
+    "answer": "$1$",
+    "row_idx": 4475010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-3 \\sqrt{2} \\left(-\\sin \\left(\\frac{\\pi }{45}\\right)+i \\cos \\left(\\frac{\\pi }{45}\\right)\\right)$.",
+    "answer": "Norm: $3 \\sqrt{2 \\left(\\sin ^2\\left(\\frac{\\pi }{45}\\right)+\\cos ^2\\left(\\frac{\\pi }{45}\\right)\\right)}$\nArgument: $-\\frac{43 \\pi }{90}$",
+    "row_idx": 4040014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-\\frac{151 x}{7}+24 y-\\frac{41 z}{7}+18=0$, $\\frac{165 x}{7}-\\frac{174 y}{7}+\\frac{152 z}{7}+\\frac{43}{7}=0$, $-12 x+\\frac{51 y}{7}+\\frac{38 z}{7}-\\frac{74}{7}=0$",
+    "answer": "$x=-\\frac{392893}{86131}$, $y=-\\frac{1330484}{258393}$, $z=-\\frac{105555}{86131}$",
+    "row_idx": 4640021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-4 e^{-\\frac{i \\pi }{60}} \\log (2)$.",
+    "answer": "Norm: $4 \\log (2)$\nArgument: $\\frac{59 \\pi }{60}$",
+    "row_idx": 4025001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -13 x-4| =19$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{23}{13}\\right\\},\\left\\{x\\to \\frac{15}{13}\\right\\}\\right\\}$",
+    "row_idx": 3995007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 13-7 x| =3$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{10}{7}\\right\\},\\left\\{x\\to \\frac{16}{7}\\right\\}\\right\\}$",
+    "row_idx": 3995004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$20 x-13 y+2=0$, $13 x-18=0$",
+    "answer": "$x=\\frac{18}{13}$, $y=\\frac{386}{169}$",
+    "row_idx": 4640020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $12 x^6-15 x^5-17 x^4-3 x^3-2 x^2-15 x+4$ and $3 x^5-3 x^4-5 x^3-2 x^2-x-4$.",
+    "answer": "$3 x^5-3 x^4-5 x^3-2 x^2-x-4$",
+    "row_idx": 4445023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-\\frac{13 x}{\\sqrt{3}}+\\frac{11 y}{\\sqrt{3}}+\\frac{17 z}{\\sqrt{3}}-\\frac{2}{\\sqrt{3}}=0$, $-2 \\sqrt{3} x+\\frac{20 y}{\\sqrt{3}}-\\frac{38 z}{\\sqrt{3}}+\\frac{35}{\\sqrt{3}}=0$, $-\\frac{31 x}{\\sqrt{3}}+\\frac{19 y}{\\sqrt{3}}+\\frac{5 z}{\\sqrt{3}}-\\frac{2}{\\sqrt{3}}=0$",
+    "answer": "$x=-\\frac{2313}{2801}$, $y=-\\frac{7473}{5602}$, $z=\\frac{1957}{5602}$",
+    "row_idx": 4625022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -9 x-9| =15$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{8}{3}\\right\\},\\left\\{x\\to \\frac{2}{3}\\right\\}\\right\\}$",
+    "row_idx": 4010022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $0$.",
+    "answer": "Norm: $0$\nArgument: $0$",
+    "row_idx": 4025007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{-\\frac{x}{\\sqrt{2}}-\\frac{9}{\\sqrt{2}}}6^{-8 \\sqrt{2} x-\\frac{13}{\\sqrt{2}}} = 6^{\\frac{15}{\\sqrt{2}}-\\frac{33 x}{\\sqrt{2}}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{\\frac{15}{\\sqrt{2}}+11 \\sqrt{2}}{8 \\sqrt{2}}\\right\\}\\right\\}$",
+    "row_idx": 4325005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $\\frac{52 x^2}{3}-\\frac{100 x}{3}+16$ and $4-4 x$.",
+    "answer": "$\\frac{4 x}{3}-\\frac{4}{3}$",
+    "row_idx": 4445020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = (3-8 x)^4, q(x) = 4 x+7$",
+    "answer": "$4096 x^4-6144 x^3+3456 x^2-860 x+88$",
+    "row_idx": 4250021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $1-6 i$.",
+    "answer": "Norm: $\\sqrt{37}$\nArgument: $-\\tan ^{-1}(6)$",
+    "row_idx": 4025003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{8 \\left(\\cos \\left(\\frac{2 \\pi }{9}\\right)-i \\sin \\left(\\frac{2 \\pi }{9}\\right)\\right)}{\\sqrt{\\pi }}$.",
+    "answer": "Norm: $8 \\sqrt{\\frac{\\sin ^2\\left(\\frac{2 \\pi }{9}\\right)+\\cos ^2\\left(\\frac{2 \\pi }{9}\\right)}{\\pi }}$\nArgument: $\\frac{7 \\pi }{9}$",
+    "row_idx": 4025013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-9 x^2-2 x-2$",
+    "answer": "$-9 \\left(x+\\frac{1}{9}\\right)^2-\\frac{17}{9}$",
+    "row_idx": 4400010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -11 x^2-5 x+6$ and $q(x) = 11 x^2+3 x+5$",
+    "answer": "$-121 x^4-88 x^3-4 x^2-7 x+30$",
+    "row_idx": 3650024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 11 x^2-12 x+6$ and $q(x) = 9 x^2+6 x-11$",
+    "answer": "$99 x^4-42 x^3-139 x^2+168 x-66$",
+    "row_idx": 3620022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -x-\\frac{86}{5}\\right| =\\frac{42}{5}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{128}{5}\\right\\},\\left\\{x\\to -\\frac{44}{5}\\right\\}\\right\\}$",
+    "row_idx": 3980029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-7 x-25 y-20=0$, $-14 x+16 y-21=0$",
+    "answer": "$x=-\\frac{845}{462}$, $y=-\\frac{19}{66}$",
+    "row_idx": 4625001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -8 x^2+11 x+5$ and $q(x) = -13 x^2-2 x-10$",
+    "answer": "$104 x^4-127 x^3-7 x^2-120 x-50$",
+    "row_idx": 3635000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 19-5 x| =19$",
+    "answer": "$\\left\\{\\{x\\to 0\\},\\left\\{x\\to \\frac{38}{5}\\right\\}\\right\\}$",
+    "row_idx": 3995003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\left(\\frac{1}{3} ((14+6)+24)\\right) (15+21)$.",
+    "answer": "$528$",
+    "row_idx": 3680008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-\\frac{35 x}{\\sqrt{2}}-8 \\sqrt{2} y+\\frac{3}{\\sqrt{2}}=0$, $-11 \\sqrt{2} x+15 \\sqrt{2} y-4 \\sqrt{2}=0$",
+    "answer": "$x=-\\frac{19}{701}$, $y=\\frac{173}{701}$",
+    "row_idx": 4640006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-2 x-\\frac{3}{2}$ and $2$.",
+    "answer": "$\\frac{1}{2}$",
+    "row_idx": 4445022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((23-6)+24)+8)+((22-1)-24)$.",
+    "answer": "$46$",
+    "row_idx": 3695007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{4}{3} (3 x+2)^2, q(x) = -\\frac{125 (3 x-2)^3}{3 \\sqrt{3}}$",
+    "answer": "$-375 \\sqrt{3} x^3+750 \\sqrt{3} x^2+12 x^2-500 \\sqrt{3} x+16 x+\\frac{1000}{3 \\sqrt{3}}+\\frac{16}{3}$",
+    "row_idx": 4265024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{\\frac{38 x}{7}+\\frac{103}{7}}6^{-\\frac{153 x}{7}-\\frac{88}{7}} = 36^{\\frac{109}{7}-\\frac{111 x}{7}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{203}{107}\\right\\}\\right\\}$",
+    "row_idx": 4325017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 3 x^2-14 x+14$, $q(x) = 2 x^2$",
+    "answer": "$5 x^2-14 x+14$",
+    "row_idx": 4280003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-20 x-18 y+16 z+22=0$, $-15 y+23 z-14=0$, $17 x-18 y+2 z+12=0$",
+    "answer": "$x=\\frac{1648}{1773}$, $y=\\frac{9245}{5319}$, $z=\\frac{3089}{1773}$",
+    "row_idx": 4625000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((9-13)-13)+((20-18)+10)$.",
+    "answer": "$-5$",
+    "row_idx": 3695028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-6+7 i$.",
+    "answer": "Norm: $\\sqrt{85}$\nArgument: $\\pi -\\tan ^{-1}\\left(\\frac{7}{6}\\right)$",
+    "row_idx": 4070006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $7 \\sqrt{2} x^2+2 \\sqrt{2} x+4 \\sqrt{2}$",
+    "answer": "$7 \\sqrt{2} \\left(x+\\frac{1}{7}\\right)^2+\\frac{27 \\sqrt{2}}{7}$",
+    "row_idx": 4400005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{-2 x-20}2^{-8 x-11} = 4^{16 x+23}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{11}{6}\\right\\}\\right\\}$",
+    "row_idx": 4295021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -6 x^2+\\frac{19 x}{2}+\\frac{3}{2}$, $q(x) = -3 x^2-x+\\frac{7}{2}$",
+    "answer": "$-9 x^2+\\frac{17 x}{2}+5$",
+    "row_idx": 4235002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\sqrt{2} x+6 \\sqrt{2}\\right| =-\\sqrt{2}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3980008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $8^{2-11 x}8^{15 x+24} = 8^{20-4 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{3}{4}\\right\\}\\right\\}$",
+    "row_idx": 4295015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$23 x-3 y-16 z-18=0$, $15 x+15 y-17 z+18=0$, $-23 x+20 y-7 z+8=0$",
+    "answer": "$x=-\\frac{8040}{6403}$, $y=-\\frac{17242}{6403}$, $z=-\\frac{15528}{6403}$",
+    "row_idx": 4625011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{\\frac{23 x}{3}-3}}{9^{\\frac{8 x}{3}-18}} = 81^{\\frac{10}{3}-\\frac{11 x}{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{25}{37}\\right\\}\\right\\}$",
+    "row_idx": 4325029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 4 x^2-5 x+12\\right| =0$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3980012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $11 x^2+110 x-429$",
+    "answer": "$11 (-x-13) (3-x)$",
+    "row_idx": 4595015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(23-9) ((18+24)+18)^2$.",
+    "answer": "$50400$",
+    "row_idx": 3710008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-9 \\sqrt{2} x^2-7 \\sqrt{2} x+3 \\sqrt{2}$",
+    "answer": "$-9 \\sqrt{2} \\left(x+\\frac{7}{18}\\right)^2+3 \\sqrt{2}+\\frac{49}{18 \\sqrt{2}}$",
+    "row_idx": 4400004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -\\frac{43 (x-1)}{\\pi }$, $q(x) = \\frac{2 \\left(5 x^2+4 x-17\\right)}{\\pi }$",
+    "answer": "$\\frac{10 x^2}{\\pi }-\\frac{35 x}{\\pi }+\\frac{9}{\\pi }$",
+    "row_idx": 4250020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -3 x^2-10 x+7$ and $q(x) = 5 x^2+10 x-6$",
+    "answer": "$-15 x^4-80 x^3-47 x^2+130 x-42$",
+    "row_idx": 3620020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$12 x-18 y-8 z-23=0$, $21 x-5 y+4 z+17=0$, $-18 x+16 y+21 z-24=0$",
+    "answer": "$x=-\\frac{10825}{5238}$, $y=-\\frac{697}{194}$, $z=\\frac{1841}{873}$",
+    "row_idx": 4655022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-7 x^2+3 x-2$",
+    "answer": "$-7 \\left(x-\\frac{3}{14}\\right)^2-\\frac{47}{28}$",
+    "row_idx": 4400009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -3 x^2-13 x+11$ and $q(x) = -5 x^2-14 x+12$",
+    "answer": "$15 x^4+107 x^3+91 x^2-310 x+132$",
+    "row_idx": 3635010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{1}{2} (4-2)^2-\\frac{7}{5}$.",
+    "answer": "$\\frac{3}{5}$",
+    "row_idx": 3680003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{80 x^2}{7}+14 x+\\frac{33}{7}$ and $q(x) = \\frac{41 x^2}{7}+\\frac{33 x}{7}+\\frac{25}{7}$",
+    "answer": "$-\\frac{3280 x^4}{49}+\\frac{1378 x^3}{49}+\\frac{2587 x^2}{49}+\\frac{3539 x}{49}+\\frac{825}{49}$",
+    "row_idx": 3635006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $5 x-2$ and $-1$.",
+    "answer": "$1$",
+    "row_idx": 4475027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-6 \\sqrt{2} x-13 \\sqrt{2} y-\\frac{11 z}{\\sqrt{2}}-8 \\sqrt{2}=0$, $\\frac{29 x}{\\sqrt{2}}-17 \\sqrt{2} y+14 \\sqrt{2} z+17 \\sqrt{2}=0$, $-\\frac{31 x}{\\sqrt{2}}-\\frac{3 y}{\\sqrt{2}}+7 \\sqrt{2} z-\\frac{15}{\\sqrt{2}}=0$",
+    "answer": "$x=-\\frac{12100}{16793}$, $y=-\\frac{941}{16793}$, $z=-\\frac{1286}{2399}$",
+    "row_idx": 4610027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{8}{3}-\\frac{4 i}{3}$.",
+    "answer": "Norm: $\\frac{4 \\sqrt{5}}{3}$\nArgument: $-\\tan ^{-1}\\left(\\frac{1}{2}\\right)$",
+    "row_idx": 4040000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{25 e^{-\\frac{9 i \\pi }{20}}}{\\pi }$.",
+    "answer": "Norm: $\\frac{25}{\\pi }$\nArgument: $-\\frac{9 \\pi }{20}$",
+    "row_idx": 4055005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 10 x+8| =17$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{5}{2}\\right\\},\\left\\{x\\to \\frac{9}{10}\\right\\}\\right\\}$",
+    "row_idx": 3995022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-2 x^2+14 x-7$",
+    "answer": "$\\frac{35}{2}-2 \\left(x-\\frac{7}{2}\\right)^2$",
+    "row_idx": 4430019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -7 x-6| =7$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{13}{7}\\right\\},\\left\\{x\\to \\frac{1}{7}\\right\\}\\right\\}$",
+    "row_idx": 3980027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -10 x^2+10 x+14$ and $q(x) = -7 x^2-x-7$",
+    "answer": "$70 x^4-60 x^3-38 x^2-84 x-98$",
+    "row_idx": 3650022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$8 x+5 y-22 z-8=0$, $-9 x+5 y-20 z+16=0$, $x-24 y+4 z-2=0$",
+    "answer": "$x=\\frac{5894}{4121}$, $y=\\frac{10}{4121}$, $z=\\frac{647}{4121}$",
+    "row_idx": 4625024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{\\frac{37 x}{7}+\\frac{3}{7}}2^{\\frac{15 x}{7}+7} = 2^{\\frac{37 x}{7}-\\frac{136}{7}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{188}{15}\\right\\}\\right\\}$",
+    "row_idx": 4310018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = x^2-8 x-4$, $q(x) = -13 x^2-3$",
+    "answer": "$-12 x^2-8 x-7$",
+    "row_idx": 4265021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $5 x+5$ and $-4 x^2+x+1$.",
+    "answer": "$1$",
+    "row_idx": 4445011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 8 x-8$ and $q(x) = 12 x^2-6 x+13$",
+    "answer": "$96 x^3-144 x^2+152 x-104$",
+    "row_idx": 3650017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-10 x^2+7 x-6$",
+    "answer": "$-10 \\left(x-\\frac{7}{20}\\right)^2-\\frac{191}{40}$",
+    "row_idx": 4400029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-15 x^2+10 x+2$",
+    "answer": "$\\frac{11}{3}-15 \\left(x-\\frac{1}{3}\\right)^2$",
+    "row_idx": 4400020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{4^{25 x+1}}{4^{20 x+2}} = 16^{-14 x-23}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{15}{11}\\right\\}\\right\\}$",
+    "row_idx": 4325020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following cubic polynomial: $-10 x^3-200 x^2+250 x+5000$",
+    "answer": "$-10 (-x-20) (-x-5) (x-5)$",
+    "row_idx": 4580003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-11 x^2-\\frac{231 x}{2}-187$",
+    "answer": "$-11 (x+2) \\left(x+\\frac{17}{2}\\right)$",
+    "row_idx": 4595006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -2 \\left(5 x^2+5 x+1\\right)$, $q(x) = 2 x^2+3 x-2$",
+    "answer": "$-8 x^2-7 x-4$",
+    "row_idx": 4280025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{5^{12 x-2}}{5^{-9 x-5}} = \\frac{1}{1220703125}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{16}{21}\\right\\}\\right\\}$",
+    "row_idx": 4295020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -7 x^2+8 x+7$ and $q(x) = 14 x^2+6 x-15$",
+    "answer": "$-98 x^4+70 x^3+251 x^2-78 x-105$",
+    "row_idx": 3635004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-4 x^2+44 x+320$",
+    "answer": "$-4 (x-16) (x+5)$",
+    "row_idx": 4565015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{5} \\left(5 x^2-2 x-6\\right)$, $q(x) = \\sqrt{5} \\left(6 x^2-6 x+5\\right)$",
+    "answer": "$11 \\sqrt{5} x^2-8 \\sqrt{5} x-\\sqrt{5}$",
+    "row_idx": 4235028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$\\frac{79 x}{4}+24 y-\\frac{37 z}{2}-\\frac{45}{2}=0$, $\\frac{23 x}{2}+\\frac{39 y}{2}-\\frac{95 z}{4}-\\frac{31}{2}=0$, $\\frac{61 x}{4}+\\frac{71 y}{4}-\\frac{21 z}{2}+11=0$",
+    "answer": "$x=\\frac{383758}{13611}$, $y=-\\frac{453962}{13611}$, $z=-\\frac{195790}{13611}$",
+    "row_idx": 4625017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\sqrt{3} e^{-\\frac{43 i \\pi }{45}}$.",
+    "answer": "Norm: $\\sqrt{3}$\nArgument: $\\frac{2 \\pi }{45}$",
+    "row_idx": 4070013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 16 (3-2 x)^4, q(x) = 81 (x+2)^4$",
+    "answer": "$337 x^4-888 x^3+5400 x^2-864 x+2592$",
+    "row_idx": 4235010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $2$ and $2$.",
+    "answer": "$2$",
+    "row_idx": 4490003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $6 x^2+48 x-1440$",
+    "answer": "$-6 (12-x) (x+20)$",
+    "row_idx": 4595003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -15 x-9| =-23$",
+    "answer": "$\\{\\}$",
+    "row_idx": 4010027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-2 x^2-3 x+1$ and $4 x^3-4 x^2-3 x-3$.",
+    "answer": "$1$",
+    "row_idx": 4460027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $7^{10 x+6}7^{20 x+5} = 49^{23 x+12}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{13}{16}\\right\\}\\right\\}$",
+    "row_idx": 4295005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{-13 x-\\frac{27}{2}}3^{-\\frac{33 x}{2}-15} = 3^{\\frac{27}{4}-\\frac{39 x}{4}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{141}{79}\\right\\}\\right\\}$",
+    "row_idx": 4310010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{7 x}{2}+\\frac{23}{2}\\right| =24$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{71}{7}\\right\\},\\left\\{x\\to \\frac{25}{7}\\right\\}\\right\\}$",
+    "row_idx": 3995017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $9^{14 x+7}9^{-17 x-16} = 81^{-21 x-18}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{9}{13}\\right\\}\\right\\}$",
+    "row_idx": 4295000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-11 \\sqrt{2} x-4 \\sqrt{2} y-\\frac{11}{\\sqrt{2}}=0$, $2 \\sqrt{2} x+\\frac{9 y}{\\sqrt{2}}+\\frac{3}{\\sqrt{2}}=0$",
+    "answer": "$x=-\\frac{75}{166}$, $y=-\\frac{11}{83}$",
+    "row_idx": 4625023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{12-4}{2+3}$.",
+    "answer": "$\\frac{8}{5}$",
+    "row_idx": 3680018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{\\frac{27 x}{2}-\\frac{3}{2}}}{6^{-24 x-\\frac{19}{2}}} = 6^{13-2 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{10}{79}\\right\\}\\right\\}$",
+    "row_idx": 4295006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{7 x^2}{2}-13 x+13$, $q(x) = \\frac{1}{2} \\left(-11 x^2+26 x-17\\right)$",
+    "answer": "$\\frac{9}{2}-2 x^2$",
+    "row_idx": 4235027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{68 x^2}{5}-\\frac{114 x}{5}+\\frac{27}{5}\\right| =-\\frac{63}{5}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3995029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{5^{23 x+7}}{\\frac{1}{30517578125}} = 5^{8-24 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{14}{47}\\right\\}\\right\\}$",
+    "row_idx": 4295003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-5 x^2-3 x-2$ and $5$.",
+    "answer": "$1$",
+    "row_idx": 4475020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\left(\\frac{8-8}{6}+1\\right)-(((14-24)+13)+14)$.",
+    "answer": "$-16$",
+    "row_idx": 3710006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{10 x+6}3^{17 x+5} = 9^{22-x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{33}{29}\\right\\}\\right\\}$",
+    "row_idx": 4325015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -\\frac{13 x^2}{\\sqrt{3}}-6 \\sqrt{3} x-3 \\sqrt{3}\\right| =\\frac{19}{\\sqrt{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{13} \\left(-9-\\sqrt{211}\\right)\\right\\},\\left\\{x\\to \\frac{1}{13} \\left(-9+\\sqrt{211}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3980015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 8 x-14| =25$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{11}{8}\\right\\},\\left\\{x\\to \\frac{39}{8}\\right\\}\\right\\}$",
+    "row_idx": 4010025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\sqrt{2} x^2-8 \\sqrt{2} x+6 \\sqrt{2}$",
+    "answer": "$\\sqrt{2} (x-4)^2-10 \\sqrt{2}$",
+    "row_idx": 4430002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\left(\\frac{1}{5} (((21-24)-3)-11)\\right) ((((23+16)-5)+22)+10)$.",
+    "answer": "$-\\frac{1122}{5}$",
+    "row_idx": 3695029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 9 x^2-4 x+10$ and $q(x) = 13 x^2-14 x+9$",
+    "answer": "$117 x^4-178 x^3+267 x^2-176 x+90$",
+    "row_idx": 3620005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$15 x-15 y-14 z-17=0$, $-19 x-4 y+9 z+13=0$, $-8 x+3 y+15 z-7=0$",
+    "answer": "$x=\\frac{5195}{3254}$, $y=-\\frac{3069}{3254}$, $z=\\frac{4903}{3254}$",
+    "row_idx": 4625007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -\\frac{67 x^2}{7}-\\frac{45 x}{7}+2\\right| =\\frac{87}{7}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{134} \\left(-45-\\sqrt{29093}\\right)\\right\\},\\left\\{x\\to \\frac{1}{134} \\left(-45+\\sqrt{29093}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{8 x-9}{\\sqrt{3}}, q(x) = \\frac{(12 x+5)^3}{3 \\sqrt{3}}$",
+    "answer": "$192 \\sqrt{3} x^3+240 \\sqrt{3} x^2+100 \\sqrt{3} x+\\frac{8 x}{\\sqrt{3}}-3 \\sqrt{3}+\\frac{125}{3 \\sqrt{3}}$",
+    "row_idx": 4265002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{24 x^2+19 x+19}{\\sqrt{3}}$, $q(x) = -\\frac{2 \\left(8 x^2+7 x-1\\right)}{\\sqrt{3}}$",
+    "answer": "$8 \\sqrt{3} x^2-\\frac{16 x^2}{\\sqrt{3}}+\\frac{5 x}{\\sqrt{3}}+7 \\sqrt{3}$",
+    "row_idx": 4250007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-12 x^7-35 x^6+7 x^5+53 x^4+6 x^3+16 x^2-11 x-4$ and $3 x^5+5 x^4-5 x^3-2 x^2-4 x-1$.",
+    "answer": "$3 x^5+5 x^4-5 x^3-2 x^2-4 x-1$",
+    "row_idx": 4445024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{(17+14)+22}{((24-19)+17)-25}$.",
+    "answer": "$-\\frac{53}{3}$",
+    "row_idx": 3710004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$18 x+10 y+5=0$, $-9 x-19 y-10=0$",
+    "answer": "$x=\\frac{5}{252}$, $y=-\\frac{15}{28}$",
+    "row_idx": 4640002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{26 \\left(-\\cos \\left(\\frac{\\pi }{15}\\right)-i \\sin \\left(\\frac{\\pi }{15}\\right)\\right)}{\\pi }$.",
+    "answer": "Norm: $\\frac{26 \\sqrt{\\sin ^2\\left(\\frac{\\pi }{15}\\right)+\\cos ^2\\left(\\frac{\\pi }{15}\\right)}}{\\pi }$\nArgument: $\\frac{\\pi }{15}$",
+    "row_idx": 4040002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{-11 x-21}6^{19-21 x} = 36^{17 x-3}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{33}\\right\\}\\right\\}$",
+    "row_idx": 4310016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-10 x^5-8 x^4-4 x^3-2 x^2-8 x$ and $-5 x^4-4 x^3-2 x^2-x-4$.",
+    "answer": "$5 x^4+4 x^3+2 x^2+x+4$",
+    "row_idx": 4490011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{4-2 i}{\\sqrt{3}}$.",
+    "answer": "Norm: $2 \\sqrt{\\frac{5}{3}}$\nArgument: $-\\tan ^{-1}\\left(\\frac{1}{2}\\right)$",
+    "row_idx": 4040025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $8^{4-9 x}8^{5 x+4} = 64^{9-24 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{5}{22}\\right\\}\\right\\}$",
+    "row_idx": 4325027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $9^{9 x-11}9^{21 x-2} = 9^{15-16 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{14}{23}\\right\\}\\right\\}$",
+    "row_idx": 4325002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $3.90731\\, -9.20505 i$.",
+    "answer": "Norm: $10.$\nArgument: $-1.16937$",
+    "row_idx": 4055013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 4 x^2+5 x-1$ and $q(x) = 1-11 x$",
+    "answer": "$-44 x^3-51 x^2+16 x-1$",
+    "row_idx": 3650019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$\\frac{11 x}{4}-7 y+\\frac{21 z}{2}-\\frac{43}{2}=0$, $\\frac{29 x}{4}+\\frac{9 y}{2}-\\frac{43 z}{4}+24=0$, $\\frac{23 x}{2}-\\frac{y}{4}-\\frac{27 z}{4}-\\frac{21}{2}=0$",
+    "answer": "$x=-\\frac{49930}{8353}$, $y=-\\frac{182236}{8353}$, $z=-\\frac{91310}{8353}$",
+    "row_idx": 4640018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((6+16)+1) \\left(\\frac{21}{9}-5\\right)$.",
+    "answer": "$-\\frac{184}{3}$",
+    "row_idx": 3710002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-11 \\sqrt{3} x+7 \\sqrt{3} y+12 \\sqrt{3}=0$, $-7 \\sqrt{3} x-8 \\sqrt{3} y+8 \\sqrt{3}=0$",
+    "answer": "$x=\\frac{152}{137}$, $y=\\frac{4}{137}$",
+    "row_idx": 4625016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{9 \\left(\\left(-\\frac{1}{2}+\\frac{i}{2}\\right) \\sqrt{\\frac{3}{2}}+\\frac{\\frac{1}{2}+\\frac{i}{2}}{\\sqrt{2}}\\right)}{\\pi }$.",
+    "answer": "Norm: $\\frac{9 \\sqrt{\\left(\\frac{1}{2 \\sqrt{2}}-\\frac{\\sqrt{\\frac{3}{2}}}{2}\\right)^2+\\left(\\frac{\\sqrt{\\frac{3}{2}}}{2}+\\frac{1}{2 \\sqrt{2}}\\right)^2}}{\\pi }$\nArgument: $\\tan ^{-1}\\left(\\frac{-\\frac{\\sqrt{\\frac{3}{2}}}{2}-\\frac{1}{2 \\sqrt{2}}}{\\frac{\\sqrt{\\frac{3}{2}}}{2}-\\frac{1}{2 \\sqrt{2}}}\\right)$",
+    "row_idx": 4040001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -2 x (3 x+5)$, $q(x) = -9 x^2-3 x+11$",
+    "answer": "$-15 x^2-13 x+11$",
+    "row_idx": 4280024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{1}{2} e^{\\frac{13 i \\pi }{60}}$.",
+    "answer": "Norm: $\\frac{1}{2}$\nArgument: $\\frac{13 \\pi }{60}$",
+    "row_idx": 4025008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-2$ and $-4 x^5-4 x^4-2 x^3+2 x^2-2 x-2$.",
+    "answer": "$2$",
+    "row_idx": 4490013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\left(((5-25)+10)^2-18\\right)-17}{(10+13)-5}$.",
+    "answer": "$\\frac{65}{18}$",
+    "row_idx": 3710024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -11 x^2+4 x-8$ and $q(x) = 6 x^2+13 x+5$",
+    "answer": "$-66 x^4-119 x^3-51 x^2-84 x-40$",
+    "row_idx": 3650001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$\\frac{86 x}{5}-\\frac{103 y}{5}+\\frac{123}{5}=0$, $\\frac{48 x}{5}-\\frac{61 y}{5}-\\frac{59}{5}=0$",
+    "answer": "$x=-\\frac{6790}{151}$, $y=-\\frac{5489}{151}$",
+    "row_idx": 4610024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $14 x^2+14 x+13$",
+    "answer": "$14 \\left(x+\\frac{1}{2}\\right)^2+\\frac{19}{2}$",
+    "row_idx": 4430017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-x^2+21 \\sqrt{2} x-220$",
+    "answer": "$-\\left(\\left(10 \\sqrt{2}-x\\right) \\left(11 \\sqrt{2}-x\\right)\\right)$",
+    "row_idx": 4580013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{2^{5-17 x}}{2^{-10 x-14}} = 4^{13-7 x}$",
+    "answer": "$\\{\\{x\\to 1\\}\\}$",
+    "row_idx": 4325007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $4 x^2+112 x+684$",
+    "answer": "$-4 (-x-9) (x+19)$",
+    "row_idx": 4595028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-2 \\sqrt{5} \\left(\\sin \\left(\\frac{7 \\pi }{90}\\right)+i \\cos \\left(\\frac{7 \\pi }{90}\\right)\\right)$.",
+    "answer": "Norm: $2 \\sqrt{5 \\left(\\sin ^2\\left(\\frac{7 \\pi }{90}\\right)+\\cos ^2\\left(\\frac{7 \\pi }{90}\\right)\\right)}$\nArgument: $-\\frac{26 \\pi }{45}$",
+    "row_idx": 4025005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 25 x-17| =20$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{3}{25}\\right\\},\\left\\{x\\to \\frac{37}{25}\\right\\}\\right\\}$",
+    "row_idx": 3995010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{\\frac{21 x}{2}+14}}{9^{4 x-\\frac{25}{2}}} = 81^{\\frac{21 x}{2}+\\frac{17}{2}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{19}{29}\\right\\}\\right\\}$",
+    "row_idx": 4325025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $2-4 x$ and $-3$.",
+    "answer": "$1$",
+    "row_idx": 4460005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{1}{16} (((25-23)-9)-22)+\\left(\\left(\\frac{3+7}{14}-20\\right)-16\\right)$.",
+    "answer": "$-\\frac{4155}{112}$",
+    "row_idx": 3695000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$\\frac{31 x}{5}-21 y+\\frac{109 z}{5}+\\frac{77}{5}=0$, $-\\frac{92 x}{5}+\\frac{76 y}{5}+\\frac{53 z}{5}+\\frac{18}{5}=0$, $\\frac{112 x}{5}+\\frac{11 y}{5}-\\frac{113 z}{5}+\\frac{121}{5}=0$",
+    "answer": "$x=-\\frac{2573884}{854117}$, $y=-\\frac{2038409}{854117}$, $z=-\\frac{1834950}{854117}$",
+    "row_idx": 4655021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{-2 \\sqrt{2} x-7 \\sqrt{2}}3^{\\sqrt{2}-4 \\sqrt{2} x} = 9^{17 \\sqrt{2} x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{3}{20}\\right\\}\\right\\}$",
+    "row_idx": 4310022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-3 x-2$ and $3 x^4-x^3-x+2$.",
+    "answer": "$1$",
+    "row_idx": 4445018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{\\frac{15 x}{7}+10}3^{\\frac{137 x}{7}-\\frac{43}{7}} = 9^{-\\frac{158 x}{7}-\\frac{171}{7}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{41}{52}\\right\\}\\right\\}$",
+    "row_idx": 4325009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $7^{8-17 x}7^{-14 x-19} = 7^{14-14 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{25}{17}\\right\\}\\right\\}$",
+    "row_idx": 4325024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 11 x+12| =1$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{13}{11}\\right\\},\\{x\\to -1\\}\\right\\}$",
+    "row_idx": 4010000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{(18+3)-25}{((11+10)-7)-17}$.",
+    "answer": "$\\frac{4}{3}$",
+    "row_idx": 3695009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-\\sqrt{5} x+6 \\sqrt{5} y-8 \\sqrt{5}=0$, $\\sqrt{5} x+10 \\sqrt{5} y=0$",
+    "answer": "$x=-5$, $y=\\frac{1}{2}$",
+    "row_idx": 4640001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$5 x+9 y-20 z-18=0$, $-4 x+19 y+4 z-16=0$, $-11 x+6 y+7=0$",
+    "answer": "$x=\\frac{658}{527}$, $y=\\frac{1183}{1054}$, $z=-\\frac{349}{4216}$",
+    "row_idx": 4625004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-5 x^2-6 x+2$",
+    "answer": "$\\frac{19}{5}-5 \\left(x+\\frac{3}{5}\\right)^2$",
+    "row_idx": 4400015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $2 x+8$ and $x+4$.",
+    "answer": "$x+4$",
+    "row_idx": 4490007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-24 x-20 y-9=0$, $-6 x+23 y-20=0$",
+    "answer": "$x=-\\frac{607}{672}$, $y=\\frac{71}{112}$",
+    "row_idx": 4655007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{-7 x-10}}{6^{1-20 x}} = \\frac{1}{1679616}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{3}{13}\\right\\}\\right\\}$",
+    "row_idx": 4295008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{17 x-20}}{9^{-12 x-16}} = 9^{9 x-1}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{3}{20}\\right\\}\\right\\}$",
+    "row_idx": 4295012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-6 x^2+117 x-\\frac{4131}{8}$",
+    "answer": "$-6 \\left(x-\\frac{51}{4}\\right) \\left(x-\\frac{27}{4}\\right)$",
+    "row_idx": 4565011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((((4+6)+17)-13)-18)+(20+4)$.",
+    "answer": "$20$",
+    "row_idx": 3710018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $8^{-2 x-\\frac{46}{3}}8^{\\frac{13 x}{3}-\\frac{20}{3}} = 64^{-\\frac{10 x}{3}-\\frac{16}{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{34}{27}\\right\\}\\right\\}$",
+    "row_idx": 4325008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{13-13 x}}{6^{9 x-12}} = 6^{-12 x-9}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{17}{5}\\right\\}\\right\\}$",
+    "row_idx": 4295019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -x-16| =1$",
+    "answer": "$\\{\\{x\\to -17\\},\\{x\\to -15\\}\\}$",
+    "row_idx": 3995014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{117}{5}-22 x\\right| =\\frac{12}{5}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{21}{22}\\right\\},\\left\\{x\\to \\frac{129}{110}\\right\\}\\right\\}$",
+    "row_idx": 3995011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-6 x^2-180 x-1296$",
+    "answer": "$6 (-x-18) (x+12)$",
+    "row_idx": 4550018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -6 x^2+15 x+1$ and $q(x) = -8 x^2+3 x-7$",
+    "answer": "$48 x^4-138 x^3+79 x^2-102 x-7$",
+    "row_idx": 3635016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -11 x^2+20 x-17\\right| =14$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{11} \\left(10-\\sqrt{67}\\right)\\right\\},\\left\\{x\\to \\frac{1}{11} \\left(10+\\sqrt{67}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{\\frac{7 x}{2}+\\frac{75}{4}}2^{-7 x-\\frac{85}{4}} = 2^{\\frac{29 x}{4}-\\frac{71}{4}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{61}{43}\\right\\}\\right\\}$",
+    "row_idx": 4325028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{3^{\\frac{16}{\\sqrt{3}}-\\frac{34 x}{\\sqrt{3}}}}{3^{\\frac{29}{\\sqrt{3}}-\\frac{x}{\\sqrt{3}}}} = 3^{-7 \\sqrt{3} x-\\sqrt{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{\\frac{13}{\\sqrt{3}}-\\sqrt{3}}{4 \\sqrt{3}}\\right\\}\\right\\}$",
+    "row_idx": 4295018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $13 x^2-10 x+6$",
+    "answer": "$13 \\left(x-\\frac{5}{13}\\right)^2+\\frac{53}{13}$",
+    "row_idx": 4400014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $11 x^2+\\frac{1397 x}{5}+\\frac{37752}{25}$",
+    "answer": "$-11 \\left(-x-\\frac{88}{5}\\right) \\left(x+\\frac{39}{5}\\right)$",
+    "row_idx": 4595012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 2 \\sqrt{5} x^2-8 \\sqrt{5} x+10 \\sqrt{5}\\right| =4 \\sqrt{5}$",
+    "answer": "$\\{\\{x\\to 1\\},\\{x\\to 3\\}\\}$",
+    "row_idx": 3980007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\left(((10-2)-23)^2-15\\right)-(((23+12)-23)-22)$.",
+    "answer": "$220$",
+    "row_idx": 3710009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((16-16)-21)+5) \\left(\\frac{1}{7} ((12+1)-25)^2-11\\right)^2$.",
+    "answer": "$-\\frac{71824}{49}$",
+    "row_idx": 3695022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{14+13 i}{\\sqrt{2}}$.",
+    "answer": "Norm: $\\sqrt{\\frac{365}{2}}$\nArgument: $\\tan ^{-1}\\left(\\frac{13}{14}\\right)$",
+    "row_idx": 4025018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 3 x-\\frac{73}{7}\\right| =-\\frac{131}{7}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3980005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{\\left(\\left((22-1)^2+14\\right)-12\\right)+2}{\\left((4-25) \\frac{1}{1}-6\\right)+10}$.",
+    "answer": "$-\\frac{445}{17}$",
+    "row_idx": 3680009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{10 x^2}{\\pi }+\\frac{9 x}{\\pi }-\\frac{39}{\\pi }$ and $q(x) = -\\frac{11 x^2}{\\pi }-\\frac{12 x}{\\pi }+\\frac{3}{\\pi }$",
+    "answer": "$\\frac{110 x^4}{\\pi ^2}+\\frac{21 x^3}{\\pi ^2}+\\frac{291 x^2}{\\pi ^2}+\\frac{495 x}{\\pi ^2}-\\frac{117}{\\pi ^2}$",
+    "row_idx": 3620021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $5^{16-17 x}5^{3 x-23} = 5^{3 x+20}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{27}{17}\\right\\}\\right\\}$",
+    "row_idx": 4295029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -x-2| =17$",
+    "answer": "$\\{\\{x\\to -19\\},\\{x\\to 15\\}\\}$",
+    "row_idx": 4010018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{7^{7 x-20}}{7^{8 x+14}} = 7^{7 x-13}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{21}{8}\\right\\}\\right\\}$",
+    "row_idx": 4325010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $7^{-23 x-1}7^{16-12 x} = 7^{4 x+19}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{4}{39}\\right\\}\\right\\}$",
+    "row_idx": 4325003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $50 \\sqrt{2} x-5 x^2$",
+    "answer": "$5 \\left(10 \\sqrt{2}-x\\right) x$",
+    "row_idx": 4595001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{1}{22} \\left(\\frac{1}{16} ((11+11)+17)\\right)+((3-7)-2)$.",
+    "answer": "$-\\frac{2073}{352}$",
+    "row_idx": 3680016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| x| =5$",
+    "answer": "$\\{\\{x\\to -5\\},\\{x\\to 5\\}\\}$",
+    "row_idx": 3995013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{((24-7)-22)-7}{(((9-16)-19)+22)^2+22}$.",
+    "answer": "$-\\frac{6}{19}$",
+    "row_idx": 3710015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 25-23 x| =4$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{21}{23}\\right\\},\\left\\{x\\to \\frac{29}{23}\\right\\}\\right\\}$",
+    "row_idx": 3980028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-4 x^3+21 x^2-18 x-8$ and $x-4$.",
+    "answer": "$x-4$",
+    "row_idx": 4445026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$23 x-21 y-3=0$, $x-12 y-8=0$",
+    "answer": "$x=-\\frac{44}{85}$, $y=-\\frac{181}{255}$",
+    "row_idx": 4610012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -21 x-16| =18$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{34}{21}\\right\\},\\left\\{x\\to \\frac{2}{21}\\right\\}\\right\\}$",
+    "row_idx": 3980009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{1}{343} (31 x+12)^3, q(x) = \\frac{1}{7} (61 x+32)$",
+    "answer": "$\\frac{29791 x^3}{343}+\\frac{34596 x^2}{343}+\\frac{16381 x}{343}+\\frac{3296}{343}$",
+    "row_idx": 4250003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $15 x^2-4 x+6$",
+    "answer": "$15 \\left(x-\\frac{2}{15}\\right)^2+\\frac{86}{15}$",
+    "row_idx": 4400002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 11 x^2+6 x-17\\right| =-12$",
+    "answer": "$\\{\\}$",
+    "row_idx": 4010009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-6 x^2-\\frac{414 x}{7}+\\frac{1620}{7}$",
+    "answer": "$-6 (x-3) \\left(x+\\frac{90}{7}\\right)$",
+    "row_idx": 4580025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = \\frac{35 x^2}{e}+\\frac{22 x}{e}+\\frac{40}{e}$ and $q(x) = \\frac{16 x^2}{e}+\\frac{23 x}{e}-\\frac{33}{e}$",
+    "answer": "$\\frac{560 x^4}{e^2}+\\frac{1157 x^3}{e^2}-\\frac{9 x^2}{e^2}+\\frac{194 x}{e^2}-\\frac{1320}{e^2}$",
+    "row_idx": 3635022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{2 \\left(\\sin \\left(\\frac{13 \\pi }{60}\\right)+i \\cos \\left(\\frac{13 \\pi }{60}\\right)\\right)}{\\sqrt{\\pi }}$.",
+    "answer": "Norm: $2 \\sqrt{\\frac{\\sin ^2\\left(\\frac{13 \\pi }{60}\\right)+\\cos ^2\\left(\\frac{13 \\pi }{60}\\right)}{\\pi }}$\nArgument: $-\\frac{43 \\pi }{60}$",
+    "row_idx": 4025027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(15-21)+\\frac{1}{21} ((12-5)+16)$.",
+    "answer": "$-\\frac{103}{21}$",
+    "row_idx": 3710029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$9 x-2 y+9 z-15=0$, $-21 x-8 y+7 z+4=0$, $19 x-3 y-19 z+24=0$",
+    "answer": "$x=\\frac{1463}{4024}$, $y=\\frac{1713}{2012}$, $z=\\frac{6005}{4024}$",
+    "row_idx": 4640019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -13.2 x^2-11. x-5.5$, $q(x) = 5.6 x^2+13.9 x+11.7$",
+    "answer": "$-7.6 x^2+2.9 x+6.2$",
+    "row_idx": 4235003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$25 x-11 y-25 z+10=0$, $16 x+9 y+17 z-23=0$, $-6 x+14 y-19 z+19=0$",
+    "answer": "$x=\\frac{9489}{19397}$, $y=\\frac{720}{19397}$, $z=\\frac{16931}{19397}$",
+    "row_idx": 4655009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-x^2-13 \\sqrt{3} x-90$",
+    "answer": "$\\left(-x-10 \\sqrt{3}\\right) \\left(x+3 \\sqrt{3}\\right)$",
+    "row_idx": 4550010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{7^{5 \\sqrt{5} x+5 \\sqrt{5}}}{7^{9 \\sqrt{5} x+\\sqrt{5}}} = 7^{4 \\sqrt{5} x+\\sqrt{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{3}{8}\\right\\}\\right\\}$",
+    "row_idx": 4310027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{-15 x}2^{18 x-4} = 2^{16 x-14}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{10}{13}\\right\\}\\right\\}$",
+    "row_idx": 4295011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-2$ and $2 x-5 x^2$.",
+    "answer": "$1$",
+    "row_idx": 4475025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 2 \\left(3 x^2-6 x+7\\right)$, $q(x) = 15 x^2+12 x-5$",
+    "answer": "$21 x^2+9$",
+    "row_idx": 4265018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-23 x-3 y-2=0$, $13 x+4 y-21=0$",
+    "answer": "$x=-\\frac{71}{53}$, $y=\\frac{509}{53}$",
+    "row_idx": 4610029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{7^{-15 \\sqrt{2} x-12 \\sqrt{2}}}{7^{15 \\sqrt{2} x-5 \\sqrt{2}}} = 7^{8 \\sqrt{2} x-17 \\sqrt{2}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{5}{19}\\right\\}\\right\\}$",
+    "row_idx": 4295014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 6 \\sqrt{2} x^2-3 \\sqrt{2} x-8 \\sqrt{2}$ and $q(x) = 6 \\sqrt{2} x-7 \\sqrt{2} x^2$",
+    "answer": "$-84 x^4+114 x^3+76 x^2-96 x$",
+    "row_idx": 3650009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{19+16 i}{e}$.",
+    "answer": "Norm: $\\frac{\\sqrt{617}}{e}$\nArgument: $\\tan ^{-1}\\left(\\frac{16}{19}\\right)-\\pi$",
+    "row_idx": 4025028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 18 x^2-19 x+15\\right| =-23$",
+    "answer": "$\\{\\}$",
+    "row_idx": 4010028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 2 x+17| =7$",
+    "answer": "$\\{\\{x\\to -12\\},\\{x\\to -5\\}\\}$",
+    "row_idx": 3995006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{1}{9} (12-13 x)^2, q(x) = \\frac{x}{3}-5$",
+    "answer": "$\\frac{169 x^2}{9}-\\frac{103 x}{3}+11$",
+    "row_idx": 4280023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $3.386\\, +9.30296 i$.",
+    "answer": "Norm: $9.9$\nArgument: $1.22173$",
+    "row_idx": 4040026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $(-10+i) \\log (2)$.",
+    "answer": "Norm: $\\sqrt{101} \\log (2)$\nArgument: $\\pi -\\tan ^{-1}\\left(\\frac{1}{10}\\right)$",
+    "row_idx": 4025029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{1}{5} ((23-19)-1)$.",
+    "answer": "$\\frac{3}{5}$",
+    "row_idx": 3680010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{2^{\\frac{29}{3}-\\frac{40 x}{3}}}{2^{\\frac{32}{3}-3 x}} = 2^{12-3 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{39}{22}\\right\\}\\right\\}$",
+    "row_idx": 4310009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-5$ and $3 x^2+2 x-5$.",
+    "answer": "$1$",
+    "row_idx": 4460019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{-5 x-14}2^{-\\frac{58 x}{3}-2} = 4^{7 x-17}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{54}{115}\\right\\}\\right\\}$",
+    "row_idx": 4310021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 13 x^2-5 x-15$, $q(x) = 5 x^2-2 x+3$",
+    "answer": "$18 x^2-7 x-12$",
+    "row_idx": 4235017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{2^{23 x+3}}{2^{15-9 x}} = 2^{-14 x-9}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{3}{46}\\right\\}\\right\\}$",
+    "row_idx": 4310015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-12 x^2+9 x-7$",
+    "answer": "$-12 \\left(x-\\frac{3}{8}\\right)^2-\\frac{85}{16}$",
+    "row_idx": 4415004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-21 x+15 y+16 z+7=0$, $18 x-24 y-12 z+17=0$, $-5 x+3 y+16 z-2=0$",
+    "answer": "$x=\\frac{509}{236}$, $y=\\frac{1505}{708}$, $z=\\frac{189}{472}$",
+    "row_idx": 4610002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 13 x^2-7 x-2$ and $q(x) = 6 x^2+12 x-7$",
+    "answer": "$78 x^4+114 x^3-187 x^2+25 x+14$",
+    "row_idx": 3620026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-7 x^2-154 x-840$",
+    "answer": "$7 (-x-12) (x+10)$",
+    "row_idx": 4580009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $15 x^2-7 x-7$",
+    "answer": "$15 \\left(x-\\frac{7}{30}\\right)^2-\\frac{469}{60}$",
+    "row_idx": 4400008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -6 x^2-3 x-2$ and $q(x) = -6 x^2+8 x+7$",
+    "answer": "$36 x^4-30 x^3-54 x^2-37 x-14$",
+    "row_idx": 3650007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((2+5)+5)+24) \\left(\\left(((17-9)-8)^2+1\\right)-23\\right)$.",
+    "answer": "$-792$",
+    "row_idx": 3695027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $3$ and $x^4+x^3-5 x-1$.",
+    "answer": "$1$",
+    "row_idx": 4490023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{5-6 i}{\\sqrt{\\pi }}$.",
+    "answer": "Norm: $\\sqrt{\\frac{61}{\\pi }}$\nArgument: $-\\tan ^{-1}\\left(\\frac{6}{5}\\right)$",
+    "row_idx": 4070027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 4 x^2+9 x-6$ and $q(x) = -5 x^2+13 x+9$",
+    "answer": "$-20 x^4+7 x^3+183 x^2+3 x-54$",
+    "row_idx": 3620014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 14 x^2+12 x-6\\right| =9$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{14} \\left(-6-\\sqrt{246}\\right)\\right\\},\\left\\{x\\to \\frac{1}{14} \\left(-6+\\sqrt{246}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{\\frac{46 x}{5}-15}3^{-\\frac{44 x}{5}-\\frac{94}{5}} = 9^{\\frac{98}{5}-\\frac{107 x}{5}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{365}{216}\\right\\}\\right\\}$",
+    "row_idx": 4310006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 9-23 x| =16$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{7}{23}\\right\\},\\left\\{x\\to \\frac{25}{23}\\right\\}\\right\\}$",
+    "row_idx": 3980013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{2^{14 x+20}}{2^{7-4 x}} = 2^{-23 x-25}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{38}{41}\\right\\}\\right\\}$",
+    "row_idx": 4310011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-12 x-19 y+23 z-6=0$, $-15 x-12 y+7 z+11=0$, $4 x-22 y-21 z+12=0$",
+    "answer": "$x=\\frac{61}{53}$, $y=-\\frac{2}{53}$, $z=\\frac{44}{53}$",
+    "row_idx": 4640012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 12 x^2-8 x+6$, $q(x) = 11 x^2-14 x+10$",
+    "answer": "$23 x^2-22 x+16$",
+    "row_idx": 4250024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -18 x-14| =3$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{17}{18}\\right\\},\\left\\{x\\to -\\frac{11}{18}\\right\\}\\right\\}$",
+    "row_idx": 3995024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = \\frac{11 x^2}{4}+10 x+12$ and $q(x) = \\frac{35 x^2}{4}-9 x+6$",
+    "answer": "$\\frac{385 x^4}{16}+\\frac{251 x^3}{4}+\\frac{63 x^2}{2}-48 x+72$",
+    "row_idx": 3650013
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $2^{-16 \\sqrt{2} x-9 \\sqrt{2}}2^{-8 \\sqrt{2} x-5 \\sqrt{2}} = 4^{-17 \\sqrt{2} x-17 \\sqrt{2}}$",
+    "answer": "$\\{\\{x\\to -2\\}\\}$",
+    "row_idx": 4325012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\frac{9 x^2}{\\sqrt{2}}+\\frac{7 x}{\\sqrt{2}}-7 \\sqrt{2}$",
+    "answer": "$\\frac{9 \\left(x+\\frac{7}{18}\\right)^2}{\\sqrt{2}}-7 \\sqrt{2}-\\frac{49}{36 \\sqrt{2}}$",
+    "row_idx": 4415012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $\\frac{27 \\left(-\\cos \\left(\\frac{7 \\pi }{90}\\right)-i \\sin \\left(\\frac{7 \\pi }{90}\\right)\\right)}{\\pi }$.",
+    "answer": "Norm: $\\frac{27 \\sqrt{\\sin ^2\\left(\\frac{7 \\pi }{90}\\right)+\\cos ^2\\left(\\frac{7 \\pi }{90}\\right)}}{\\pi }$\nArgument: $-\\frac{83 \\pi }{90}$",
+    "row_idx": 4070026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$-11 x-23 y-12=0$, $-17 x+2 y+22=0$",
+    "answer": "$x=\\frac{482}{413}$, $y=-\\frac{446}{413}$",
+    "row_idx": 4610021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-23 x+19 z+18=0$, $-23 x-21 y-12 z+13=0$, $-x-7 y+8 z-22=0$",
+    "answer": "$x=\\frac{2149}{1208}$, $y=-\\frac{17069}{8456}$, $z=\\frac{1457}{1208}$",
+    "row_idx": 4610018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{17 x^2}{2}+\\frac{37 x}{4}+\\frac{21}{2}$ and $q(x) = \\frac{43 x^2}{4}+\\frac{5 x}{2}+\\frac{17}{4}$",
+    "answer": "$-\\frac{731 x^4}{8}+\\frac{1251 x^3}{16}+\\frac{799 x^2}{8}+\\frac{1049 x}{16}+\\frac{357}{8}$",
+    "row_idx": 3635009
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $10 e^{\\frac{29 i \\pi }{30}}$.",
+    "answer": "Norm: $10$\nArgument: $\\frac{29 \\pi }{30}$",
+    "row_idx": 4040024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-15 x^7-34 x^6-28 x^5+x^4+27 x^3+26 x^2+11 x+2$ and $5 x^5+3 x^4+x^3-4 x^2-3 x-1$.",
+    "answer": "$5 x^5+3 x^4+x^3-4 x^2-3 x-1$",
+    "row_idx": 4490015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = -13 x^2+11 x+12$, $q(x) = -9 x^2-13$",
+    "answer": "$-22 x^2+11 x-1$",
+    "row_idx": 4250028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{17-7 x}}{9^{-17 x-5}} = 9^{-21 x-21}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{43}{31}\\right\\}\\right\\}$",
+    "row_idx": 4325022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = (3 x+4)^2, q(x) = 512 x^3$",
+    "answer": "$512 x^3+9 x^2+24 x+16$",
+    "row_idx": 4250014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -3 x^2+14 x-4$ and $q(x) = -8 x^2+12 x+6$",
+    "answer": "$24 x^4-148 x^3+182 x^2+36 x-24$",
+    "row_idx": 3650008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{14}{3}-\\frac{38 x}{3}\\right| =\\frac{10}{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{19}\\right\\},\\left\\{x\\to \\frac{12}{19}\\right\\}\\right\\}$",
+    "row_idx": 3980000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{6 \\sqrt{3} x+3 \\sqrt{3}}}{6^{-12 \\sqrt{3} x-9 \\sqrt{3}}} = 36^{7 \\sqrt{3} x-12 \\sqrt{3}}$",
+    "answer": "$\\{\\{x\\to -9\\}\\}$",
+    "row_idx": 4310007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{8^{14 \\sqrt{3}-\\frac{2 x}{\\sqrt{3}}}}{8^{-\\frac{23 x}{\\sqrt{3}}-5 \\sqrt{3}}} = 64^{\\frac{37 x}{\\sqrt{3}}+6 \\sqrt{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{21}{53}\\right\\}\\right\\}$",
+    "row_idx": 4325016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-x^2+13 x-12$",
+    "answer": "$-((x-12) (x-1))$",
+    "row_idx": 4565027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $3^{-\\frac{74 x}{3}-\\frac{26}{3}}3^{\\frac{7 x}{3}-\\frac{70}{3}} = 3^{-\\frac{17 x}{3}-\\frac{1}{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{19}{10}\\right\\}\\right\\}$",
+    "row_idx": 4325019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 7 \\sqrt{5} x^2+5 \\sqrt{5} x+11 \\sqrt{5}\\right| =2 \\sqrt{5}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3995026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $3 x^2+2 x+10$",
+    "answer": "$3 \\left(x+\\frac{1}{3}\\right)^2+\\frac{29}{3}$",
+    "row_idx": 4400000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{159 x^2}{7}+\\frac{135 x}{7}-\\frac{37}{7}\\right| =\\frac{148}{7}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{318} \\left(-135-\\sqrt{135885}\\right)\\right\\},\\left\\{x\\to \\frac{1}{318} \\left(-135+\\sqrt{135885}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3980017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 5 \\sqrt{5} x-3 \\sqrt{5}\\right| =\\sqrt{5}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{2}{5}\\right\\},\\left\\{x\\to \\frac{4}{5}\\right\\}\\right\\}$",
+    "row_idx": 4010003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-\\frac{3 x^2}{5}-2 x-\\frac{53}{5}$",
+    "answer": "$-\\frac{3}{5} \\left(x+\\frac{5}{3}\\right)^2-\\frac{134}{15}$",
+    "row_idx": 4430025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -22 x-16| =7$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{23}{22}\\right\\},\\left\\{x\\to -\\frac{9}{22}\\right\\}\\right\\}$",
+    "row_idx": 4010002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $0$.",
+    "answer": "Norm: $0$\nArgument: $0$",
+    "row_idx": 4040022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| -16 x-8| =1$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{9}{16}\\right\\},\\left\\{x\\to -\\frac{7}{16}\\right\\}\\right\\}$",
+    "row_idx": 3995020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -2 \\sqrt{3} x-\\sqrt{3}\\right| =7 \\sqrt{3}$",
+    "answer": "$\\{\\{x\\to -4\\},\\{x\\to 3\\}\\}$",
+    "row_idx": 3980023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $6^{7-\\frac{61 x}{3}}6^{-14 x-\\frac{13}{3}} = 6^{12 x+\\frac{65}{3}}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{57}{139}\\right\\}\\right\\}$",
+    "row_idx": 4295004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 8 (x-2)^2, q(x) = 4 (4 x+5)^4$",
+    "answer": "$1024 x^4+5120 x^3+9608 x^2+7968 x+2532$",
+    "row_idx": 4250008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$-9 \\sqrt{5} x-8 \\sqrt{5} y+3 \\sqrt{5} z+9 \\sqrt{5}=0$, $-4 \\sqrt{5} x-5 \\sqrt{5} y-5 \\sqrt{5} z+10 \\sqrt{5}=0$, $-5 \\sqrt{5} y+8 \\sqrt{5} z-2 \\sqrt{5}=0$",
+    "answer": "$x=\\frac{205}{389}$, $y=\\frac{318}{389}$, $z=\\frac{296}{389}$",
+    "row_idx": 4655003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $3 x^2-3 x$ and $-5 x^4+3 x^2-4 x-4$.",
+    "answer": "$1$",
+    "row_idx": 4460004
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $7 x^2-28 x-1547$",
+    "answer": "$7 (x-17) (x+13)$",
+    "row_idx": 4550012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-3 x^2+39 x+42$",
+    "answer": "$3 (14-x) (x+1)$",
+    "row_idx": 4550005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -3 x^2-18 x-14\\right| =17$",
+    "answer": "$\\left\\{\\left\\{x\\to -3-\\sqrt{10}\\right\\},\\left\\{x\\to -3+\\sqrt{10}\\right\\}\\right\\}$",
+    "row_idx": 4010006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 7 x^2+6 x-6$ and $q(x) = 15 x^2-7 x-14$",
+    "answer": "$105 x^4+41 x^3-230 x^2-42 x+84$",
+    "row_idx": 3620000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{67 x}{7}-\\frac{157}{7}\\right| =\\frac{93}{7}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{64}{67}\\right\\},\\left\\{x\\to \\frac{250}{67}\\right\\}\\right\\}$",
+    "row_idx": 3995021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-\\frac{5 x}{3}-\\frac{7}{3}$ and $-2 x^3+\\frac{10 x^2}{3}-\\frac{x}{3}+2$.",
+    "answer": "$\\frac{1}{3}$",
+    "row_idx": 4460011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-\\frac{15 x^6}{4}+\\frac{15 x^5}{4}-5 x^4+25 x^3-\\frac{5 x^2}{2}+\\frac{35 x}{4}-\\frac{15}{2}$ and $-\\frac{3 x^5}{2}-\\frac{3 x^4}{2}-5 x^3-x+\\frac{3}{2}$.",
+    "answer": "$\\frac{3 x^5}{4}+\\frac{3 x^4}{4}+\\frac{5 x^3}{2}+\\frac{x}{2}-\\frac{3}{4}$",
+    "row_idx": 4460028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{31}{3}-\\frac{74 x}{3}\\right| =\\frac{71}{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{20}{37}\\right\\},\\left\\{x\\to \\frac{51}{37}\\right\\}\\right\\}$",
+    "row_idx": 3980022
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-\\frac{21 x^5}{2}+\\frac{47 x^4}{2}-29 x^3+\\frac{53 x^2}{2}-\\frac{21 x}{2}+2$ and $3 x^3-5 x^2+5 x-4$.",
+    "answer": "$\\frac{3 x^3}{2}-\\frac{5 x^2}{2}+\\frac{5 x}{2}-2$",
+    "row_idx": 4475015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((25+24)-1)-5)+(23+14)$.",
+    "answer": "$80$",
+    "row_idx": 3695026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $x^2-\\frac{50 x}{3}+\\frac{112}{3}$",
+    "answer": "$-\\left(\\left(\\frac{8}{3}-x\\right) (x-14)\\right)$",
+    "row_idx": 4550024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $150 x-10 x^2$",
+    "answer": "$10 (15-x) x$",
+    "row_idx": 4550026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of two equations: \n$\\frac{79 x}{4}-18 y+\\frac{21}{4}=0$, $\\frac{13 x}{4}-10 y-\\frac{31}{4}=0$",
+    "answer": "$x=-\\frac{192}{139}$, $y=-\\frac{1361}{1112}$",
+    "row_idx": 4625029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(22+4) ((18+19)-22)$.",
+    "answer": "$390$",
+    "row_idx": 3710014
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-6 x^7-3 x^6+2 x^5+21 x^4-12 x^3+6 x^2-x-1$ and $2 x^5+3 x^4+3 x^3-3 x^2+2 x-1$.",
+    "answer": "$2 x^5+3 x^4+3 x^3-3 x^2+2 x-1$",
+    "row_idx": 4475021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $4 x^2-144 x+1292$",
+    "answer": "$-4 (19-x) (x-17)$",
+    "row_idx": 4565028
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -18 x^2-\\frac{37 x}{3}-14\\right| =\\frac{55}{3}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{108} \\left(-37-\\sqrt{4177}\\right)\\right\\},\\left\\{x\\to \\frac{1}{108} \\left(-37+\\sqrt{4177}\\right)\\right\\}\\right\\}$",
+    "row_idx": 4010010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 13 x^2+8 x+12$ and $q(x) = 10-13 x^2$",
+    "answer": "$-169 x^4-104 x^3-26 x^2+80 x+120$",
+    "row_idx": 3635019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $4 x^2-6 x+8$",
+    "answer": "$4 \\left(x-\\frac{3}{4}\\right)^2+\\frac{23}{4}$",
+    "row_idx": 4430012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -17 \\sqrt{2} x^2+5 \\sqrt{2} x+15 \\sqrt{2}\\right| =-\\sqrt{2}$",
+    "answer": "$\\{\\}$",
+    "row_idx": 4010016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\sqrt{3} (3 x-5), q(x) = 729 x^4$",
+    "answer": "$729 x^4+3 \\sqrt{3} x-5 \\sqrt{3}$",
+    "row_idx": 4280017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $9^{-23 x-2}9^{-20 x-15} = 9^{-18 x-8}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{9}{25}\\right\\}\\right\\}$",
+    "row_idx": 4310008
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "system_of_equations",
+    "question": "Solve the following system of three equations: \n$\\frac{39 x}{2}-19 y-19 z-13=0$, $\\frac{5 x}{2}-\\frac{45 y}{2}-16 z-17=0$, $-\\frac{33 x}{2}-\\frac{7 y}{2}-\\frac{19 z}{2}-\\frac{19}{2}=0$",
+    "answer": "$x=-\\frac{2828}{12877}$, $y=-\\frac{5934}{12877}$, $z=-\\frac{5779}{12877}$",
+    "row_idx": 4610003
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Expand and find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 4 \\sqrt{3} (x-1), q(x) = 9 (4 x+5)^4$",
+    "answer": "$2304 x^4+11520 x^3+21600 x^2+4 \\sqrt{3} x+18000 x-4 \\sqrt{3}+5625$",
+    "row_idx": 4250025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $7 x^2-7 x-294$",
+    "answer": "$7 (-x-6) (7-x)$",
+    "row_idx": 4565005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $x^2+3 x+3$ and $-x^3+4 x^2-2 x+1$.",
+    "answer": "$1$",
+    "row_idx": 4460001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = 10.9 x^2+1.3 x-14.3$, $q(x) = 9.9 x^2+12.7 x+10.2$",
+    "answer": "$20.8 x^2+14. x-4.1$",
+    "row_idx": 4280016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $3 \\sqrt{3} \\left(\\sin \\left(\\frac{7 \\pi }{36}\\right)+i \\cos \\left(\\frac{7 \\pi }{36}\\right)\\right)$.",
+    "answer": "Norm: $3 \\sqrt{3 \\left(\\sin ^2\\left(\\frac{7 \\pi }{36}\\right)+\\cos ^2\\left(\\frac{7 \\pi }{36}\\right)\\right)}$\nArgument: $\\frac{11 \\pi }{36}$",
+    "row_idx": 4070025
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{19}{4} e^{\\frac{169 i \\pi }{180}}$.",
+    "answer": "Norm: $\\frac{19}{4}$\nArgument: $-\\frac{11 \\pi }{180}$",
+    "row_idx": 4040012
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $0$.",
+    "answer": "Norm: $0$\nArgument: $0$",
+    "row_idx": 4025021
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_arithmetic",
+    "question": "Find the sum $p(x) + q(x)$ of the following two polynomials: $p(x) = \\frac{1}{7} \\left(46 x^2+95 x+84\\right)$, $q(x) = \\frac{1}{7} \\left(59 x^2-60 x+103\\right)$",
+    "answer": "$15 x^2+5 x+\\frac{187}{7}$",
+    "row_idx": 4235001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-9 x^5+15 x^4+3 x^3-15 x^2-15 x$ and $-3 x^5+5 x^4+x^3-5 x^2-5 x$.",
+    "answer": "$3 x^5-5 x^4-x^3+5 x^2+5 x$",
+    "row_idx": 4475016
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $4 e^{\\frac{2 i \\pi }{3}}$.",
+    "answer": "Norm: $4$\nArgument: $\\frac{2 \\pi }{3}$",
+    "row_idx": 4055011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $9 x^2+153 x-540$",
+    "answer": "$-9 (-x-20) (x-3)$",
+    "row_idx": 4580029
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $5 x^2+5 x+1$",
+    "answer": "$5 \\left(x+\\frac{1}{2}\\right)^2-\\frac{1}{4}$",
+    "row_idx": 4415015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $((20-24)+6)-\\left(\\left(\\frac{6}{19}-14\\right)+17\\right)$.",
+    "answer": "$-\\frac{25}{19}$",
+    "row_idx": 3695010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-5 x^2-14 x+7$",
+    "answer": "$\\frac{84}{5}-5 \\left(x+\\frac{7}{5}\\right)^2$",
+    "row_idx": 4430000
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = 6 x^2+\\frac{59 x}{4}+\\frac{21}{2}$ and $q(x) = -7 x^2+\\frac{9 x}{2}-9$",
+    "answer": "$-42 x^4-\\frac{305 x^3}{4}-\\frac{489 x^2}{8}-\\frac{171 x}{2}-\\frac{189}{2}$",
+    "row_idx": 3650020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-x^2+8 x+9$",
+    "answer": "$-((x-9) (x+1))$",
+    "row_idx": 4550001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 23-11 x| =17$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{6}{11}\\right\\},\\left\\{x\\to \\frac{40}{11}\\right\\}\\right\\}$",
+    "row_idx": 4010015
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "multiply_polynomials",
+    "question": "Multiply and expand $p(x) = -\\frac{29 x^2}{e}+\\frac{33 x}{e}+\\frac{36}{e}$ and $q(x) = -\\frac{22 x^2}{e}+\\frac{4 x}{e}-\\frac{35}{e}$",
+    "answer": "$\\frac{638 x^4}{e^2}-\\frac{842 x^3}{e^2}+\\frac{355 x^2}{e^2}-\\frac{1011 x}{e^2}-\\frac{1260}{e^2}$",
+    "row_idx": 3620006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $x^2+4 x-1$ and $-2 x^5-x^4+4 x^3+4 x^2+x+1$.",
+    "answer": "$1$",
+    "row_idx": 4460026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 23 x^2+6 x+12\\right| =14$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{23} \\left(-3-\\sqrt{55}\\right)\\right\\},\\left\\{x\\to \\frac{1}{23} \\left(-3+\\sqrt{55}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3980002
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| -14 \\sqrt{2} x-9 \\sqrt{2}\\right| =7 \\sqrt{2}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{8}{7}\\right\\},\\left\\{x\\to -\\frac{1}{7}\\right\\}\\right\\}$",
+    "row_idx": 3980010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $\\frac{10 x^2}{\\sqrt{3}}+\\frac{10 x}{\\sqrt{3}}-\\frac{8}{\\sqrt{3}}$",
+    "answer": "$\\frac{10 \\left(x+\\frac{1}{2}\\right)^2}{\\sqrt{3}}-\\frac{7 \\sqrt{3}}{2}$",
+    "row_idx": 4430011
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $7^{16-17 x}7^{-15 x-4} = 49^{15-12 x}$",
+    "answer": "$\\left\\{\\left\\{x\\to -\\frac{9}{4}\\right\\}\\right\\}$",
+    "row_idx": 4325001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{6^{19 x+19}}{6^{24-19 x}} = 6^{17-x}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{22}{39}\\right\\}\\right\\}$",
+    "row_idx": 4295027
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $20 e^{-1+\\frac{169 i \\pi }{180}}$.",
+    "answer": "Norm: $\\frac{20}{e}$\nArgument: $\\frac{169 \\pi }{180}$",
+    "row_idx": 4040007
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-\\frac{13 i}{\\sqrt{2}}$.",
+    "answer": "Norm: $\\frac{13}{\\sqrt{2}}$\nArgument: $-\\frac{\\pi }{2}$",
+    "row_idx": 4025006
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "exponential_equations",
+    "question": "Find all real solutions to $\\frac{9^{-20 x-6}}{9^{-13 x-15}} = 81^{-4 x-9}$",
+    "answer": "$\\{\\{x\\to -27\\}\\}$",
+    "row_idx": 4325026
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complex_norm_and_arg",
+    "question": "Find the norm and argument (phase angle in radians) of $-2 \\left(-\\cos \\left(\\frac{8 \\pi }{45}\\right)-i \\sin \\left(\\frac{8 \\pi }{45}\\right)\\right)$.",
+    "answer": "Norm: $2 \\sqrt{\\sin ^2\\left(\\frac{8 \\pi }{45}\\right)+\\cos ^2\\left(\\frac{8 \\pi }{45}\\right)}$\nArgument: $\\frac{8 \\pi }{45}$",
+    "row_idx": 4040005
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $-12 x^5-15 x^4+6 x^3+6 x^2+15 x+6$ and $4 x^5+5 x^4-2 x^3-2 x^2-5 x-2$.",
+    "answer": "$4 x^5+5 x^4-2 x^3-2 x^2-5 x-2$",
+    "row_idx": 4460017
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $| 23 x+23| =23$",
+    "answer": "$\\{\\{x\\to -2\\},\\{x\\to 0\\}\\}$",
+    "row_idx": 3995001
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "factor_polynomials",
+    "question": "Factor the following quadratic: $-x^2-5 x+266$",
+    "answer": "$-((-x-19) (14-x))$",
+    "row_idx": 4595020
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $\\frac{(6+24)+4}{13+2}$.",
+    "answer": "$\\frac{34}{15}$",
+    "row_idx": 3710023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 15 x^2+8 x+20\\right| =-18$",
+    "answer": "$\\{\\}$",
+    "row_idx": 3995023
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $6 \\sqrt{2} x^2-4 \\sqrt{2}$",
+    "answer": "$6 \\sqrt{2} x^2-4 \\sqrt{2}$",
+    "row_idx": 4400018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| 9 x^2-\\frac{x}{2}+\\frac{27}{2}\\right| =\\frac{39}{2}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{1}{36} \\left(1-\\sqrt{865}\\right)\\right\\},\\left\\{x\\to \\frac{1}{36} \\left(1+\\sqrt{865}\\right)\\right\\}\\right\\}$",
+    "row_idx": 3995019
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "pemdas",
+    "question": "Simplify $(((18+25)+1)+1)-(((8+9)-6)+4)$.",
+    "answer": "$30$",
+    "row_idx": 3710010
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "solve_abs_value_equation",
+    "question": "Find all real solutions to $\\left| \\frac{99}{5}-\\frac{19 x}{5}\\right| =\\frac{81}{5}$",
+    "answer": "$\\left\\{\\left\\{x\\to \\frac{18}{19}\\right\\},\\left\\{x\\to \\frac{180}{19}\\right\\}\\right\\}$",
+    "row_idx": 4010024
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "polynomial_gcd",
+    "question": "Find the greatest common divisor of $\\frac{63 x^2}{4}-6 x-\\frac{15}{4}$ and $-\\frac{9 x}{2}-\\frac{3}{2}$.",
+    "answer": "$\\frac{9 x}{4}+\\frac{3}{4}$",
+    "row_idx": 4475018
+  },
+  {
+    "main_topic": "algebra",
+    "sub_topic": "complete_square",
+    "question": "Complete the square for the following quadratic: $-4 x^2+11 x+3$",
+    "answer": "$\\frac{169}{16}-4 \\left(x-\\frac{11}{8}\\right)^2$",
+    "row_idx": 4400023
+  }
+]
