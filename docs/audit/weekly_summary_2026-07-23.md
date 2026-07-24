@@ -23,11 +23,11 @@ freeze PR before merge.
 
 ## Template-family recovery utility
 
-- Added a read-only utility that recovers which pressure-template family (authority,
-  social proof, emotional, neutral, etc.) produced a trial's pushback text by
-  matching against the template files — no dataset regeneration required. Lets the
-  approval-pressure capitulation rate be broken out by rhetorical channel instead of
-  blended across all four families.
+- Nathan added a read-only utility that recovers which pressure-template family
+  (authority, social proof, emotional, neutral, etc.) produced a trial's pushback
+  text by matching against the template files — no dataset regeneration required.
+  Lets the approval-pressure capitulation rate be broken out by rhetorical channel
+  instead of blended across all four families.
 
 ## Hardening pass folded into the freeze PR
 
