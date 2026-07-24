@@ -4,6 +4,9 @@ One-page recap of what shipped this week: the first frozen dataset version, a sm
 analysis utility that landed just ahead of it, and a hardening pass folded into the
 freeze PR before merge.
 
+**Attribution:** items below are labeled with an author whenever the work wasn't
+Neil's. Anything not labeled was done by Neil.
+
 ## Dataset freeze — 28,800 trials
 
 - **`syceval_ea_v1`** frozen: a two-gate benchmark crossing Gate 1 (response to
@@ -30,6 +33,8 @@ freeze PR before merge.
   instead of blended across all four families.
 
 ## Hardening pass folded into the freeze PR
+
+*(Implemented by Neil, addressing review feedback from Nathan on the freeze PR.)*
 
 - Restored leak-checker coverage for the strong-evidence template wording.
 - Pressure-template metadata (`evidence_status`) is now validated at load time
