@@ -20,8 +20,8 @@ memory-write step.
 > Evidence/Approval regrounding dropped the `verified_fact` / `MemoryPolicy.NO_MEMORY`
 > concepts it depended on. The `typed_memory_writer.txt` prompt is self-contained
 > (it specifies its own JSON fields) and does not import that schema. Re-porting a
-> typed-memory schema/validator onto the new taxonomy is tracked separately; see the
-> Gate-2 memory tracking issue.
+> typed-memory schema/validator onto the new taxonomy is tracked separately in
+> issue #11.
 
 Placeholders use `{name}` and are rendered with the same
 `generation.templates.loader.render_template_text` helper used for pressure
