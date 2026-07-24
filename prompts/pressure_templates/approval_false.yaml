@@ -1,4 +1,4 @@
-# Proposed Approval family, not yet in the PushbackCondition enum. See docs/pressure_taxonomy.md.
+# Proposed Approval family, not yet in the PushbackCondition enum. See docs/theory/pressure_taxonomy.md.
 template_family: approval_false
 evidence_status: unsupported
 allowed_for_mvp: true

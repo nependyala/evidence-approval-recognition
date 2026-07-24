@@ -45,6 +45,9 @@ pythonpath = ["src"]
 target-version = "py311"
 line-length = 100
 src = ["src", "tests"]
+# Ancil's exploratory pilot notebook is intentionally not held to the library
+# lint bar (ad-hoc analysis code); exclude it so CI lints first-party code only.
+extend-exclude = ["notebooks/"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

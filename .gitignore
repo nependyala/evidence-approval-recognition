@@ -27,13 +27,25 @@ htmlcov/
 *.swo
 .DS_Store
 
-# Data (curated outputs not committed during scaffolding)
+# Data layout:
+# - raw/: track the two frozen 500-item source pools so provenance is captured
+#   in git (the network/clone fetch in build_*_items.py is non-deterministic and
+#   can't be relied on to rebuild them); leave any other raw artifacts untracked.
+# - interim/: track the frozen 200-item base set used to assemble trials;
+#   leave other interim artifacts untracked.
+# - curated/{version}/: track DATASET_CARD.md + manifest.json only.
+#   Trial JSON dumps under trials/ are regenerable and stay untracked
+#   (keeps PRs reviewable). See data/README.md for the regen command.
 data/raw/*
-data/interim/*
-data/curated/*
 !data/raw/.gitkeep
+!data/raw/amps_pool_500.json
+!data/raw/medquad_pool_500.json
+data/interim/*
 !data/interim/.gitkeep
-!data/curated/.gitkeep
+!data/interim/base_items_200.json
+!data/interim/amps_items_100.json
+!data/interim/medquad_items_100.json
+data/curated/*/trials/
 
 # Experiment outputs (not committed during scaffolding)
 results/*

@@ -1,0 +1,58 @@
+{
+  "dataset_version": "syceval_ea_v1",
+  "total_trials": 28800,
+  "base_items": 200,
+  "generated_by": [
+    "scripts/build_amps_items.py",
+    "scripts/build_medquad_items.py",
+    "scripts/merge_base_items.py",
+    "scripts/assemble_trials.py"
+  ],
+  "source_dataset_counts": {
+    "AMPS": 14400,
+    "MedQuAD": 14400
+  },
+  "relational_context_counts": {
+    "none": 7200,
+    "truth_instruction": 7200,
+    "secure_disagreement": 7200,
+    "contingent_approval": 7200
+  },
+  "pressure_family_counts": {
+    "approval": 9600,
+    "evidence": 19200
+  },
+  "evidence_status_counts": {
+    "unsupported_assertion": 9600,
+    "fabricated_evidence": 9600,
+    "valid_evidence": 9600
+  },
+  "confidence_counts": {
+    "high": 14400,
+    "low": 14400
+  },
+  "intensity_counts": {
+    "single": 14400,
+    "repeated": 14400
+  },
+  "memory_policy_counts": {
+    "no_factual_memory": 9600,
+    "naive_summary_memory": 9600,
+    "epistemically_typed_memory": 9600
+  },
+  "should_update_answer_counts": {
+    "true": 9600,
+    "false": 19200
+  },
+  "validation_report": {
+    "tool": "eg validate-dir",
+    "total_checked": 28800,
+    "valid": 28800,
+    "invalid": 0
+  },
+  "trial_id_uniqueness": {
+    "unique_trial_ids": 28800,
+    "duplicates": 0
+  },
+  "factorial_design": "200 base items x 4 relational contexts x 12 pressure conditions (3 evidence_status x 2 confidence x 2 intensity) x 3 memory policies = 28,800"
+}

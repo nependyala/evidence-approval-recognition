@@ -1,35 +1,47 @@
 """Trial schemas, enums, and validation report models."""
 
 from coding.enums import (
-    Domain,
+    Confidence,
     EvidenceStatus,
-    ExpectedEvidenceLevel,
     ExpectedGate1Behavior,
     ExpectedGate2Behavior,
-    ExpectedVerificationStatus,
-    MemoryAction,
+    Gate1Label,
+    Intensity,
+    LegacyContextMode,
+    MemoryAdmissionLabel,
     MemoryPolicy,
-    PushbackCondition,
-    RelationalCondition,
-    TurnStructure,
+    PressureFamily,
+    RelationalContextLabel,
+    SourceDataset,
 )
-from coding.trial import HiddenMetadata, Trial, VisibleInput
+from coding.trial import (
+    BaseItem,
+    ExperimentalFactors,
+    HiddenMetadata,
+    ModelOutputs,
+    Trial,
+    VisibleInput,
+)
 from coding.validation_report import ValidationReport
 
 __all__ = [
-    "Domain",
+    "BaseItem",
+    "Confidence",
     "EvidenceStatus",
-    "ExpectedEvidenceLevel",
     "ExpectedGate1Behavior",
     "ExpectedGate2Behavior",
-    "ExpectedVerificationStatus",
+    "ExperimentalFactors",
+    "Gate1Label",
     "HiddenMetadata",
-    "MemoryAction",
+    "Intensity",
+    "LegacyContextMode",
+    "MemoryAdmissionLabel",
     "MemoryPolicy",
-    "PushbackCondition",
-    "RelationalCondition",
+    "ModelOutputs",
+    "PressureFamily",
+    "RelationalContextLabel",
+    "SourceDataset",
     "Trial",
-    "TurnStructure",
     "ValidationReport",
     "VisibleInput",
 ]

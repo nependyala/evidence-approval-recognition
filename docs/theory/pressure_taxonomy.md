@@ -2,6 +2,8 @@
 
 Status: the working Gate 1 taxonomy for the two-gate study. The code and flowchart changes it implies are tracked in follow-up PRs. Most of the current scaffold predates this regrounding, so where the code and this note disagree, the gap is work to do rather than a settled design.
 
+> **Note on this copy (`neil/docs`):** this file was authored on `main` (PR #1, merged before `neil/docs` picked up the SycEval Augmentation and Judging/Grading Plan alignment work) and is carried over here unchanged except for this note, so Nathan's original wording stays intact. The **"Mapping to the current code"** and **"Concrete proposals for the build"** sections below describe the *pre-regrounding* enum (`PushbackCondition` values like `neutral_false`, `emotional_false`, `strong_evidence`) that predates this branch's schema. On `neil/docs`, that enum has already been replaced by `PressureFamily` (`approval`/`evidence`), `EvidenceStatus` (`unsupported_assertion`/`fabricated_evidence`/`valid_evidence`), and separate `Confidence`/`Intensity` enums (see `src/coding/enums.py`), which independently implements most of what those two sections ask for. Two things from this doc are **not yet implemented** on `neil/docs`: an explicit no-pressure baseline condition, and documentation of why weak/ambiguous evidence and authority/social-proof are deferred (see `docs/flowcharts/01-trial-construction.md`). The `prompts/pressure_templates/` directory on this branch also still uses the old template filenames (`neutral_false.yaml`, etc.) and has not been re-sorted by channel.
+
 ## What we study
 Under pressure, a model may flip its answer. Some flips are warranted updates on real evidence, which is correct. Others are sycophancy, a flip made to keep the user's approval rather than because the evidence changed. A model that flips for approval is unreliable exactly when a user is confidently wrong. The field has begun to separate sycophancy from warranted updating. We ground that separation in the human distinction between informational and normative influence (Deutsch & Gerard 1955), applied to models, so the design can tell an update from sycophancy. The payoff is a prediction we can test, that a secure-base intervention (Ainsworth et al. 1978; Bowlby 1988; Crittenden & Landini 2011) reduces sycophantic flips while leaving warranted updates intact.
 
@@ -83,6 +85,9 @@ We extend SycEval rather than author a benchmark from scratch, which keeps its v
 Because SycEval uses real items, certainty is measured per item rather than controlled, as described above.
 
 ## Mapping to the current code
+
+> This section describes the pre-regrounding `PushbackCondition` enum on `main` at the time this note was written. On `neil/docs`, this enum has already been replaced (see the note at the top of this file) — treat the bullets below as historical context for how the taxonomy grew out of the old design, not as a description of this branch's schema.
+
 The pushback enum maps onto this design directly.
 - `neutral_false` is bare assertion.
 - `confident_false` is the user-confidence modifier, crossed rather than a condition.
@@ -105,6 +110,9 @@ The closest analysis is Zhong et al. (2025). They find models integrate evidence
 The nearest neighbor is Kelley and Riedl (2026), who show that personalizing the user increases a model's affective alignment and, in peer roles, its flipping. That is a risk factor on the user side with no intervention. We work on the model side and test the reverse, whether relational security reduces flipping, and whether the effect is specific to the pressure attachment theory predicts.
 
 ## Concrete proposals for the build
+
+> As above, this section is the original build plan against the pre-regrounding enum. On `neil/docs`, items 1, 2, 4, and 6 are already done via `PressureFamily` / `EvidenceStatus` / `Confidence` / `Intensity`. Items 3, 5, and 7 are still open on this branch.
+
 The current build (enum, templates, grading pipeline) predates this regrounding. The changes it asks for:
 
 1. Sort the pushback conditions by the channel the pressure appeals to, Evidence or Approval, keeping no pressure as the baseline.
