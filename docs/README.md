@@ -29,6 +29,7 @@ Docs for the SycEval-augmented two-gate benchmark. Start here if you're looking 
 - [Action items](audit/action_items.md) — `syceval_ea_v1` freeze-review brief
 - [Human audit checklist](audit/human_audit_checklist.md) — pre-freeze review checklist + sign-off
 - [Human audit sample trials](audit/human_audit_sample_trials.md) — 48-trial stratified rendered-trial reading list
+- [Weekly summary (Jul 17–23, 2026)](audit/weekly_summary_2026-07-23.md) — one-pager on the freeze + hardening pass
 
 ### Findings
 - [Authority deference finding](findings/authority_deference_finding.md) — scout result on authority as a dissociable channel
