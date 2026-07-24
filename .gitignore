@@ -28,7 +28,9 @@ htmlcov/
 .DS_Store
 
 # Data layout:
-# - raw/ stays untracked (source pools; regenerable via build_* scripts).
+# - raw/: track the two frozen 500-item source pools so provenance is captured
+#   in git (the network/clone fetch in build_*_items.py is non-deterministic and
+#   can't be relied on to rebuild them); leave any other raw artifacts untracked.
 # - interim/: track the frozen 200-item base set used to assemble trials;
 #   leave other interim artifacts untracked.
 # - curated/{version}/: track DATASET_CARD.md + manifest.json only.
@@ -36,6 +38,8 @@ htmlcov/
 #   (keeps PRs reviewable). See data/README.md for the regen command.
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/amps_pool_500.json
+!data/raw/medquad_pool_500.json
 data/interim/*
 !data/interim/.gitkeep
 !data/interim/base_items_200.json

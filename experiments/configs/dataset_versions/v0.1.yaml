@@ -1,18 +1,32 @@
 version: v0.1
 description: Initial scaffolding release for evidence-gates trial schema and validation.
-status: draft
+status: superseded
+superseded_by: syceval_ea_v1
+# Domains and memory policies below reflect the actual taxonomy that shipped in
+# the frozen syceval_ea_v1 set (see data/curated/syceval_ea_v1/DATASET_CARD.md).
+# The earlier speculative domain list (synthetic_biography, company_policy_records,
+# etc.) and the old memory-policy names (no_memory, naive_summary) were retired
+# during the Evidence/Approval regrounding and are no longer used anywhere.
 domains:
-  - synthetic_biography
-  - company_policy_records
-  - calendar_scheduling_facts
-  - user_profile_facts
-  - table_based_records
-  - task_rules
-  - organizational_records
+  - algebra_pemdas
+  - algebra_complete_square
+  - algebra_factor_polynomials
+  - algebra_multiply_polynomials
+  - algebra_polynomial_arithmetic
+  - algebra_polynomial_gcd
+  - algebra_complex_norm
+  - algebra_complex_argument
+  - algebra_exponential_equations
+  - algebra_system_of_equations
+  - algebra_solve_abs_value_equation
+  - medquad_inheritance
+  - medquad_frequency
 memory_policies:
-  - no_memory
-  - naive_summary
+  - no_factual_memory
+  - naive_summary_memory
   - epistemically_typed_memory
 notes: >
-  This version defines schema, validation, and template libraries only.
-  No curated dataset is frozen in v0.1.
+  This version defined the schema, validation, and template libraries only; no
+  curated dataset was frozen under v0.1. The first frozen dataset is
+  syceval_ea_v1. This file is retained for provenance and points at the current
+  taxonomy so it is no longer a source of stale domain/memory-policy names.

@@ -34,15 +34,18 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(Path(__file__).parent))
 
-from generation.ids import build_trial_id  # noqa: E402
 from pressure_manifest import PRESSURE_CONDITIONS, build_pushback_texts  # noqa: E402
+
+from generation.ids import build_trial_id  # noqa: E402
 
 RELATIONAL_CONTEXTS = ["none", "truth_instruction", "secure_disagreement", "contingent_approval"]
 MEMORY_POLICIES = ["no_factual_memory", "naive_summary_memory", "epistemically_typed_memory"]
 
 RELATIONAL_CONTEXT_TEXT = {
     "none": "",
-    "truth_instruction": (ROOT / "prompts" / "relational_memory" / "truth_instruction.txt").read_text().strip(),
+    "truth_instruction": (
+        ROOT / "prompts" / "relational_memory" / "truth_instruction.txt"
+    ).read_text().strip(),
     "secure_disagreement": (
         ROOT / "prompts" / "relational_memory" / "secure_disagreement_memory.txt"
     ).read_text().strip(),
@@ -52,8 +55,12 @@ RELATIONAL_CONTEXT_TEXT = {
 }
 
 MEMORY_INSTRUCTION_TEXT = {
-    "no_factual_memory": (ROOT / "prompts" / "memory_instructions" / "no_memory.txt").read_text().strip(),
-    "naive_summary_memory": (ROOT / "prompts" / "memory_instructions" / "naive_summary.txt").read_text().strip(),
+    "no_factual_memory": (
+        ROOT / "prompts" / "memory_instructions" / "no_memory.txt"
+    ).read_text().strip(),
+    "naive_summary_memory": (
+        ROOT / "prompts" / "memory_instructions" / "naive_summary.txt"
+    ).read_text().strip(),
     "epistemically_typed_memory": (
         ROOT / "prompts" / "memory_instructions" / "epistemically_typed_memory.txt"
     ).read_text().strip(),
@@ -133,13 +140,18 @@ def import_medquad_lib():
     return lib_medquad
 
 
-def build_canonical_initial_turn(base_item: dict, evidence_status: str, lib_amps, lib_medquad) -> str:
+def build_canonical_initial_turn(
+    base_item: dict, evidence_status: str, lib_amps, lib_medquad
+) -> str:
     if evidence_status != "valid_evidence":
         return base_item["target_claim"]
     if base_item["source_dataset"] == "AMPS":
         sub_topic = base_item["provenance"]["sub_topic"]
         return lib_amps.derive_false_claim(
-            base_item["target_claim"], base_item["gold_answer"], base_item["false_answer"], sub_topic
+            base_item["target_claim"],
+            base_item["gold_answer"],
+            base_item["false_answer"],
+            sub_topic,
         )
     condition = base_item["provenance"].get("condition", "")
     return lib_medquad.derive_false_claim(
@@ -147,18 +159,34 @@ def build_canonical_initial_turn(base_item: dict, evidence_status: str, lib_amps
     )
 
 
-def build_trial(base_item: dict, relational: str, condition: dict, memory_policy: str, dataset_version: str, lib_amps, lib_medquad) -> dict:
+def build_trial(
+    base_item: dict,
+    relational: str,
+    condition: dict,
+    memory_policy: str,
+    dataset_version: str,
+    lib_amps,
+    lib_medquad,
+) -> dict:
     evidence_status = condition["evidence_status"]
     is_valid_evidence = evidence_status == "valid_evidence"
 
     pushback_texts = build_pushback_texts(condition, base_item["base_item_number"], base_item)
-    pushback_turns = [{"turn_index": i + 1, "user_text": text} for i, text in enumerate(pushback_texts)]
+    pushback_turns = [
+        {"turn_index": i + 1, "user_text": text} for i, text in enumerate(pushback_texts)
+    ]
 
-    canonical_initial_turn_text = build_canonical_initial_turn(base_item, evidence_status, lib_amps, lib_medquad)
+    canonical_initial_turn_text = build_canonical_initial_turn(
+        base_item, evidence_status, lib_amps, lib_medquad
+    )
 
     should_update_answer = is_valid_evidence
-    expected_gate_1_behavior = "rational_revision" if is_valid_evidence else "hold_or_elicitation"
-    expected_gate_2_behavior = "store_verified_update" if is_valid_evidence else "do_not_store_false_answer_as_fact"
+    expected_gate_1_behavior = (
+        "rational_revision" if is_valid_evidence else "hold_or_elicitation"
+    )
+    expected_gate_2_behavior = (
+        "store_verified_update" if is_valid_evidence else "do_not_store_false_answer_as_fact"
+    )
 
     trial_id = build_trial_id(
         dataset_version,
@@ -184,7 +212,11 @@ def build_trial(base_item: dict, relational: str, condition: dict, memory_policy
             "base_item_id": base_item["base_item_id"],
             "syceval_item_id": base_item["syceval_item_id"],
             "source_dataset": base_item["source_dataset"],
-            "source_item_id": base_item["source_item_id"] if isinstance(base_item["source_item_id"], str) else str(base_item["source_item_id"]),
+            "source_item_id": (
+                base_item["source_item_id"]
+                if isinstance(base_item["source_item_id"], str)
+                else str(base_item["source_item_id"])
+            ),
             "domain": base_item["domain"],
             "legacy_context_mode": base_item["legacy_context_mode"],
             "legacy_rebuttal_tier": condition["legacy_rebuttal_tier"],
@@ -203,9 +235,14 @@ def build_trial(base_item: dict, relational: str, condition: dict, memory_policy
         "visible_input": {
             "question": question_text,
             "relational_context": RELATIONAL_CONTEXT_TEXT[relational],
-            "canonical_initial_turn": {"assistant_response": canonical_initial_turn_text},
+            "canonical_initial_turn": {
+                "assistant_response": canonical_initial_turn_text
+            },
             "pushback_turns": pushback_turns,
-            "response_format_instruction": {"format": "json", "schema": RESPONSE_FORMAT_SCHEMA},
+            "response_format_instruction": {
+                "format": "json",
+                "schema": RESPONSE_FORMAT_SCHEMA,
+            },
             "memory_instruction": MEMORY_INSTRUCTION_TEXT[memory_policy],
             "downstream_task": downstream_task,
         },
@@ -214,9 +251,13 @@ def build_trial(base_item: dict, relational: str, condition: dict, memory_policy
             "gold_answer": base_item["gold_answer"],
             "true_answer_aliases": base_item["true_answer_aliases"],
             "false_answer": base_item["false_answer"],
-            "valid_evidence_asset": base_item["valid_evidence_asset"] if is_valid_evidence else None,
+            "valid_evidence_asset": (
+                base_item["valid_evidence_asset"] if is_valid_evidence else None
+            ),
             "fabricated_evidence_asset": (
-                base_item["fabricated_evidence_asset"] if evidence_status == "fabricated_evidence" else None
+                base_item["fabricated_evidence_asset"]
+                if evidence_status == "fabricated_evidence"
+                else None
             ),
             "should_update_answer": should_update_answer,
             "expected_gate_1_behavior": expected_gate_1_behavior,
@@ -231,7 +272,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--version", default="syceval_ea_v1")
     parser.add_argument("--out", default=None)
-    parser.add_argument("--limit-items", type=int, default=None, help="For smoke-testing on a subset.")
+    parser.add_argument(
+        "--limit-items", type=int, default=None, help="For smoke-testing on a subset."
+    )
     args = parser.parse_args()
 
     out_dir = Path(args.out) if args.out else ROOT / "data" / "interim" / args.version
@@ -249,7 +292,15 @@ def main() -> None:
         for relational in RELATIONAL_CONTEXTS:
             for condition in PRESSURE_CONDITIONS:
                 for memory_policy in MEMORY_POLICIES:
-                    trial = build_trial(base_item, relational, condition, memory_policy, args.version, lib_amps, lib_medquad)
+                    trial = build_trial(
+                        base_item,
+                        relational,
+                        condition,
+                        memory_policy,
+                        args.version,
+                        lib_amps,
+                        lib_medquad,
+                    )
                     path = out_dir / f"{trial['trial_id']}.json"
                     path.write_text(json.dumps(trial, indent=2) + "\n")
                     count += 1

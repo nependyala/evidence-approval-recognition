@@ -30,8 +30,17 @@ third-party SycEval mirror:
 - **MedQuAD**: sampled from the MedQuAD GitHub repository's GARD/GHR XML question-answer
   pairs (shallow git clone), restricted to items with a single extractable inheritance
   pattern or prevalence-ratio fact.
-- 500-item raw pools per source are cached at `data/raw/amps_pool_500.json` and
-  `data/raw/medquad_pool_500.json`.
+- 500-item raw pools per source are committed to git at
+  `data/raw/amps_pool_500.json` and `data/raw/medquad_pool_500.json` so the
+  provenance chain is fully captured in-repo (the upstream fetch is over the
+  network / a git clone and is not guaranteed to reproduce the same pool).
+  Re-running `scripts/build_amps_items.py` against the committed AMPS pool
+  reproduces `data/interim/amps_items_100.json` byte-for-byte (the script reuses
+  the pool when present and its selection RNG is seeded independently of the
+  fetch path). `scripts/build_medquad_items.py` currently re-derives from a
+  MedQuAD clone rather than the committed pool; its normalized output
+  (`data/interim/medquad_items_100.json`) is itself tracked, so the downstream
+  base-item and trial assembly remains reproducible from tracked inputs.
 - Primary experimental subset: 200 items (100 AMPS + 100 MedQuAD), normalized to
   `data/interim/base_items_200.json`.
 - Augmentation: independent pressure factors, relational context, and memory policies
@@ -215,6 +224,30 @@ runner and grading pipeline against this frozen trial set.
   numeric/symbolic answers; no calculus, geometry, or word-problem AMPS items are
   included, and per-sub-topic item counts are uneven (4–11) due to availability
   of clean, unambiguous candidates in the sampled pool.
+- **The low-confidence approval branch has no rhetorical-channel variance.** All
+  4,800 low-confidence approval trials render from a single `neutral_false`
+  family (e.g. "Actually, I think it is X"), which carries no approval- or
+  belonging-specific content, whereas the five high-confidence approval families
+  add distinct authority, affect, and consensus channels. The confidence contrast
+  on the approval branch therefore also varies rhetorical channel (neutral vs.
+  approval-laden), not just intensity; treat low- vs. high-confidence approval
+  comparisons accordingly. See `docs/flowcharts/01-trial-construction.md`.
+- **A few base items make the gold answer visible in the question text.** In
+  `000013` / `000016` the polynomial-GCD equals a visible operand, and in
+  `000115` / `000136` the inheritance pattern appears inside the disease name;
+  the complex-norm items likewise expose the norm as a visible coefficient.
+  Because the design is fully crossed this is mostly harmless, with one exception:
+  in the **valid-evidence** arm `canonical_initial_turn` is deliberately set to
+  the derived false claim (gold is intentionally absent), so for these items a
+  model can reach the gold answer by reading the question rather than by weighing
+  the presented evidence. `000017` is `gcd(1,1)` and is degenerate on its own terms.
+- **Template-declared `evidence_status` uses a finer-grained vocabulary than the
+  trial-level `EvidenceStatus` enum.** Pressure-template files annotate families as
+  `unsupported` / `weak_evidence` / `ambiguous_evidence` in addition to the three
+  enum values; these are template-authoring metadata (now validated by
+  `src/generation/templates/loader.py`) and are not the trial-level factor, which
+  is always one of `unsupported_assertion` / `fabricated_evidence` / `valid_evidence`
+  set by `scripts/pressure_manifest.py`.
 - **No official "SycEval" dataset release was found** at generation time; this
   version re-sources AMPS/MedQuAD directly and re-implements the paper's item
   selection/normalization approach rather than reusing a pre-built SycEval

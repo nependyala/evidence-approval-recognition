@@ -4,23 +4,18 @@ Status: working notes on the `notebooks/two_gate_probe.ipynb` pilot pushed to `o
 
 ## Where this notebook actually lives
 
-`notebooks/two_gate_probe.ipynb` and its raw output (`notebooks/quick_probe_outputs/`) exist **only on `origin/main`**, pushed directly by Ancil in two commits with no PR:
+`notebooks/two_gate_probe.ipynb` and its raw output (`notebooks/quick_probe_outputs/`) are now tracked in this repo (brought across in the dataset-construction merge). They were originally pushed directly by Ancil to `origin/main` in two commits with no PR:
 
 - `245d740` — "ad hoc experiment & hypothesis testing" (Run 1: single model, Qwen2.5-7B-Instruct, 100 items x 4 conditions, n=400)
 - `11e65c9` — "updated notebook for comparing multiple models" (Run 2: qwen-2.5-7b-instruct, qwen3-235b-a22b, gemma-3-27b-it:nitro, 400 rows/probes per model, n=1200)
 
-Local branches (`main`, `neil/docs`, `neil/dataset-construction`) are behind `origin/main` and do not have this notebook checked out. Pull it with:
-
-```bash
-git fetch origin
-git checkout origin/main -- notebooks/
-```
+They live under `notebooks/` on this branch; no separate `git checkout origin/main -- notebooks/` step is needed anymore.
 
 **Nathan's branches/PRs were checked and do not contain a notebook or H5 analysis.** Nathan's GitHub handle is `FedExodus`; his work in this repo is `nathan/approval-pressure-taxonomy` (PR #1, merged), `nathan/secure-base-wording` (PR #4, merged), `nathan/flowchart-taxonomy` (PR #3, open), and `nathan/enums-taxonomy` (no PR yet) — all taxonomy/flowchart/enum docs, none touch `notebooks/`. If Nathan has his own H5 analysis, it has not been pushed anywhere in this repo yet. **Action: sync with Nathan directly before treating "his approach" as an input to the decision below** — until then this doc only has Ancil's two runs to compare.
 
 ## What the pilot was for
 
-Stress-test the augmentation plan's hypotheses (H1-H5) and the schema/prompt/grading pipeline against generated examples before the real AMPS+MedQuAD subset is curated. Full H1-H4 recap is in the [syceval-pilot-results canvas](/Users/neilpendyala/.cursor/projects/Users-neilpendyala-Downloads-evidence-approval-recognition/canvases/syceval-pilot-results.canvas.tsx) from the Slack thread. This doc focuses specifically on H5, since it's the one hypothesis that has not held up and blocks a clean "all augmentations validated" story.
+Stress-test the augmentation plan's hypotheses (H1-H5) and the schema/prompt/grading pipeline against generated examples before the real AMPS+MedQuAD subset is curated. The full H1-H4 recap lives in the `syceval-pilot-results` canvas from the Slack thread (Cursor canvas artifact, not tracked in this repo). This doc focuses specifically on H5, since it's the one hypothesis that has not held up and blocks a clean "all augmentations validated" story.
 
 ## The H5 discrepancy
 

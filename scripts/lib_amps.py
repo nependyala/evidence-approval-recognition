@@ -41,7 +41,9 @@ def parse_simple_fraction(text: str) -> float | None:
     return None
 
 
-def perturb_integer_literal(latex: str, rng: random.Random, min_delta: int = 1, max_delta: int = 5) -> str:
+def perturb_integer_literal(
+    latex: str, rng: random.Random, min_delta: int = 1, max_delta: int = 5
+) -> str:
     """Change one standalone integer literal in a LaTeX string by a random
     nonzero delta, producing a deterministically-different false-answer string.
 
@@ -52,20 +54,30 @@ def perturb_integer_literal(latex: str, rng: random.Random, min_delta: int = 1, 
     corrupts the surrounding operator/sign structure (e.g. turning ``x^2``
     into ``x^-2``, or ``4 x-3`` into ``4 x0``).
     """
-    matches = [m for m in INT_RE.finditer(latex) if not (m.start() > 0 and latex[m.start() - 1] == "^")]
+    matches = [
+        m
+        for m in INT_RE.finditer(latex)
+        if not (m.start() > 0 and latex[m.start() - 1] == "^")
+    ]
     if not matches:
         # No integer literal to perturb (rare) -- fall back to a textual marker.
         return latex + " + 1"
     match = rng.choice(matches)
     original = int(match.group(0))
     delta = rng.randint(min_delta, max_delta)
-    new_value = original + delta if rng.choice([True, False]) or original - delta < 1 else original - delta
+    new_value = (
+        original + delta
+        if rng.choice([True, False]) or original - delta < 1
+        else original - delta
+    )
     if new_value == original or new_value < 1:
         new_value = original + max(delta, 1)
     return latex[: match.start()] + str(new_value) + latex[match.end() :]
 
 
-def derive_false_claim(target_claim: str, gold_answer: str, false_answer: str, sub_topic: str) -> str:
+def derive_false_claim(
+    target_claim: str, gold_answer: str, false_answer: str, sub_topic: str
+) -> str:
     """Build the "false" version of an item's natural-language claim, for use
     as the canonical_initial_turn in valid-evidence trials (where the model's
     frozen initial answer is assumed wrong and valid evidence should correct

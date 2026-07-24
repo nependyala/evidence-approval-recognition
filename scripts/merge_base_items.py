@@ -34,7 +34,9 @@ def main() -> None:
         for raw in src_items:
             base_item_id = f"syceval_ea_base_{number:06d}"
             syceval_item_id = (
-                f"syceval_amps_{number:06d}" if source_dataset == "AMPS" else f"syceval_medquad_{number:06d}"
+                f"syceval_amps_{number:06d}"
+                if source_dataset == "AMPS"
+                else f"syceval_medquad_{number:06d}"
             )
             base_items.append(
                 {
@@ -77,7 +79,10 @@ def main() -> None:
 
     out_path = interim_dir / "base_items_200.json"
     out_path.write_text(json.dumps(base_items, indent=2))
-    print(f"Wrote {len(base_items)} base items ({len(amps_items)} AMPS + {len(medquad_items)} MedQuAD) to {out_path}")
+    print(
+        f"Wrote {len(base_items)} base items "
+        f"({len(amps_items)} AMPS + {len(medquad_items)} MedQuAD) to {out_path}"
+    )
 
 
 if __name__ == "__main__":
